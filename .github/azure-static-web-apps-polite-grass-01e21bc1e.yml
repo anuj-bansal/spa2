@@ -24,14 +24,13 @@ jobs:
           npm ci
           npm run build          
         with:
-          azure_static_web_apps_api_token: '36cd823b9f503f34bd9ff30df487345c9c90538236b6b520167fed95f4d99ec001-724e0cb8-d19b-41f1-8d78-84c1910d8a9201e251501e21bc1e'
-          repo_token: 'github_pat_11ADVDCQQ0IFWn50jepGPb_3xXqXy2xXxXsxpvGBnw8yEMEoSsSDE70GpJiFXwe94TDT36RCGXzJxWXa9Z' # Used for Github integrations (i.e. PR comments)
-      - name: Build And Deploy
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}      - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: '36cd823b9f503f34bd9ff30df487345c9c90538236b6b520167fed95f4d99ec001-724e0cb8-d19b-41f1-8d78-84c1910d8a9201e251501e21bc1e'
-          repo_token: 'github_pat_11ADVDCQQ0IFWn50jepGPb_3xXqXy2xXxXsxpvGBnw8yEMEoSsSDE70GpJiFXwe94TDT36RCGXzJxWXa9Z' # Used for Github integrations (i.e. PR comments)
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}          
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
@@ -49,5 +48,5 @@ jobs:
         id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: '36cd823b9f503f34bd9ff30df487345c9c90538236b6b520167fed95f4d99ec001-724e0cb8-d19b-41f1-8d78-84c1910d8a9201e251501e21bc1e'
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           action: "close"
