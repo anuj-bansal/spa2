@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://issaquahkidsdentistry.com/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Block unnecessary paths
+Disallow: /src/
+Disallow: *.js$
+Disallow: *.css$
