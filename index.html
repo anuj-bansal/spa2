@@ -1,44 +1,577 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/ikd-logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- SEO Meta Tags -->
-    <title>Issaquah Kids Dentistry | Pediatric Dental Care in Issaquah, WA</title>
-    <meta name="description" content="Expert pediatric dental care in Issaquah, WA. Dr. Shradha Bansal provides comprehensive children's dentistry including preventive care, sedation dentistry with nitrous oxide, general anesthesia, special needs care, emergency dentistry, and custom mouth guards. Call (425) 657-0609." />
-    <meta name="keywords" content="pediatric dentist, children's dentistry, Issaquah dentist, kids dental care, sedation dentistry, nitrous oxide dentistry, pediatric sedation, anxiety-free dentistry, laughing gas, general anesthesia dentistry, emergency dental care, special needs dentistry, autism dentistry, developmental delays dental care, mouth guards sports, custom mouth guards kids, thumb sucking treatment, finger sucking appliance, habit breaking appliance, longer dental appointments, extended appointments children, nitrous oxide Issaquah, emergency dentist children, Dr. Shradha Bansal, Issaquah sedation dentist, special needs pediatric dentist" />
-    <meta name="author" content="Dr. Shradha Bansal, DDS" />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://issaquahkidsdentistry.com" />
-    
-    <!-- Local SEO Meta Tags -->
-    <meta name="geo.region" content="US-WA" />
-    <meta name="geo.placename" content="Issaquah" />
-    <meta name="geo.position" content="47.5301;-122.0326" />
-    <meta name="ICBM" content="47.5301, -122.0326" />
-    <meta name="DC.title" content="Issaquah Kids Dentistry" />
-    <meta name="DC.subject" content="Pediatric Dentistry" />
-    <meta name="DC.description" content="Expert pediatric dental care in Issaquah, WA" />
-    
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Issaquah Kids Dentistry | Pediatric Dental Care in Issaquah, WA" />
-    <meta property="og:description" content="Expert pediatric dental care in Issaquah, WA. Dr. Shradha Bansal provides comprehensive children's dentistry including preventive care, sedation dentistry with nitrous oxide, general anesthesia, special needs care, and emergency dentistry." />
-    <meta property="og:image" content="https://issaquahkidsdentistry.com/ikd-logo.png" />
-    <meta property="og:url" content="https://issaquahkidsdentistry.com" />
-    <meta property="og:site_name" content="Issaquah Kids Dentistry" />
-    <meta property="og:locale" content="en_US" />
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Issaquah Kids Dentistry | Pediatric Dental Care in Issaquah, WA" />
-    <meta name="twitter:description" content="Expert pediatric dental care in Issaquah, WA. Dr. Shradha Bansal provides comprehensive children's dentistry including sedation dentistry, special needs care, and emergency dental services." />
-    <meta name="twitter:image" content="https://issaquahkidsdentistry.com/ikd-logo.png" />
-    
-    <!-- Local Business Structured Data -->
-    <script type="application/ld+json">
+
+<head>
+  <!-- Review Schema.org Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Issaquah Kids Dentistry",
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Patient Name"
+          },
+          "reviewBody": "Excellent pediatric dental care! The staff is friendly and Dr. Bansal is wonderful with kids. Highly recommend Issaquah Kids Dentistry.",
+          "datePublished": "2025-08-01"
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Provider Name"
+          },
+          "reviewBody": "As a referring provider, I am impressed by the professionalism and care at Issaquah Kids Dentistry. My patients always have positive experiences.",
+          "datePublished": "2025-07-15"
+        }
+      ]
+    }
+    </script>
+  <!-- Service Schema.org Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Service",
+          "name": "First Visit / Early Childhood Visit",
+          "description": "Gentle introductory visits designed to make children comfortable with dental care from an early age.",
+          "provider": {
+            "@type": "Dentist",
+            "name": "Issaquah Kids Dentistry"
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "Preventive Care",
+          "description": "Comprehensive preventive services to maintain optimal oral health and prevent dental problems. Includes cleanings, fluoride treatments, sealants, and digital X-rays.",
+          "provider": {
+            "@type": "Dentist",
+            "name": "Issaquah Kids Dentistry"
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "Fillings & Restorative Care",
+          "description": "Advanced restorative treatments to repair and strengthen damaged teeth using modern materials and techniques.",
+          "provider": {
+            "@type": "Dentist",
+            "name": "Issaquah Kids Dentistry"
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "Sedation Dentistry",
+          "description": "Safe and effective sedation options to ensure comfort during dental procedures for anxious patients, including nitrous oxide and general anesthesia.",
+          "provider": {
+            "@type": "Dentist",
+            "name": "Issaquah Kids Dentistry"
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "Hospital Dentistry",
+          "description": "Comprehensive dental care performed in a hospital setting for patients requiring specialized medical monitoring.",
+          "provider": {
+            "@type": "Dentist",
+            "name": "Issaquah Kids Dentistry"
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "Special Needs Children",
+          "description": "Specialized care tailored to meet the unique needs of children with developmental, physical, or medical conditions.",
+          "provider": {
+            "@type": "Dentist",
+            "name": "Issaquah Kids Dentistry"
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "Custom Mouth Guards",
+          "description": "Custom-fitted mouth guards for sports protection, preventing dental injuries during athletic activities.",
+          "provider": {
+            "@type": "Dentist",
+            "name": "Issaquah Kids Dentistry"
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "Habit Breaking Appliances",
+          "description": "Custom appliances to help children break harmful oral habits like thumb sucking, finger sucking, and tongue thrusting.",
+          "provider": {
+            "@type": "Dentist",
+            "name": "Issaquah Kids Dentistry"
+          }
+        }
+      ]
+    }
+    </script>
+  <style>
+    /* Hamburger menu for mobile */
+    .logo-flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      min-width: 220px;
+      min-height: 140px;
+      padding: 0.5rem 0;
+    }
+
+    .logo-img-large {
+      max-width: 500px;
+      /* max-height: 125px; */
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      background: transparent;
+      display: block;
+    }
+
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary-purple);
+      line-height: 1.1;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 900px) {
+      .nav-menu {
+        display: none !important;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 80vw;
+        min-width: 220px;
+        max-width: 340px;
+        background: #fff;
+        box-shadow: -2px 0 12px rgba(0, 0, 0, 0.18);
+        border-radius: 0 0 0 12px;
+        flex-direction: column;
+        padding: 100px 0 2rem 0;
+        z-index: 9999;
+      }
+
+      .nav-menu.open {
+        display: flex !important;
+      }
+
+      .mobile-menu-toggle {
+        display: block !important;
+        position: fixed;
+        right: 1rem;
+        top: 1rem;
+        font-size: 2.5rem;
+        background: none;
+        border: none;
+        color: var(--primary-purple, #7c3aed);
+        cursor: pointer;
+        z-index: 10000;
+      }
+
+      .nav-container {
+        position: static;
+      }
+    }
+
+    @media (min-width: 901px) {
+      .mobile-menu-toggle {
+        display: none !important;
+      }
+
+      .nav-menu {
+        display: flex !important;
+        position: static;
+      }
+    }
+
+    html {
+      scroll-padding-top: 300px;
+    }
+
+    /* Only direct child submenu of hovered parent opens */
+    .nav-menu>.nav-item-with-submenu:hover>.submenu,
+    .nav-menu>.nav-item-with-submenu:focus-within>.submenu {
+      display: block;
+    }
+
+    /* Only direct child submenu of hovered parent opens */
+    .nav-item-with-submenu:hover>.submenu,
+    .nav-item-with-submenu:focus-within>.submenu,
+    .nav-item-with-submenu:hover>.submenu-right,
+    .nav-item-with-submenu:focus-within>.submenu-right {
+      display: block;
+    }
+
+    /* Prevent descendant submenus from opening unless their own parent is hovered */
+    .nav-item-with-submenu:hover>.submenu>.nav-item-with-submenu>.submenu,
+    .nav-item-with-submenu:focus-within>.submenu>.nav-item-with-submenu>.submenu {
+      display: none;
+    }
+
+    .nav-item-with-submenu:hover>.submenu>.nav-item-with-submenu:hover>.submenu,
+    .nav-item-with-submenu:focus-within>.submenu>.nav-item-with-submenu:focus-within>.submenu {
+      display: block;
+    }
+
+    /* Unified submenu popup and spacing for all nav-container items */
+    .submenu,
+    .submenu-right {
+      position: absolute;
+      min-width: 220px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+      border-radius: 8px;
+      z-index: 100;
+      display: none;
+    }
+
+    .submenu-right {
+      left: 100%;
+      top: 0;
+      margin-left: 0.5rem;
+    }
+
+    .submenu {
+      left: 0;
+      top: 100%;
+    }
+
+    .nav-item-with-submenu>.submenu,
+    .nav-item-with-submenu>.submenu-right {
+      display: none;
+    }
+
+    /* Only show submenu when its direct parent li is hovered/focused */
+    .nav-menu>.nav-item-with-submenu:hover>.submenu,
+    .nav-menu>.nav-item-with-submenu:focus-within>.submenu,
+    .nav-menu>.nav-item-with-submenu:hover>.submenu-right,
+    .nav-menu>.nav-item-with-submenu:focus-within>.submenu-right {
+      display: block;
+    }
+
+    /* For nested submenus, only show when their own parent li is hovered/focused */
+    .submenu>.nav-item-with-submenu:hover>.submenu,
+    .submenu>.nav-item-with-submenu:focus-within>.submenu,
+    .submenu>.nav-item-with-submenu:hover>.submenu-right,
+    .submenu>.nav-item-with-submenu:focus-within>.submenu-right {
+      display: block;
+    }
+
+    /* Ensure only direct parent li triggers submenu popup */
+    .nav-item-with-submenu>.submenu,
+    .nav-item-with-submenu>.submenu-right {
+      pointer-events: auto;
+    }
+
+    /* Ensure nested submenu-right pops out correctly */
+    .submenu .nav-item-with-submenu>.submenu-right,
+    .submenu-right .nav-item-with-submenu>.submenu-right {
+      left: 100%;
+      top: 0;
+      margin-left: 0.5rem;
+      display: none;
+    }
+
+    .submenu .nav-item-with-submenu:hover>.submenu-right,
+    .submenu .nav-item-with-submenu:focus-within>.submenu-right,
+    .submenu-right .nav-item-with-submenu:hover>.submenu-right,
+    .submenu-right .nav-item-with-submenu:focus-within>.submenu-right {
+      display: block;
+    }
+
+    /* Fix for nested submenus: pop out on hover/focus of their parent li */
+    .nav-item-with-submenu .nav-item-with-submenu>.submenu,
+    .nav-item-with-submenu .nav-item-with-submenu>.submenu-right {
+      display: none;
+    }
+
+    .nav-item-with-submenu .nav-item-with-submenu:hover>.submenu,
+    .nav-item-with-submenu .nav-item-with-submenu:focus-within>.submenu,
+    .nav-item-with-submenu .nav-item-with-submenu:hover>.submenu-right,
+    .nav-item-with-submenu .nav-item-with-submenu:focus-within>.submenu-right {
+      display: block;
+    }
+
+    .nav-item-with-submenu {
+      position: relative;
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+
+    /* Hamburger menu for mobile */
+    @media (max-width: 900px) {
+      .nav-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 80vw;
+        min-width: 220px;
+        max-width: 340px;
+        background: #fff;
+        box-shadow: -2px 0 12px rgba(0, 0, 0, 0.18);
+        border-radius: 0 0 0 12px;
+        flex-direction: column;
+        padding: 100px 0 2rem 0;
+        z-index: 9999;
+        transition: transform 0.3s ease;
+        display: none;
+      }
+
+      .nav-menu.open {
+        display: flex !important;
+        transform: translateX(0);
+      }
+
+      .mobile-menu-toggle {
+        display: block !important;
+        position: fixed;
+        right: 1rem;
+        top: 1rem;
+        font-size: 2.5rem;
+        background: none;
+        border: none;
+        color: var(--primary-purple, #7c3aed);
+        cursor: pointer;
+        z-index: 10000;
+      }
+
+      .nav-container {
+        position: static;
+      }
+    }
+
+    /* Hide hamburger on desktop */
+    @media (min-width: 901px) {
+      .mobile-menu-toggle {
+        display: none !important;
+      }
+
+      .nav-menu {
+        position: static;
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    /* Social sidebar styles */
+    .social-sidebar {
+      position: fixed;
+      top: 50%;
+      right: 0;
+      left: auto;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      z-index: 99999;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 12px 0 0 12px;
+      box-shadow: -2px 2px 12px rgba(0, 0, 0, 0.08);
+      padding: 0.7rem 0.2rem 0.7rem 0.4rem;
+      align-items: center;
+    }
+
+    .social-sidebar a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+      transition: background 0.2s;
+      font-size: 1.7rem;
+      color: #7c3aed;
+      text-decoration: none;
+    }
+
+    .social-sidebar a:hover {
+      background: #ffe6b3;
+      color: #ff9800;
+    }
+
+    .social-sidebar .social-icon {
+      width: 24px;
+      height: 24px;
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      .social-sidebar {
+        top: auto;
+        bottom: 10px;
+        right: 10px;
+        left: auto;
+        transform: none;
+        flex-direction: row;
+        border-radius: 12px;
+        padding: 0.4rem 0.7rem;
+      }
+    }
+  </style>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/ikd-logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Issaquah Kids Dentistry | Pediatric Dental Care in Issaquah, WA</title>
+  <meta name="description"
+    content="Expert pediatric dental care in Issaquah, WA. Dr. Shradha Bansal provides comprehensive children's dentistry including preventive care, sedation dentistry with nitrous oxide, general anesthesia, special needs care, emergency dentistry, and custom mouth guards. Call (425) 657-0609." />
+  <meta name="keywords"
+    content="pediatric dentist, children's dentistry, Issaquah dentist, kids dental care, sedation dentistry, nitrous oxide dentistry, pediatric sedation, anxiety-free dentistry, laughing gas, general anesthesia dentistry, emergency dental care, special needs dentistry, autism dentistry, developmental delays dental care, mouth guards sports, custom mouth guards kids, thumb sucking treatment, finger sucking appliance, habit breaking appliance, longer dental appointments, extended appointments children, nitrous oxide Issaquah, emergency dentist children, Dr. Shradha Bansal, Issaquah sedation dentist, special needs pediatric dentist" />
+  <meta name="author" content="Dr. Shradha Bansal, DDS" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://issaquahkidsdentistry.com" />
+
+  <!-- Open Graph / Twitter Card Meta Tags for Major Pages -->
+  <!-- Home -->
+  <meta property="og:title" content="Issaquah Kids Dentistry | Pediatric Dental Care in Issaquah, WA" />
+  <meta property="og:description"
+    content="Expert pediatric dental care in Issaquah, WA. Warm, friendly, and advanced treatment for children." />
+  <meta property="og:image" content="https://issaquahkidsdentistry.com/ikd-logo.png" />
+  <meta property="og:url" content="https://issaquahkidsdentistry.com/#home" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Issaquah Kids Dentistry | Pediatric Dental Care in Issaquah, WA" />
+  <meta name="twitter:description"
+    content="Expert pediatric dental care in Issaquah, WA. Warm, friendly, and advanced treatment for children." />
+  <meta name="twitter:image" content="https://issaquahkidsdentistry.com/ikd-logo.png" />
+  <meta name="twitter:url" content="https://issaquahkidsdentistry.com/#home" />
+
+  <!-- About Us -->
+  <meta property="og:title" content="About Us | Issaquah Kids Dentistry" />
+  <meta property="og:description"
+    content="Meet Dr. Shradha Bansal and our caring pediatric dental team in Issaquah, WA." />
+  <meta property="og:image" content="https://issaquahkidsdentistry.com/dentist.png" />
+  <meta property="og:url" content="https://issaquahkidsdentistry.com/#about" />
+  <meta property="og:type" content="profile" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="About Us | Issaquah Kids Dentistry" />
+  <meta name="twitter:description"
+    content="Meet Dr. Shradha Bansal and our caring pediatric dental team in Issaquah, WA." />
+  <meta name="twitter:image" content="https://issaquahkidsdentistry.com/dentist.png" />
+  <meta name="twitter:url" content="https://issaquahkidsdentistry.com/#about" />
+
+  <!-- Services -->
+  <meta property="og:title" content="Services | Issaquah Kids Dentistry" />
+  <meta property="og:description"
+    content="Comprehensive pediatric dental services: preventive care, sedation, hospital dentistry, special needs, mouth guards." />
+  <meta property="og:image" content="https://issaquahkidsdentistry.com/ikd-logo.png" />
+  <meta property="og:url" content="https://issaquahkidsdentistry.com/#services" />
+  <meta property="og:type" content="service" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Services | Issaquah Kids Dentistry" />
+  <meta name="twitter:description"
+    content="Comprehensive pediatric dental services: preventive care, sedation, hospital dentistry, special needs, mouth guards." />
+  <meta name="twitter:image" content="https://issaquahkidsdentistry.com/ikd-logo.png" />
+  <meta name="twitter:url" content="https://issaquahkidsdentistry.com/#services" />
+
+  <!-- Emergency Care -->
+  <meta property="og:title" content="Emergency Care | Issaquah Kids Dentistry" />
+  <meta property="og:description"
+    content="Same-day emergency dental care for children in Issaquah, WA. Call (425) 657-0609." />
+  <meta property="og:image" content="https://issaquahkidsdentistry.com/ikd-logo.png" />
+  <meta property="og:url" content="https://issaquahkidsdentistry.com/#emergency" />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Emergency Care | Issaquah Kids Dentistry" />
+  <meta name="twitter:description"
+    content="Same-day emergency dental care for children in Issaquah, WA. Call (425) 657-0609." />
+  <meta name="twitter:image" content="https://issaquahkidsdentistry.com/ikd-logo.png" />
+  <meta name="twitter:url" content="https://issaquahkidsdentistry.com/#emergency" />
+
+  <!-- Patient Forms -->
+  <meta property="og:title" content="Patient Forms | Issaquah Kids Dentistry" />
+  <meta property="og:description"
+    content="Download new and existing patient forms for Issaquah Kids Dentistry. HIPAA compliant records request available." />
+  <meta property="og:image" content="https://issaquahkidsdentistry.com/ikd-logo.png" />
+  <meta property="og:url" content="https://issaquahkidsdentistry.com/#forms" />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Patient Forms | Issaquah Kids Dentistry" />
+  <meta name="twitter:description"
+    content="Download new and existing patient forms for Issaquah Kids Dentistry. HIPAA compliant records request available." />
+  <meta name="twitter:image" content="https://issaquahkidsdentistry.com/ikd-logo.png" />
+  <meta name="twitter:url" content="https://issaquahkidsdentistry.com/#forms" />
+
+  <!-- Finances -->
+  <meta property="og:title" content="Finances & Insurance | Issaquah Kids Dentistry" />
+  <meta property="og:description"
+    content="Affordable pediatric dental care. Insurance accepted, flexible payment options, CareCredit, HSA/FSA." />
+  <meta property="og:image" content="https://issaquahkidsdentistry.com/ikd-logo.png" />
+  <meta property="og:url" content="https://issaquahkidsdentistry.com/#finances" />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Finances & Insurance | Issaquah Kids Dentistry" />
+  <meta name="twitter:description"
+    content="Affordable pediatric dental care. Insurance accepted, flexible payment options, CareCredit, HSA/FSA." />
+  <meta name="twitter:image" content="https://issaquahkidsdentistry.com/ikd-logo.png" />
+  <meta name="twitter:url" content="https://issaquahkidsdentistry.com/#finances" />
+
+  <!-- Referrals -->
+  <meta property="og:title" content="Referrals | Issaquah Kids Dentistry" />
+  <meta property="og:description"
+    content="Refer a patient or provider to Issaquah Kids Dentistry. Download referral forms and instructions." />
+  <meta property="og:image" content="https://issaquahkidsdentistry.com/ikd-logo.png" />
+  <meta property="og:url" content="https://issaquahkidsdentistry.com/#referrals" />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Referrals | Issaquah Kids Dentistry" />
+  <meta name="twitter:description"
+    content="Refer a patient or provider to Issaquah Kids Dentistry. Download referral forms and instructions." />
+  <meta name="twitter:image" content="https://issaquahkidsdentistry.com/ikd-logo.png" />
+  <meta name="twitter:url" content="https://issaquahkidsdentistry.com/#referrals" />
+
+  <!-- Local SEO Meta Tags -->
+  <meta name="geo.region" content="US-WA" />
+  <meta name="geo.placename" content="Issaquah" />
+  <meta name="geo.position" content="47.5301;-122.0326" />
+  <meta name="ICBM" content="47.5301, -122.0326" />
+  <meta name="DC.title" content="Issaquah Kids Dentistry" />
+  <meta name="DC.subject" content="Pediatric Dentistry" />
+  <meta name="DC.description" content="Expert pediatric dental care in Issaquah, WA" />
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Issaquah Kids Dentistry | Pediatric Dental Care in Issaquah, WA" />
+  <meta property="og:description"
+    content="Expert pediatric dental care in Issaquah, WA. Dr. Shradha Bansal provides comprehensive children's dentistry including preventive care, sedation dentistry with nitrous oxide, general anesthesia, special needs care, and emergency dentistry." />
+  <meta property="og:image" content="https://issaquahkidsdentistry.com/ikd-logo.png" />
+  <meta property="og:url" content="https://issaquahkidsdentistry.com" />
+  <meta property="og:site_name" content="Issaquah Kids Dentistry" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Issaquah Kids Dentistry | Pediatric Dental Care in Issaquah, WA" />
+  <meta name="twitter:description"
+    content="Expert pediatric dental care in Issaquah, WA. Dr. Shradha Bansal provides comprehensive children's dentistry including sedation dentistry, special needs care, and emergency dental services." />
+  <meta name="twitter:image" content="https://issaquahkidsdentistry.com/ikd-logo.png" />
+
+  <!-- Local Business Structured Data -->
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Dentist",
@@ -237,448 +770,821 @@
       }
     }
     </script>
-  </head>
-  <body>
-    <!-- Scroll Progress Indicator -->
-    <div class="scroll-indicator">
-      <div class="scroll-progress" id="scroll-progress"></div>
-    </div>
+</head>
 
-    <!-- Header -->
-    <header class="header">
-      <nav class="nav-container">
-        <a href="#home" class="logo">
-          <img src="/ikd-logo.png" alt="Issaquah Kids Dentistry" class="logo-img-large" />
-          <span class="logo-text">Issaquah Kids Dentistry</span>
+<body>
+  <a href="#main-content" class="skip-link"
+    style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;background:#fff;color:#7b2cbf;font-weight:bold;padding:0.75rem 1.5rem;z-index:10001;transition:left 0.2s;">Skip
+    to main content</a>
+  <!-- Social Sidebar -->
+  <div class="social-sidebar">
+    <a href="https://share.google/BiNCOuYvqTMqAIMqE" target="_blank" title="Google">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Google_Favicon_2025.svg" alt="Google"
+        class="social-icon" />
+    </a>
+    <a href="https://instagram.com/issaquahkidsdentistry" target="_blank" title="Instagram">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"
+        class="social-icon" />
+    </a>
+    <a href="https://facebook.com/issaquahkidsdentistry" target="_blank" title="Facebook">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"
+        class="social-icon" />
+    </a>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var mobileToggle = document.getElementById('mobile-toggle');
+      var navMenu = document.getElementById('nav-menu');
+      if (mobileToggle && navMenu) {
+        mobileToggle.addEventListener('click', function (e) {
+          e.stopPropagation();
+          var expanded = navMenu.classList.toggle('open');
+          mobileToggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+        });
+      }
+      // Update aria-expanded for submenu triggers
+      var submenuTriggers = document.querySelectorAll('.nav-item-with-submenu > .nav-link[aria-haspopup="true"]');
+      submenuTriggers.forEach(function (trigger) {
+        trigger.addEventListener('mouseenter', function () {
+          trigger.setAttribute('aria-expanded', 'true');
+        });
+        trigger.addEventListener('mouseleave', function () {
+          trigger.setAttribute('aria-expanded', 'false');
+        });
+        trigger.addEventListener('focus', function () {
+          trigger.setAttribute('aria-expanded', 'true');
+        });
+        trigger.addEventListener('blur', function () {
+          trigger.setAttribute('aria-expanded', 'false');
+        });
+      });
+      // Close menu when clicking outside
+      document.addEventListener('click', function (e) {
+        if (window.innerWidth <= 900 && navMenu.classList.contains('open')) {
+          if (!navMenu.contains(e.target) && e.target !== mobileToggle) {
+            navMenu.classList.remove('open');
+            mobileToggle.setAttribute('aria-expanded', 'false');
+          }
+        }
+      });
+      // Close menu on resize to desktop
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 900 && navMenu.classList.contains('open')) {
+          navMenu.classList.remove('open');
+          mobileToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var mobileToggle = document.getElementById('mobile-toggle');
+      var navMenu = document.getElementById('nav-menu');
+      if (mobileToggle && navMenu) {
+        mobileToggle.addEventListener('click', function (e) {
+          e.stopPropagation();
+          navMenu.classList.toggle('open');
+        });
+      }
+      // Close menu when clicking outside
+      document.addEventListener('click', function (e) {
+        if (window.innerWidth <= 900 && navMenu.classList.contains('open')) {
+          if (!navMenu.contains(e.target) && e.target !== mobileToggle) {
+            navMenu.classList.remove('open');
+          }
+        }
+      });
+      // Close menu on resize to desktop
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 900 && navMenu.classList.contains('open')) {
+          navMenu.classList.remove('open');
+        }
+      });
+    });
+  </script>
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-indicator">
+    <div class="scroll-progress" id="scroll-progress"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav-container" role="navigation" aria-label="Main navigation"
+      style="display: flex; align-items: center; gap: 2rem; justify-content: space-between;">
+      <div class="header-flex-group">
+        <a href="tel:+14256570609" class="call-us-btn"
+          style="background: linear-gradient(135deg, var(--primary-orange), var(--primary-yellow)); color: white; border: none; border-radius: 25px; padding: 0.7rem 1.4rem; font-size: 1.1rem; font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; box-shadow: 0 2px 8px rgba(255,107,53,0.12); transition: background 0.2s;">
+          <span style="font-size: 1.3rem;">📞</span> Call Us
         </a>
-        <ul class="nav-menu" id="nav-menu">
-          <li class="nav-item-with-submenu">
-            <a href="#about" class="nav-link">About Us</a>
-            <ul class="submenu">
-              <li><a href="#meet-dentist" class="nav-link submenu-link">Meet Our Dentist</a></li>
-              <li><a href="#contact-us" class="nav-link submenu-link">Contact Info</a></li>
-            </ul>
-          </li>
-          <li class="nav-item-with-submenu">
-            <a href="#services" class="nav-link">Services</a>
-            <ul class="submenu">
-              <li><a href="#first-visit-section" class="nav-link submenu-link">First Visit</a></li>
-              <li><a href="#preventive-care-section" class="nav-link submenu-link">Preventive Care</a></li>
-              <li><a href="#fillings-section" class="nav-link submenu-link">Fillings & Restorative</a></li>
-              <li><a href="#sedation-section" class="nav-link submenu-link">Sedation Dentistry</a></li>
-              <li><a href="#hospital-section" class="nav-link submenu-link">Hospital Dentistry</a></li>
-              <li><a href="#special-needs-section" class="nav-link submenu-link">Special Needs Care</a></li>
-              <li><a href="#mouth-guard-section" class="nav-link submenu-link">Mouth Guards</a></li>
-              <li><a href="#habit-appliance-section" class="nav-link submenu-link">Habit Prevention</a></li>
-            </ul>
-          </li>
-          <li class="nav-item-with-submenu">
-            <a href="#forms" class="nav-link">Patient Forms</a>
-            <ul class="submenu">
-              <li><a href="#new-patient" class="nav-link submenu-link">New Patient</a></li>
-              <li><a href="#existing-patient" class="nav-link submenu-link">Existing Patient</a></li>
-            </ul>
-          </li>
-          <li class="nav-item-with-submenu">
-            <a href="#finances" class="nav-link">Finances</a>
-            <ul class="submenu">
-              <li><a href="#finances" class="nav-link submenu-link">Insurance Accepted</a></li>
-              <li><a href="#finances" class="nav-link submenu-link">Payment Options</a></li>
-            </ul>
-          </li>
-          <li class="nav-item-with-submenu">
-            <a href="#emergency" class="nav-link">Emergency Care</a>
-            <ul class="submenu">
-              <li><a href="#emergency" class="nav-link submenu-link">Emergency Overview</a></li>
-              <li><a href="#knocked-out-baby" class="nav-link submenu-link">Knocked Out Baby Tooth</a></li>
-              <li><a href="#knocked-out-permanent" class="nav-link submenu-link">Knocked Out Permanent Tooth</a></li>
-              <li><a href="#toothache" class="nav-link submenu-link">Toothache</a></li>
-              <li><a href="#chipped-tooth" class="nav-link submenu-link">Chipped/Fractured Tooth</a></li>
-            </ul>
-          </li>
-          <li class="nav-item-with-submenu">
-            <a href="#referrals" class="nav-link">Referrals</a>
-            <ul class="submenu">
-              <li><a href="#provider-referral" class="nav-link submenu-link">Provider Referral</a></li>
-              <li><a href="#patient-referral" class="nav-link submenu-link">Patient Referral</a></li>
-            </ul>
-          </li>
-        </ul>
-        <button class="mobile-menu-toggle" id="mobile-toggle">☰</button>
-      </nav>
-    </header>
+        <a href="#home" class="logo" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+          <span class="logo-flex">
+            <img src="/ikd-logo.png" alt="Issaquah Kids Dentistry" class="logo-img-large" loading="lazy" />
+            <span class="logo-text">Issaquah Kids Dentistry</span>
+          </span>
+        </a>
+        <a href="https://maps.google.com?q=85+NW+Alder+Pl+Suite+B,+Issaquah,+WA+98027" target="_blank"
+          class="directions-btn"
+          style="background: linear-gradient(135deg, var(--primary-purple), var(--primary-yellow)); color: white; border: none; border-radius: 25px; padding: 0.7rem 1.4rem; font-size: 1.1rem; font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; box-shadow: 0 2px 8px rgba(123,44,191,0.12); transition: background 0.2s;">
+          <span style="font-size: 1.3rem;">📍</span> Directions
+        </a>
+      </div>
+      <ul class="nav-menu" id="nav-menu" role="menubar">
+        <li class="nav-item-with-submenu" role="none">
+          <a href="#about" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false">About Us</a>
+          <ul class="submenu" role="menu">
+            <li role="none"><a href="#meet-dentist" class="nav-link submenu-link" role="menuitem">Meet Our Dentist</a>
+            </li>
+            <li role="none"><a href="#contact-us" class="nav-link submenu-link" role="menuitem">Contact Info</a></li>
+          </ul>
+        </li>
+        <li class="nav-item-with-submenu" role="none">
+          <!-- ...existing code... -->
+          <a href="#about" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false">Services</a>
+          <ul class="submenu" role="menu">
+            <li role="none"><a href="#preventive-care-section" class="nav-link submenu-link" role="menuitem">Preventive
+                Care</a></li>
+            <li role="none"><a href="#fillings-section" class="nav-link submenu-link" role="menuitem">Restorative
+                Care</a></li>
+            <li class="nav-item-with-submenu" role="none">
+              <a href="#sedation-section" class="nav-link submenu-link" role="menuitem" aria-haspopup="true"
+                aria-expanded="false">Sedation Dentistry</a>
+              <!-- ...existing code... -->
+            </li>
+            <li role="none"><a href="#hospital-section" class="nav-link submenu-link" role="menuitem">Hospital
+                Dentistry</a></li>
+            <li role="none"><a href="#special-needs-section" class="nav-link submenu-link" role="menuitem">Special Needs
+                Children</a></li>
+            <li class="nav-item-with-submenu" role="none">
+              <a href="#habit-appliance-section" class="nav-link submenu-link" role="menuitem" aria-haspopup="true"
+                aria-expanded="false">Habit Preventing Appliance</a>
+              <!-- ...existing code... -->
+            </li>
+          </ul>
+        </li>
 
-    <!-- Main Content -->
-    <main class="main-content">
-      <!-- Home Section -->
-      <section id="home" class="section">
-        <div class="section-content">
-          <h1>Welcome to Issaquah Kids Dentistry</h1>
-          <p>Providing exceptional pediatric dental care with a warm, friendly approach. Our specialized practice combines advanced technology with gentle treatment methods designed specifically for children's comfort and optimal oral health.</p>
-          
-          <!-- Prominent Contact Info -->
-          <div class="home-contact-info" style="margin: 3rem 0; text-align: center;">
-            <div class="home-contact-item" style="margin-bottom: 2rem;">
-              <div class="home-contact-icon" style="font-size: 2rem; margin-bottom: 0.5rem;">📞</div>
-              <a href="tel:+14256570609" style="color: var(--primary-purple); font-size: 2.2rem; font-weight: bold; text-decoration: none; display: block; margin-bottom: 0.3rem;">(425) 657-0609</a>
-              <p style="font-size: 1.1rem; color: var(--primary-orange); margin: 0;">Call us for appointments & emergencies</p>
-            </div>
-            
-            <div class="home-contact-item">
-              <div class="home-contact-icon" style="font-size: 2rem; margin-bottom: 0.5rem;">📍</div>
-              <a href="https://maps.google.com?q=85+NW+Alder+Pl+Suite+B,+Issaquah,+WA+98027" target="_blank" style="color: var(--primary-purple); font-size: 1.8rem; font-weight: bold; text-decoration: none; display: block; margin-bottom: 0.3rem;">85 NW Alder Pl Suite B<br>Issaquah, WA 98027</a>
-              <p style="font-size: 1.1rem; color: var(--primary-orange); margin: 0;">Click to get directions</p>
-            </div>
-          </div>
-          
-          <a href="#about" class="btn">Learn More About Us</a>
-        </div>
-      </section>
+        </li>
+        <li class="nav-item-with-submenu" role="none">
+          <a href="#forms" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false">Patient Forms</a>
+          <ul class="submenu" role="menu">
+            <li role="none"><a href="#new-patient" class="nav-link submenu-link" role="menuitem">New Patient</a></li>
+            <li role="none"><a href="#existing-patient" class="nav-link submenu-link" role="menuitem">Existing
+                Patient</a></li>
+          </ul>
+        </li>
+        <li class="nav-item-with-submenu" role="none">
+          <a href="#finances" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false">Finances</a>
+          <ul class="submenu" role="menu">
+            <li role="none"><a href="#finances" class="nav-link submenu-link" role="menuitem">Insurance Accepted</a>
+            </li>
+            <li role="none"><a href="#finances" class="nav-link submenu-link" role="menuitem">Payment Options</a></li>
+          </ul>
+        </li>
+        <li class="nav-item-with-submenu" role="none">
+          <a href="#emergency" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false">Emergency
+            Care</a>
+          <ul class="submenu" role="menu">
+            <li role="none"><a href="#knocked-out-baby" class="nav-link submenu-link" role="menuitem">Knocked Out Baby
+                Tooth</a></li>
+            <li role="none"><a href="#knocked-out-permanent" class="nav-link submenu-link" role="menuitem">Knocked Out
+                Permanent Tooth</a></li>
+            <li role="none"><a href="#toothache" class="nav-link submenu-link" role="menuitem">Toothache</a></li>
+            <li role="none"><a href="#chipped-tooth" class="nav-link submenu-link" role="menuitem">Chipped/Fractured
+                Tooth</a></li>
+          </ul>
+        </li>
+        <li class="nav-item-with-submenu" role="none">
+          <a href="#reviews" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false">Reviews</a>
+        </li>
+        <li class="nav-item-with-submenu" role="none">
+          <a href="#referrals" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false">Referrals</a>
 
-      <!-- About Us Section -->
-      <section id="about" class="section">
-        <div class="section-content">
-          <h2 class="section-title-btn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})" style="font-size: 2.5rem; color: var(--primary-purple); margin-bottom: 2rem; text-align: center; display: block; width: 100%; cursor: pointer; background: none; border: none;">About Us</h2>
-          
-          <!-- Meet Our Dentist -->
-          <div id="meet-dentist">
-            <h3>Meet Our Dentist</h3>
-            <div class="team-grid">
-              <div class="team-member">
-                <div class="team-photo">
-                  <img src="/dentist.png" alt="Dr. Shradha Bansal" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;" />
-                </div>
-                <h4>Dr. Shradha Bansal, DDS</h4>
-                <p>Our pediatric dentist, Dr. Shradha Bansal, is truly passionate to work with children and teens. This passion developed early in life and her thirst for knowledge in children's oral health were the driving force for leading her into a career in dental pediatrics. After graduating from dental school, she completed graduate program in Pediatric Dentistry during which she received extensive training in hospital and clinical pediatric dentistry.</p>
-                
-                <p>She is an expert in all aspects of pediatric care including childhood development, preventive care, craniofacial growth and development, pediatric oral trauma, medically complex patients, pediatric oral pathology, pediatric genetics that effect head and neck, dental development, restorative procedures, behavior management, conscious sedation, and care of children with special health care needs. She keeps up with the latest advances in Pediatric dentistry.</p>
-                
-                <p>She has extensive experience in treating medically compromised, special needs and anxious patients. She teams with various other medical providers to provide full mouth rehabilitation for such patients in hospital setting to restore their optimal oral health.</p>
-                
-                <p><strong>She is credentialed and privileged as dental surgeon at following hospitals locations:</strong></p>
-                <ul style="text-align: left; margin: 1rem 0;">
-                  <li>Swedish Hospital, Issaquah</li>
-                  <li>Covington Multicare Surgery center</li>
-                  <li>Mary Bridge Children's Hospital</li>
-                </ul>
-                
-                <p>After completing her graduate program from Howard University in 2000, she settled in the Pacific Northwest and since then have been serving the community by providing dental care to children and teens. As a parent, herself she can personally relates to parental concerns. It is this empathy that guides many of her treatment philosophies for young patients. She enjoys interacting with families with diverse backgrounds and cultures.</p>
-                
-                <p><strong>She is a member of the following:</strong></p>
-                <ul style="text-align: left; margin: 1rem 0;">
-                  <li>American Academy of Pediatric Dentistry</li>
-                  <li>American Dental Association</li>
-                  <li>International Association of Dental Traumatology</li>
-                  <li>Affiliated with the University of Washington</li>
-                  <li>Seattle pediatric dental study club</li>
-                  <li>Northwest pediatric dental study club</li>
-                </ul>
-                
-                <p>When not working, she enjoys spending time with her husband and two wonderful children, as well as reading and hiking.</p>
-              </div>
-            </div>
+          <ul class="submenu" role="menu">
+            <li role="none"><a href="#provider-referral" class="nav-link submenu-link" role="menuitem">Provider
+                Referral</a></li>
+            <li role="none"><a href="#patient-referral" class="nav-link submenu-link" role="menuitem">Patient
+                Referral</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button class="mobile-menu-toggle" id="mobile-toggle" aria-controls="nav-menu" aria-expanded="false"
+        aria-label="Open main menu">☰</button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Home Section -->
+    <section id="home" class="section">
+      <div class="section-content">
+        <h1>Welcome to Issaquah Kids Dentistry</h1>
+        <p>Providing exceptional pediatric dental care with a warm, friendly approach. Our specialized practice combines
+          advanced technology with gentle treatment methods designed specifically for children's comfort and optimal
+          oral health.</p>
+
+        <!-- Prominent Contact Info -->
+        <div class="home-contact-info" style="margin: 3rem 0; text-align: center;">
+          <div class="home-contact-item" style="margin-bottom: 2rem;">
+            <div class="home-contact-icon" style="font-size: 2rem; margin-bottom: 0.5rem;">📞</div>
+            <a href="tel:+14256570609"
+              style="color: var(--primary-purple); font-size: 2.2rem; font-weight: bold; text-decoration: none; display: block; margin-bottom: 0.3rem;">(425)
+              657-0609</a>
+            <p style="font-size: 1.1rem; color: var(--primary-orange); margin: 0;">Call us for appointments &
+              emergencies</p>
           </div>
 
-          <!-- Contact Us -->
-          <div id="contact-us" style="margin-top: 4rem;" itemscope itemtype="https://schema.org/LocalBusiness">
-            <h3>Contact Us</h3>
-            <div class="contact-info">
-              <div class="contact-card">
-                <div class="contact-icon">📞</div>
-                <button class="section-title-btn" onclick="window.location.href='tel:+14256570609'">Phone</button>
-                <p><a href="tel:+14256570609" style="color: inherit; text-decoration: none;" itemprop="telephone">(425) 657-0609</a></p>
-              </div>
-              <div class="contact-card">
-                <div class="contact-icon">📠</div>
-                <h4>Fax</h4>
-                <p itemprop="faxNumber">(425) 888-1234</p>
-              </div>
-              <div class="contact-card">
-                <div class="contact-icon"><a href="mailto:office@IssaquahKidsDentistry.com" style="color: inherit; text-decoration: none;">📧</a></div>
-                <button class="section-title-btn" onclick="window.location.href='mailto:office@IssaquahKidsDentistry.com'">Email</button>
-                <p><a href="mailto:office@IssaquahKidsDentistry.com" style="color: inherit; text-decoration: none;" itemprop="email">office@IssaquahKidsDentistry.com</a></p>
-              </div>
-              <div class="contact-card">
-                <div class="contact-icon">📍</div>
-                <button class="section-title-btn" onclick="window.open('https://maps.google.com?q=85+NW+Alder+Pl+Suite+B,+Issaquah,+WA+98027', '_blank')">Address</button>
-                <p><a href="https://maps.google.com?q=85+NW+Alder+Pl+Suite+B,+Issaquah,+WA+98027" target="_blank" style="color: inherit; text-decoration: none;" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-                  <span itemprop="streetAddress">85 NW Alder Pl Suite B</span><br>
-                  <span itemprop="addressLocality">Issaquah</span>, <span itemprop="addressRegion">WA</span> <span itemprop="postalCode">98027</span>
-                </a></p>
-              </div>
-              <div class="contact-card">
-                <div class="contact-icon">🕒</div>
-                <h4>Hours</h4>
-                <p itemprop="openingHours" content="Mo-Fr 08:00-17:00, Sa By Appointment">Mon-Fri: 8AM-5PM<br>Sat: By Appointment</p>
-              </div>
-            </div>
+          <div class="home-contact-item">
+            <div class="home-contact-icon" style="font-size: 2rem; margin-bottom: 0.5rem;">📍</div>
+            <a href="https://maps.google.com?q=85+NW+Alder+Pl+Suite+B,+Issaquah,+WA+98027" target="_blank"
+              style="color: var(--primary-purple); font-size: 1.8rem; font-weight: bold; text-decoration: none; display: block; margin-bottom: 0.3rem;">85
+              NW Alder Pl Suite B<br>Issaquah, WA 98027</a>
+            <p style="font-size: 1.1rem; color: var(--primary-orange); margin: 0;">Click to get directions</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Services Section -->
-      <section id="services" class="section">
-        <div class="section-content">
-          <h2 class="section-title-btn" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})" style="font-size: 2.5rem; color: var(--primary-purple); margin-bottom: 2rem; text-align: center; display: block; width: 100%; cursor: pointer; background: none; border: none;">Our Services</h2>
-          <div class="services-grid">
-            
-            <!-- Early Childhood Visit / First Visit -->
-            <div class="service-card" id="first-visit-section">
-              <h3>First Visit / Early Childhood Visit</h3>
-              
-              <div class="first-visit-content">
-                <div class="first-visit-images">
-                  <img src="./1st-bday.png" alt="First birthday dental visit" class="first-visit-image">
-                  <img src="./cavities.png" alt="Early childhood caries prevention" class="first-visit-image">
-                  <img src="./bottle-feeding.png" alt="Bottle feeding and dental health" class="first-visit-image">
-                </div>
-                
-                <div class="first-visit-info">
-                  <h4>When should my child first see a dentist?</h4>
-                  <p><strong>"First visit by first birthday"</strong> sums it up. Your child should visit a pediatric dentist when the first tooth comes in, usually between 6 and 12 months of age. This visit will establish a dental home for your child. Early examination and preventive care will protect your child's smile now and in the future.</p>
-                  
-                  <h4>Why so early? What dental problems could a baby have?</h4>
-                  <p>The most important reason is to begin a thorough prevention program. Dental problems can begin early. A big concern is Early Childhood Caries (formerly known as baby bottle tooth decay or nursing caries). Once a child's diet includes anything besides breast-milk, erupted teeth are at risk for decay. The earlier the dental visit, the better the chance of preventing dental problems. Children with healthy teeth chew food easily and smile with confidence. Start your child now on a lifetime of good dental habits.</p>
-                  
-                  <h4>Preventing Bottle and Nursing Tooth Decay</h4>
-                  <div class="bottle-feeding-info">
-                    <div class="bottle-text">
-                      <p><strong>How can I prevent tooth decay from nursing or using a bottle?</strong></p>
-                      <p>At-will breast-feeding should be avoided after the first primary (baby) teeth begin to erupt and other sources of nutrition have been introduced. Children should not fall asleep with a bottle containing anything other than water. Drinking juice from a bottle should be avoided. Fruit juice should only be offered in a cup with meals or at snack time.</p>
-                      
-                      <p><strong>When should bottle-feeding be stopped?</strong></p>
-                      <p>Children should be weaned from the bottle at 12-14 months of age.</p>
-                    </div>
-                  </div>
-                  
-                  <h4>Thumb and Finger Sucking</h4>
-                  <p><strong>Should I worry about thumb and finger sucking?</strong></p>
-                  <p>Thumb sucking is perfectly normal for infants; many stop by age 2. Prolonged thumb sucking can create crooked teeth or bite problems. If the habit continues beyond age 3, a professional evaluation is recommended.</p>
-                  
-                  <h4>Cleaning Your Baby's Teeth</h4>
-                  <p><strong>When should I start cleaning my baby's teeth?</strong></p>
-                  <p>The sooner the better! Starting at birth, clean your child's gums with a soft infant toothbrush or cloth and water. As soon as the teeth begin to appear, start brushing twice daily using fluoridated toothpaste and a soft, age-appropriate sized toothbrush. Use a "smear" of toothpaste to brush the teeth of a child less than 2 years of age. For the 2-5 year old, dispense a "pea-size" amount of toothpaste and perform or assist your child's tooth brushing. Remember that young children do not have the ability to brush their teeth effectively.</p>
-                  
-                  <h4>Teething Advice</h4>
-                  <p><strong>Any advice on teething?</strong></p>
-                  <p>From six months to age 3, your child may have tender gums when teeth erupt. Many children like a clean teething ring, cool spoon or cold wet wash-cloth. Some parents swear by a chilled ring; others simply rub the baby's gums with a clean finger.</p>
-                </div>
-              </div>
-            </div>
+    <!-- About Us Section -->
+    <section id="about" class="section">
+      <div class="section-content">
+        <h2 class="section-title-btn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})"
+          style="font-size: 2.5rem; color: var(--primary-purple); margin-bottom: 2rem; text-align: center; display: block; width: 100%; cursor: pointer; background: none; border: none;">
+          About Us</h2>
 
-            <!-- Preventive Care -->
-            <div class="service-card" id="preventive-care-section">
-              <h3>Preventive Care</h3>
-              <p>Comprehensive preventive services to maintain optimal oral health and prevent dental problems.</p>
-              <div class="sub-services">
-                <button class="sub-service" onclick="document.getElementById('sealants-section').scrollIntoView({behavior: 'smooth'})">Sealants</button>
-                <button class="sub-service" onclick="document.getElementById('fluoride-section').scrollIntoView({behavior: 'smooth'})">Fluoride Treatment</button>
-                <button class="sub-service" onclick="document.getElementById('xrays-section').scrollIntoView({behavior: 'smooth'})">Digital X-rays</button>
-                <button class="sub-service" onclick="document.getElementById('sdf-section').scrollIntoView({behavior: 'smooth'})">SDF-Smart Fluoride</button>
+        <!-- Meet Our Dentist -->
+        <div id="meet-dentist">
+          <h3>Meet Our Dentist</h3>
+          <div class="team-grid">
+            <div class="team-member">
+              <div class="team-photo">
+                <picture>
+                  <img src="/dentist.png" alt="Dr. Shradha Bansal"
+                    style="width: 25%; height: 25%; object-fit: cover; border-radius: 50%;" loading="lazy" />
               </div>
-              
-              <!-- Sub-content for Sealants -->
-              <div id="sealants-section" class="sub-content-expanded" style="margin-top: 1.5rem; padding: 1rem; background: rgba(255,255,255,0.5); border-radius: 8px;">
-                <h4 style="color: var(--primary-purple); margin-bottom: 0.5rem;">Sealants</h4>
-                <p style="font-size: 0.9rem;">Your child's teeth are especially vulnerable to tooth decay due to pits and grooves on the biting surface of their teeth. These areas allow food to stick to the tooth and make it difficult to clean. Sealants are a white-colored resin material that can be placed in the deep pits and grooves of the teeth to help prevent cavities by creating a smooth surface that is easily cleaned.</p>
-              </div>
-              
-              <!-- Sub-content for Fluoride Treatment -->
-              <div id="fluoride-section" class="sub-content-expanded" style="margin-top: 1rem; padding: 1rem; background: rgba(255,255,255,0.5); border-radius: 8px;">
-                <h4 style="color: var(--primary-purple); margin-bottom: 0.5rem;">Fluoride Treatment</h4>
-                <p style="font-size: 0.9rem;">Fluoride treatment takes just a few minutes and normally follows your child's dental exam. After the treatment, patients can eat and drink right away but cannot have anything hot to ensure the fluoride treatment does not come off. This helps to allow the teeth to absorb the fluoride treatment. If needed, we may prescribe an at-home fluoride product such as a mouthwash, gel, or antibacterial rinse.</p>
-              </div>
-              
-              <!-- Sub-content for Digital X-rays -->
-              <div id="xrays-section" class="sub-content-expanded" style="margin-top: 1rem; padding: 1rem; background: rgba(255,255,255,0.5); border-radius: 8px;">
-                <h4 style="color: var(--primary-purple); margin-bottom: 0.5rem;">Digital X-rays</h4>
-                <p style="font-size: 0.9rem;">We use advanced dental technology possible and our practice is dedicated to providing you with the safest and most convenient treatment options available, we utilize advanced digital X-ray technology in our office. Digital X-rays provide several advanced imaging options designed to save time, provide clearer dental photos, and expose patients up to 90% less radiation than traditional X-ray technology. We use safety precautions such as lead aprons and thyroid collars to help reduce exposure.</p>
-                <p style="font-size: 0.9rem; margin-top: 0.5rem;">X-rays are used as a diagnostic tool to diagnose cavities in between the teeth. Often times, taking x-rays are the only way to see interproximal cavities. Dental x-rays can also help determine your child's risk potential for future cavities. Because of these benefits, we recommended to take x-rays at least once a year.</p>
-              </div>
-              
-              <!-- Sub-content for SDF-Smart Fluoride -->
-              <div id="sdf-section" class="sub-content-expanded" style="margin-top: 1rem; padding: 1rem; background: rgba(255,255,255,0.5); border-radius: 8px;">
-                <h4 style="color: var(--primary-purple); margin-bottom: 0.5rem;">SDF-Smart Fluoride</h4>
-                <p style="font-size: 0.9rem;">Silver Diamine Fluoride (SDF) is an innovative, non-invasive treatment that helps stop cavity progression and prevent new cavities from forming. This FDA-approved liquid medication is applied directly to affected teeth, providing immediate antimicrobial and remineralizing benefits. SDF is particularly beneficial for young children, special needs patients, or anxious children who may have difficulty with traditional restorative procedures.</p>
-              </div>
-            </div>
+              <h4>Dr. Shradha Bansal, DDS</h4>
+              <p>Our pediatric dentist, Dr. Shradha Bansal, is truly passionate to work with children and teens. This
+                passion developed early in life and her thirst for knowledge in children's oral health were the driving
+                force for leading her into a career in dental pediatrics. After graduating from dental school, she
+                completed graduate program in Pediatric Dentistry during which she received extensive training in
+                hospital and clinical pediatric dentistry.</p>
 
-            <!-- Fillings & Restorative Care -->
-            <div class="service-card" id="fillings-section">
-              <h3>Fillings & Restorative Care</h3>
-              <p>Our new office is designed specifically for kids and most of our patients think that "getting a filling" is actually fun! We will offer your child the choice of watching TV or a movie. We will also offer your child nitrous oxide/oxygen analgesia or "happy air" to help them be more relaxed. Most of the time we will be able to restore teeth with a tooth-colored bonded composite material. Teeth that have more advanced decay will require a full coverage restoration, or stainless steel crown. When possible and always for anterior teeth, we prefer to address this with tooth-colored crowns that make the teeth look new again. We also offer white crowns (Zirconia crowns) for the posterior teeth. Before your child's treatment begins, Dr Bansal will discuss all options and help you choose the best filling for your child's particular case.</p>
-            </div>
+              <p>She is an expert in all aspects of pediatric care including childhood development, preventive care,
+                craniofacial growth and development, pediatric oral trauma, medically complex patients, pediatric oral
+                pathology, pediatric genetics that effect head and neck, dental development, restorative procedures,
+                behavior management, conscious sedation, and care of children with special health care needs. She keeps
+                up with the latest advances in Pediatric dentistry.</p>
 
-            <!-- Sedation Dentistry -->
-            <div class="service-card" id="sedation-section">
-              <h3>Sedation Dentistry</h3>
-              <p>Most dental procedures in children are completed using local anesthesia, however, very young, fearful children may need added help to control anxiety. Our office is licensed to use the safest clinical approaches to provide mild sedation or oral sedation. Issaquah Pediatric Dentistry follows the administration guidelines for safe sedation endorsed by the American Academy of Pediatrics and American Academy of Pediatric Dentistry. Using sedation safely is extremely important and this is why Dr. Bansal dedicates many continuing education hours specific to this topic.</p>
-              <div class="sub-services">
-                <button class="sub-service" onclick="document.getElementById('nitrous-section').scrollIntoView({behavior: 'smooth'})">Nitrous Oxide</button>
-                <button class="sub-service" onclick="document.getElementById('anesthesia-section').scrollIntoView({behavior: 'smooth'})">General Anesthesia in Clinic</button>
-              </div>
-              
-              <!-- Sub-content for Nitrous Oxide -->
-              <div id="nitrous-section" class="sub-content-expanded" style="margin-top: 1.5rem; padding: 1rem; background: rgba(255,255,255,0.5); border-radius: 8px;">
-                <h4 style="color: var(--primary-purple); margin-bottom: 0.5rem;">Nitrous Oxide</h4>
-                
-                <!-- Images Section -->
-                <div class="nitrous-images" style="display: flex; justify-content: center; margin-bottom: 1.5rem;">
-                  <div class="image-container" style="text-align: center;">
-                    <img src="/nitrous-oxide-issaquah.png" alt="Nitrous oxide mask for children" style="width: 150px; height: 150px; object-fit: contain; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                    <p style="font-size: 0.8rem; color: var(--primary-purple); margin-top: 0.5rem; font-style: italic;">Nitrous oxide administration</p>
-                  </div>
-                </div>
-                
-                <p style="font-size: 0.9rem; margin-bottom: 1rem;">Most children are calm, comfortable and confident in a pediatric dental office. The office is designed for young people, and pediatric dentists have additional training in caring for infants, children and adolescents. Staff members choose to work in a pediatric dental office because they like children and want to cater to their special needs. These elements combine to make your child feel relaxed and special. Sometimes, however, a child may feel anxious before or during treatment. Your child may need more support than a gentle, caring manner to feel comfortable. Nitrous oxide/oxygen is a safe, effective sedative agent used to calm a child's fear of the dental visit and enhance effective communication. Additionally, it works well for children whose gag reflex interferes with dental treatment.</p>
-                
-                <div style="margin-bottom: 1.5rem;">
-                  <h5 style="color: var(--primary-orange); margin-bottom: 0.5rem; font-size: 1rem;">What is nitrous oxide/oxygen?</h5>
-                  <p style="font-size: 0.9rem;">Nitrous oxide/oxygen (N2O-O2) is a blend of two gases oxygen and nitrous oxide. A fitted mask is placed over the nose and, as the patient breathes normally, uptake occurs through the lungs. At the end of treatment, it is eliminated after a short period of breathing oxygen and has no lingering effects.</p>
-                </div>
-                
-                <div style="margin-bottom: 1.5rem;">
-                  <h5 style="color: var(--primary-orange); margin-bottom: 0.5rem; font-size: 1rem;">How will my child feel when breathing nitrous oxide/oxygen?</h5>
-                  <p style="font-size: 0.9rem;">Your child will smell a faint sweet aroma and experience a sense of well-being and relaxation. Since it may produce a feeling of giddiness or euphoria, it is often called "laughing gas." Children sometimes report dreaming and their arms and legs may feel "tingly." It raises the pain threshold and may even make the time appear to pass quickly. If your child is worried by the sights, sounds or sensations of dental treatment, he or she may respond more positively with the use of nitrous oxide/oxygen.</p>
-                </div>
-                
-                <div style="margin-bottom: 1.5rem;">
-                  <h5 style="color: var(--primary-orange); margin-bottom: 0.5rem; font-size: 1rem;">How safe is nitrous oxide/oxygen?</h5>
-                  <p style="font-size: 0.9rem;">Very safe. Nitrous oxide/oxygen is perhaps the safest sedative in dentistry. It is well tolerated. It has a rapid onset, is reversible, can be adjusted in various concentrations and is non-allergenic. Your child remains fully conscious and keeps all natural reflexes when breathing nitrous oxide/oxygen. He/she will be capable of responding to a question or request. Nitrous oxide/oxygen may also be used in combination with other sedative agents.</p>
-                </div>
-                
-                <div style="margin-bottom: 1.5rem;">
-                  <h5 style="color: var(--primary-orange); margin-bottom: 0.5rem; font-size: 1rem;">Are there any special instructions for nitrous oxide/oxygen?</h5>
-                  <p style="font-size: 0.9rem;">First, give your child little or no food in the two hours preceding the dental visit (occasionally, nausea or vomiting occurs when a child has a full stomach). Second, tell your pediatric dentist about any respiratory condition that makes breathing through the nose difficult for your child, as it may limit the effectiveness of nitrous oxide/oxygen. Third, tell your pediatric dentist if your child is taking any medication on the day of the appointment.</p>
-                </div>
-                
-                <div style="margin-bottom: 0;">
-                  <h5 style="color: var(--primary-orange); margin-bottom: 0.5rem; font-size: 1rem;">Will nitrous oxide/oxygen work for all children?</h5>
-                  <p style="font-size: 0.9rem;">Pediatric dentists know that all children are not alike. Every service is tailored to your child as an individual. Nitrous oxide/oxygen may not be effective for some children, especially those who have severe anxiety, nasal congestion, or discomfort wearing a nasal mask. Your pediatric dentist will review your child's medical history, level of anxiety, and dental treatment needs and inform you if nitrous oxide/oxygen is recommended for your child. Pediatric dentists have comprehensive specialty training and can offer other sedation methods that are right for your child.</p>
-                </div>
-              </div>
-              
-              <!-- Sub-content for General Anesthesia -->
-              <div id="anesthesia-section" class="sub-content-expanded" style="margin-top: 1rem; padding: 1rem; background: rgba(255,255,255,0.5); border-radius: 8px;">
-                <h4 style="color: var(--primary-purple); margin-bottom: 0.5rem;">General Anesthesia in Clinic</h4>
-                
-                <div style="margin-bottom: 1.5rem;">
-                  <h5 style="color: var(--primary-orange); margin-bottom: 0.5rem; font-size: 1rem;">What is general anesthesia?</h5>
-                  <p style="font-size: 0.9rem;">General anesthesia is a controlled state of unconsciousness that eliminates awareness, movement and discomfort during dental treatment. A physician or dentist with specialized training can use various medications to provide general anesthesia for patients receiving dental care.</p>
-                </div>
-                
-                <div style="margin-bottom: 1.5rem;">
-                  <h5 style="color: var(--primary-orange); margin-bottom: 0.5rem; font-size: 1rem;">Who should receive general anesthesia for dental treatment?</h5>
-                  <p style="font-size: 0.9rem;">General anesthesia may be indicated for children with extensive dental needs who are extremely un-cooperative, fearful or anxious or for the very young who do not understand how to cope in a cooperative fashion. General anesthesia also can be helpful for children requiring significant surgical procedures or patients having special health care needs.</p>
-                </div>
-                
-                <div style="margin-bottom: 1.5rem;">
-                  <h5 style="color: var(--primary-orange); margin-bottom: 0.5rem; font-size: 1rem;">Is general anesthesia safe?</h5>
-                  <p style="font-size: 0.9rem;">Although there is some risk associated with general anesthesia, it can be used safely and effectively when administered by an appropriately-trained individual in an appropriately-equipped facility. Precautions are taken to protect your child during general anesthesia; personnel who are trained to manage complications will monitor your child closely. Your pediatric dentist will discuss the benefits and risks of general anesthesia and why it is recommended for your child.</p>
-                </div>
-                
-                <div style="margin-bottom: 0;">
-                  <h5 style="color: var(--primary-orange); margin-bottom: 0.5rem; font-size: 1rem;">What special considerations are associated with the general anesthesia appointment?</h5>
-                  <p style="font-size: 0.9rem; margin-bottom: 0.75rem;">A physical evaluation is required prior to general anesthesia for dental care. This physical assessment provides information to ensure the safety of your child during the general anesthesia procedure. Your pediatric dentist or general anesthesia provider will advise you about evaluation appointments that are required.</p>
-                  <p style="font-size: 0.9rem; margin-bottom: 0.75rem;">Parents are instructed to report to the pediatric dentist any illness that occurs prior to the general anesthesia appointment. It may be necessary to reschedule the appointment. It is very important to follow instructions regarding fasting from fluids and foods prior to the appointment.</p>
-                  <p style="font-size: 0.9rem; margin-bottom: 0;">Your child will be discharged when stable, alert, and ready to depart. Patients often are tired following general anesthesia. You will be instructed to let the child rest at home with minimal activity until the next day. Post-operative dietary recommendations also will be given.</p>
-                </div>
-              </div>
-            </div>
+              <p>She has extensive experience in treating medically compromised, special needs and anxious patients. She
+                teams with various other medical providers to provide full mouth rehabilitation for such patients in
+                hospital setting to restore their optimal oral health.</p>
 
-            <!-- Hospital Dentistry -->
-            <div class="service-card" id="hospital-section">
-              <h3>Hospital Dentistry</h3>
-              <p>We sometimes suggest that your child receive comprehensive dental care in an operating room at one of our local hospitals if some or all of the conditions:</p>
+              <p><strong>She is credentialed and privileged as dental surgeon at following hospitals locations:</strong>
+              </p>
               <ul style="text-align: left; margin: 1rem 0;">
-                <li>A child has an age related inability to cooperate for dental care in the office setting</li>
-                <li>Has many teeth that need to be fixed</li>
-                <li>Has significant dental fear or has complex medical conditions making them a poor candidate for sedation in the office</li>
-              </ul>
-              <p><strong>Dr Bansal has privileges at:</strong></p>
-              <ul style="text-align: left; margin: 1rem 0;">
-                <li>Mary Bridge Children's Hospital</li>
-                <li>Tacoma General Hospital</li>
+                <li>Swedish Hospital, Issaquah</li>
                 <li>Covington Multicare Surgery center</li>
-                <li>Swedish Hospital</li>
+                <li>Mary Bridge Children's Hospital</li>
               </ul>
-              <p>When in the operating room, an anesthesiologist will give your child medications that will help your child fall asleep before the dental treatment is started.</p>
-            </div>
 
-            <!-- Special Needs Children -->
-            <div class="service-card" id="special-needs-section">
-              <h3>Special Needs Children</h3>
-              <p>Going to the dentist can be scary for any child, but especially for a child with special needs. Pediatric dentists have two or more years of advanced training beyond dental school that include behavior management and sedation techniques. We provide a range of dental services from routine preventative care to specialized care for children and teens with complex medical conditions, developmental delays and behavioral problems, including those who cannot be treated elsewhere. We are able to work with parents on the limits and risks of various techniques. Talk to us about a specialized program of preventative care and treatment that is geared toward your child.</p>
-            </div>
+              <p>After completing her graduate program from Howard University in 2000, she settled in the Pacific
+                Northwest and since then have been serving the community by providing dental care to children and teens.
+                As a parent, herself she can personally relates to parental concerns. It is this empathy that guides
+                many of her treatment philosophies for young patients. She enjoys interacting with families with diverse
+                backgrounds and cultures.</p>
 
-            <!-- Mouth Guard -->
-            <div class="service-card" id="mouth-guard-section">
-              <h3>Mouth Guard</h3>
-              <p>Custom-fitted mouth guards provide essential protection for your child's teeth during sports and recreational activities. Our professionally made mouth guards offer superior comfort and protection compared to over-the-counter options, helping prevent dental injuries, tooth fractures, and jaw trauma. We create personalized mouth guards that fit perfectly and allow for comfortable breathing and speaking during athletic activities.</p>
-            </div>
+              <p><strong>She is a member of the following:</strong></p>
+              <ul style="text-align: left; margin: 1rem 0;">
+                <li>American Academy of Pediatric Dentistry</li>
+                <li>American Dental Association</li>
+                <li>International Association of Dental Traumatology</li>
+                <li>Affiliated with the University of Washington</li>
+                <li>Seattle pediatric dental study club</li>
+                <li>Northwest pediatric dental study club</li>
+              </ul>
 
-            <!-- Habit Preventing Appliance -->
-            <div class="service-card" id="habit-appliance-section">
-              <h3>Habit Preventing Appliance</h3>
-              <p>Specialized appliances designed to help children break harmful oral habits such as thumb sucking, finger sucking, or tongue thrusting. These custom-made devices are comfortable and effective in redirecting harmful behaviors that can affect tooth alignment and jaw development. Dr. Bansal will evaluate your child's specific needs and recommend the most appropriate appliance to promote healthy oral development and eliminate detrimental habits.</p>
-              
-              <!-- Detailed Thumb & Finger Sucking Information -->
-              <div class="habit-content" style="margin-top: 2rem; border-top: 2px solid var(--primary-orange); padding-top: 2rem;">
-                <h4 style="color: var(--primary-purple); margin-bottom: 1rem; text-align: center;">Understanding Thumb & Finger Sucking</h4>
-                
-                <div class="habit-images" style="display: flex; justify-content: center; gap: 1rem; margin: 1.5rem 0;">
-                  <img src="./sucking-1.png" alt="Thumb sucking effects on teeth" class="habit-image" style="max-width: 200px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                  <img src="./sucking-2.png" alt="Finger sucking dental problems" class="habit-image" style="max-width: 200px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                </div>
-                
-                <div class="habit-info">
-                  <h5 style="color: var(--primary-purple); margin-top: 2rem; margin-bottom: 1rem;">Why do children suck on fingers, pacifiers or other objects?</h5>
-                  <p>This type of sucking is completely normal for babies and young children. It provides security. For young babies, it is a way to make contact with and learn about the world. In fact, babies begin to suck on their fingers or thumbs even before they are born.</p>
-                  
-                  <h5 style="color: var(--primary-purple); margin-top: 2rem; margin-bottom: 1rem;">Are these habits bad for the teeth and jaws?</h5>
-                  <p>Most children stop sucking on thumbs, pacifiers or other objects on their own between 2 and 4 years of age. However, some children continue these habits over long periods of time. In these children, the upper front teeth may tip toward the lip or not come in properly. Frequent or intense habits over a prolonged period of time can affect the way the child's teeth bite together, as well as the growth of the jaws and bones that support the teeth.</p>
-                  
-                  <h5 style="color: var(--primary-purple); margin-top: 2rem; margin-bottom: 1rem;">When should I worry about a sucking habit?</h5>
-                  <p>Your pediatric dentist will carefully watch the way your child's teeth erupt and jaws develop, keeping the sucking habit in mind at all times. Because persistent habits may cause long term problems, intervention may be recommended for children beyond 3 years of age.</p>
-                  
-                  <h5 style="color: var(--primary-purple); margin-top: 2rem; margin-bottom: 1rem;">Are pacifiers a safer habit for the teeth than thumbs or fingers?</h5>
-                  <p>Thumb, finger and pacifier sucking affect the teeth and jaws in essentially the same way. However, a pacifier habit often is easier to break.</p>
-                  
-                  <div class="treatment-section" style="background: linear-gradient(135deg, rgba(255, 165, 0, 0.1), rgba(255, 193, 7, 0.1)); padding: 1.5rem; border-radius: 10px; border-left: 4px solid var(--primary-orange); margin: 2rem 0;">
-                    <h5 style="color: var(--primary-purple); margin-top: 0; margin-bottom: 1rem;">What can I do to stop my child's habit?</h5>
-                    <p>Most children stop sucking habits on their own, but some children need the help of their parents and their pediatric dentist. When your child is old enough to understand the possible results of a sucking habit, your pediatric dentist can encourage your child to stop, as well as talk about what happens to the teeth and jaws if your child does not stop.</p>
-                    <p>This advice, coupled with support from parents, helps most children quit. If this approach does not work, your pediatric dentist may recommend ways to change the behavior, including a mouth appliance that interferes with sucking habits.</p>
-                    
-                    <h6 style="color: var(--primary-orange); margin-top: 1.5rem; margin-bottom: 0.5rem;">Professional Habit Breaking Appliances</h6>
-                    <p style="margin-bottom: 0;">Dr. Bansal provides custom-fitted habit preventing appliances that are designed to discourage thumb and finger sucking while being comfortable for your child to wear. These appliances help redirect harmful behaviors and promote healthy oral development.</p>
+              <p>When not working, she enjoys spending time with her husband and two wonderful children, as well as
+                reading and hiking.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Us -->
+        <div id="contact-us" style="margin-top: 4rem;" itemscope itemtype="https://schema.org/LocalBusiness">
+          <h3>Contact Info</h3>
+          <div class="contact-info">
+            <div class="contact-card">
+              <div class="contact-icon">📞</div>
+              <button class="section-title-btn" onclick="window.location.href='tel:+14256570609'">Phone</button>
+              <p><a href="tel:+14256570609" style="color: inherit; text-decoration: none;" itemprop="telephone">(425)
+                  657-0609</a></p>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">📠</div>
+              <h4>Fax</h4>
+              <p itemprop="faxNumber">(425) 888-1234</p>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon"><a href="mailto:office@IssaquahKidsDentistry.com"
+                  style="color: inherit; text-decoration: none;">📧</a></div>
+              <button class="section-title-btn"
+                onclick="window.location.href='mailto:office@IssaquahKidsDentistry.com'">Email</button>
+              <p><a href="mailto:office@IssaquahKidsDentistry.com" style="color: inherit; text-decoration: none;"
+                  itemprop="email">office@IssaquahKidsDentistry.com</a></p>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">📍</div>
+              <button class="section-title-btn"
+                onclick="window.open('https://maps.google.com?q=85+NW+Alder+Pl+Suite+B,+Issaquah,+WA+98027', '_blank')">Address</button>
+              <p><a href="https://maps.google.com?q=85+NW+Alder+Pl+Suite+B,+Issaquah,+WA+98027" target="_blank"
+                  style="color: inherit; text-decoration: none;" itemprop="address" itemscope
+                  itemtype="https://schema.org/PostalAddress">
+                  <span itemprop="streetAddress">85 NW Alder Pl Suite B</span><br>
+                  <span itemprop="addressLocality">Issaquah</span>, <span itemprop="addressRegion">WA</span> <span
+                    itemprop="postalCode">98027</span>
+                </a></p>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">🕒</div>
+              <h4>Hours</h4>
+              <p itemprop="openingHours" content="Mo-Fr 08:00-17:00, Sa By Appointment">Mon-Fri: 8AM-5PM<br>Sat: By
+                Appointment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+      <div class="section-content">
+        <h2 class="section-title-btn" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})"
+          style="font-size: 2.5rem; color: var(--primary-purple); margin-bottom: 2rem; text-align: center; display: block; width: 100%; cursor: pointer; background: none; border: none;">
+          Our Services</h2>
+        <div class="services-grid">
+          <div id="provider-review" class="service-card">
+            <h3>Provider Review</h3>
+            <p>Healthcare providers can share their feedback and experiences with our pediatric dental practice. Please
+              download, complete, and submit the review form with your comments and recommendations.</p>
+            <a href="/IKD-Fillable-Referral.pdf" target="_blank" class="btn">Download Review Form (PDF)</a>
+          </div>
+
+          <!-- Early Childhood Visit / First Visit -->
+          <div class="service-card" id="first-visit-section">
+            <h3>First Visit / Early Childhood Visit</h3>
+
+            <div class="first-visit-content">
+              <div class="first-visit-images">
+                <picture>
+                  <img src="./1st-bday.png" alt="First birthday dental visit" class="first-visit-image" loading="lazy">
+                  <picture>
+                    <img src="./cavities.png" alt="Early childhood caries prevention" class="first-visit-image"
+                      loading="lazy">
+                    <picture>
+                      <img src="./bottle-feeding.png" alt="Bottle feeding and dental health" class="first-visit-image"
+                        loading="lazy">
+              </div>
+
+              <div class="first-visit-info">
+                <h4>When should my child first see a dentist?</h4>
+                <p><strong>"First visit by first birthday"</strong> sums it up. Your child should visit a pediatric
+                  dentist when the first tooth comes in, usually between 6 and 12 months of age. This visit will
+                  establish a dental home for your child. Early examination and preventive care will protect your
+                  child's smile now and in the future.</p>
+
+                <h4>Why so early? What dental problems could a baby have?</h4>
+                <p>The most important reason is to begin a thorough prevention program. Dental problems can begin early.
+                  A big concern is Early Childhood Caries (formerly known as baby bottle tooth decay or nursing caries).
+                  Once a child's diet includes anything besides breast-milk, erupted teeth are at risk for decay. The
+                  earlier the dental visit, the better the chance of preventing dental problems. Children with healthy
+                  teeth chew food easily and smile with confidence. Start your child now on a lifetime of good dental
+                  habits.</p>
+
+                <h4>Preventing Bottle and Nursing Tooth Decay</h4>
+                <div class="bottle-feeding-info">
+                  <div class="bottle-text">
+                    <p><strong>How can I prevent tooth decay from nursing or using a bottle?</strong></p>
+                    <p>At-will breast-feeding should be avoided after the first primary (baby) teeth begin to erupt and
+                      other sources of nutrition have been introduced. Children should not fall asleep with a bottle
+                      containing anything other than water. Drinking juice from a bottle should be avoided. Fruit juice
+                      should only be offered in a cup with meals or at snack time.</p>
+
+                    <p><strong>When should bottle-feeding be stopped?</strong></p>
+                    <p>Children should be weaned from the bottle at 12-14 months of age.</p>
                   </div>
                 </div>
+
+                <h4>Thumb and Finger Sucking</h4>
+                <p><strong>Should I worry about thumb and finger sucking?</strong></p>
+                <p>Thumb sucking is perfectly normal for infants; many stop by age 2. Prolonged thumb sucking can create
+                  crooked teeth or bite problems. If the habit continues beyond age 3, a professional evaluation is
+                  recommended.</p>
+
+                <h4>Cleaning Your Baby's Teeth</h4>
+                <p><strong>When should I start cleaning my baby's teeth?</strong></p>
+                <p>The sooner the better! Starting at birth, clean your child's gums with a soft infant toothbrush or
+                  cloth and water. As soon as the teeth begin to appear, start brushing twice daily using fluoridated
+                  toothpaste and a soft, age-appropriate sized toothbrush. Use a "smear" of toothpaste to brush the
+                  teeth of a child less than 2 years of age. For the 2-5 year old, dispense a "pea-size" amount of
+                  toothpaste and perform or assist your child's tooth brushing. Remember that young children do not have
+                  the ability to brush their teeth effectively.</p>
+
+                <h4>Teething Advice</h4>
+                <p><strong>Any advice on teething?</strong></p>
+                <p>From six months to age 3, your child may have tender gums when teeth erupt. Many children like a
+                  clean teething ring, cool spoon or cold wet wash-cloth. Some parents swear by a chilled ring; others
+                  simply rub the baby's gums with a clean finger.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Preventive Care -->
+          <div class="service-card" id="preventive-care-section">
+            <h3>Preventive Care</h3>
+            <p>Comprehensive preventive services to maintain optimal oral health and prevent dental problems.</p>
+            <div class="sub-services">
+              <button class="sub-service"
+                onclick="document.getElementById('exam-cleaning-section').scrollIntoView({behavior: 'smooth'})">Sealants</button>
+              <button class="sub-service"
+                onclick="document.getElementById('sealants-section').scrollIntoView({behavior: 'smooth'})">Sealants</button>
+              <button class="sub-service"
+                onclick="document.getElementById('fluoride-section').scrollIntoView({behavior: 'smooth'})">Fluoride
+                Treatment</button>
+              <button class="sub-service"
+                onclick="document.getElementById('xrays-section').scrollIntoView({behavior: 'smooth'})">Digital
+                X-rays</button>
+              <button class="sub-service"
+                onclick="document.getElementById('sdf-section').scrollIntoView({behavior: 'smooth'})">SDF</button>
+            </div>
+
+            <!-- Sub-content for exam-cleaning-section -->
+            <div id="exam-cleaning-section" class="sub-content-expanded"
+              style="margin-top: 1.5rem; padding: 1rem; background: rgba(255,255,255,0.5); border-radius: 8px;">
+              <h4 style="color: var(--primary-purple); margin-bottom: 0.5rem;">Exam & Cleaning</h4>
+              <p style="font-size: 0.9rem;">During the exam, Dr. Bansal will examine your child’s teeth, gums, and
+                overall oral cavity for signs of decay, disease, or developmental issues. The cleaning involves removing
+                plaque and tartar buildup from the teeth, which helps prevent cavities and gum problems. These
+                appointments are crucial for instilling good oral hygiene habits early on and educating both children
+                and their parents on proper dental care practices.</p>
+            </div>
+
+            <!-- Sub-content for Sealants -->
+            <div id="sealants-section" class="sub-content-expanded"
+              style="margin-top: 1.5rem; padding: 1rem; background: rgba(255,255,255,0.5); border-radius: 8px;">
+              <h4 style="color: var(--primary-purple); margin-bottom: 0.5rem;">Sealants</h4>
+              <p style="font-size: 0.9rem;">Your child's teeth are especially vulnerable to tooth decay due to pits and
+                grooves on the biting surface of their teeth. These areas allow food to stick to the tooth and make it
+                difficult to clean. Sealants are a white-colored resin material that can be placed in the deep pits and
+                grooves of the teeth to help prevent cavities by creating a smooth surface that is easily cleaned.</p>
+            </div>
+
+            <!-- Sub-content for Fluoride Treatment -->
+            <div id="fluoride-section" class="sub-content-expanded"
+              style="margin-top: 1rem; padding: 1rem; background: rgba(255,255,255,0.5); border-radius: 8px;">
+              <h4 style="color: var(--primary-purple); margin-bottom: 0.5rem;">Fluoride Treatment</h4>
+              <p style="font-size: 0.9rem;">Fluoride treatment takes just a few minutes and normally follows your
+                child's dental exam. After the treatment, patients can eat and drink right away but cannot have anything
+                hot to ensure the fluoride treatment does not come off. This helps to allow the teeth to absorb the
+                fluoride treatment. If needed, we may prescribe an at-home fluoride product such as a mouthwash, gel, or
+                antibacterial rinse.</p>
+            </div>
+
+            <!-- Sub-content for Digital X-rays -->
+            <div id="xrays-section" class="sub-content-expanded"
+              style="margin-top: 1rem; padding: 1rem; background: rgba(255,255,255,0.5); border-radius: 8px;">
+              <h4 style="color: var(--primary-purple); margin-bottom: 0.5rem;">Digital X-rays</h4>
+              <p style="font-size: 0.9rem;">We use advanced dental technology possible and our practice is dedicated to
+                providing you with the safest and most convenient treatment options available, we utilize advanced
+                digital X-ray technology in our office. Digital X-rays provide several advanced imaging options designed
+                to save time, provide clearer dental photos, and expose patients up to 90% less radiation than
+                traditional X-ray technology. We use safety precautions such as lead aprons and thyroid collars to help
+                reduce exposure.</p>
+              <p style="font-size: 0.9rem; margin-top: 0.5rem;">X-rays are used as a diagnostic tool to diagnose
+                cavities in between the teeth. Often times, taking x-rays are the only way to see interproximal
+                cavities. Dental x-rays can also help determine your child's risk potential for future cavities. Because
+                of these benefits, we recommended to take x-rays at least once a year.</p>
+            </div>
+
+          </div>
+
+          <!-- Fillings & Restorative Care -->
+          <div class="service-card" id="fillings-section">
+            <h3>Fillings & Restorative Care</h3>
+            <p>Our new office is designed specifically for kids and most of our patients think that "getting a filling"
+              is actually fun! We will offer your child the choice of watching TV or a movie. We will also offer your
+              child nitrous oxide/oxygen analgesia or "happy air" to help them be more relaxed. Most of the time we will
+              be able to restore teeth with a tooth-colored bonded composite material. Teeth that have more advanced
+              decay will require a full coverage restoration, or stainless steel crown. When possible and always for
+              anterior teeth, we prefer to address this with tooth-colored crowns that make the teeth look new again. We
+              also offer white crowns (Zirconia crowns) for the posterior teeth. Before your child's treatment begins,
+              Dr Bansal will discuss all options and help you choose the best filling for your child's particular case.
+            </p>
+            <!-- Sub-content for SDF-Smart Fluoride -->
+            <div id="sdf-section" class="sub-content-expanded"
+              style="margin-top: 1rem; padding: 1rem; background: rgba(255,255,255,0.5); border-radius: 8px;">
+              <h4 style="color: var(--primary-purple); margin-bottom: 0.5rem;">SDF</h4>
+              <p style="font-size: 0.9rem;">Silver Diamine Fluoride (SDF) is an innovative, non-invasive treatment that
+                helps stop cavity progression and prevent new cavities from forming. This FDA-approved liquid medication
+                is applied directly to affected teeth, providing immediate antimicrobial and remineralizing benefits.
+                SDF is particularly beneficial for young children, special needs patients, or anxious children who may
+                have difficulty with traditional restorative procedures.</p>
+            </div>
+          </div>
+
+          <!-- Sedation Dentistry -->
+          <div class="service-card" id="sedation-section">
+            <h3>Sedation Dentistry</h3>
+            <p>Most dental procedures in children are completed using local anesthesia, however, very young, fearful
+              children may need added help to control anxiety. Our office is licensed to use the safest clinical
+              approaches to provide mild sedation or oral sedation. Issaquah Pediatric Dentistry follows the
+              administration guidelines for safe sedation endorsed by the American Academy of Pediatrics and American
+              Academy of Pediatric Dentistry. Using sedation safely is extremely important and this is why Dr. Bansal
+              dedicates many continuing education hours specific to this topic.</p>
+            <div class="sub-services">
+              <button class="sub-service"
+                onclick="document.getElementById('nitrous-section').scrollIntoView({behavior: 'smooth'})">Nitrous
+                Oxide</button>
+              <button class="sub-service"
+                onclick="document.getElementById('anesthesia-section').scrollIntoView({behavior: 'smooth'})">General
+                Anesthesia in Clinic</button>
+            </div>
+
+            <!-- Sub-content for Nitrous Oxide -->
+            <div id="nitrous-section" class="sub-content-expanded"
+              style="margin-top: 1.5rem; padding: 1rem; background: rgba(255,255,255,0.5); border-radius: 8px;">
+              <h4 style="color: var(--primary-purple); margin-bottom: 0.5rem;">Nitrous Oxide</h4>
+
+              <!-- Images Section -->
+              <div class="nitrous-images" style="display: flex; justify-content: center; margin-bottom: 1.5rem;">
+                <div class="image-container" style="text-align: center;">
+                  <picture>
+                    <img src="/nitrous-oxide-issaquah.png" alt="Nitrous oxide mask for children"
+                      style="width: 150px; height: 150px; object-fit: contain; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);"
+                      loading="lazy">
+                    <p style="font-size: 0.8rem; color: var(--primary-purple); margin-top: 0.5rem; font-style: italic;">
+                      Nitrous oxide administration</p>
+                </div>
+              </div>
+
+              <p style="font-size: 0.9rem; margin-bottom: 1rem;">Most children are calm, comfortable and confident in a
+                pediatric dental office. The office is designed for young people, and pediatric dentists have additional
+                training in caring for infants, children and adolescents. Staff members choose to work in a pediatric
+                dental office because they like children and want to cater to their special needs. These elements
+                combine to make your child feel relaxed and special. Sometimes, however, a child may feel anxious before
+                or during treatment. Your child may need more support than a gentle, caring manner to feel comfortable.
+                Nitrous oxide/oxygen is a safe, effective sedative agent used to calm a child's fear of the dental visit
+                and enhance effective communication. Additionally, it works well for children whose gag reflex
+                interferes with dental treatment.</p>
+
+              <div style="margin-bottom: 1.5rem;">
+                <h5 style="color: var(--primary-orange); margin-bottom: 0.5rem; font-size: 1rem;">What is nitrous
+                  oxide/oxygen?</h5>
+                <p style="font-size: 0.9rem;">Nitrous oxide/oxygen (N2O-O2) is a blend of two gases oxygen and nitrous
+                  oxide. A fitted mask is placed over the nose and, as the patient breathes normally, uptake occurs
+                  through the lungs. At the end of treatment, it is eliminated after a short period of breathing oxygen
+                  and has no lingering effects.</p>
+              </div>
+
+              <div style="margin-bottom: 1.5rem;">
+                <h5 style="color: var(--primary-orange); margin-bottom: 0.5rem; font-size: 1rem;">How will my child feel
+                  when breathing nitrous oxide/oxygen?</h5>
+                <p style="font-size: 0.9rem;">Your child will smell a faint sweet aroma and experience a sense of
+                  well-being and relaxation. Since it may produce a feeling of giddiness or euphoria, it is often called
+                  "laughing gas." Children sometimes report dreaming and their arms and legs may feel "tingly." It
+                  raises the pain threshold and may even make the time appear to pass quickly. If your child is worried
+                  by the sights, sounds or sensations of dental treatment, he or she may respond more positively with
+                  the use of nitrous oxide/oxygen.</p>
+              </div>
+
+              <div style="margin-bottom: 1.5rem;">
+                <h5 style="color: var(--primary-orange); margin-bottom: 0.5rem; font-size: 1rem;">How safe is nitrous
+                  oxide/oxygen?</h5>
+                <p style="font-size: 0.9rem;">Very safe. Nitrous oxide/oxygen is perhaps the safest sedative in
+                  dentistry. It is well tolerated. It has a rapid onset, is reversible, can be adjusted in various
+                  concentrations and is non-allergenic. Your child remains fully conscious and keeps all natural
+                  reflexes when breathing nitrous oxide/oxygen. He/she will be capable of responding to a question or
+                  request. Nitrous oxide/oxygen may also be used in combination with other sedative agents.</p>
+              </div>
+
+              <div style="margin-bottom: 1.5rem;">
+                <h5 style="color: var(--primary-orange); margin-bottom: 0.5rem; font-size: 1rem;">Are there any special
+                  instructions for nitrous oxide/oxygen?</h5>
+                <p style="font-size: 0.9rem;">First, give your child little or no food in the two hours preceding the
+                  dental visit (occasionally, nausea or vomiting occurs when a child has a full stomach). Second, tell
+                  your pediatric dentist about any respiratory condition that makes breathing through the nose difficult
+                  for your child, as it may limit the effectiveness of nitrous oxide/oxygen. Third, tell your pediatric
+                  dentist if your child is taking any medication on the day of the appointment.</p>
+              </div>
+
+              <div style="margin-bottom: 0;">
+                <h5 style="color: var(--primary-orange); margin-bottom: 0.5rem; font-size: 1rem;">Will nitrous
+                  oxide/oxygen work for all children?</h5>
+                <p style="font-size: 0.9rem;">Pediatric dentists know that all children are not alike. Every service is
+                  tailored to your child as an individual. Nitrous oxide/oxygen may not be effective for some children,
+                  especially those who have severe anxiety, nasal congestion, or discomfort wearing a nasal mask. Your
+                  pediatric dentist will review your child's medical history, level of anxiety, and dental treatment
+                  needs and inform you if nitrous oxide/oxygen is recommended for your child. Pediatric dentists have
+                  comprehensive specialty training and can offer other sedation methods that are right for your child.
+                </p>
               </div>
             </div>
 
-          </div>
-        </div>
-      </section>
+            <!-- Sub-content for General Anesthesia -->
+            <div id="anesthesia-section" class="sub-content-expanded"
+              style="margin-top: 1rem; padding: 1rem; background: rgba(255,255,255,0.5); border-radius: 8px;">
+              <h4 style="color: var(--primary-purple); margin-bottom: 0.5rem;">General Anesthesia in Clinic</h4>
 
-      <!-- Emergency Care Section -->
-      <section id="emergency" class="section">
-        <div class="section-content">
-          <h2 class="section-title-btn" onclick="document.getElementById('emergency').scrollIntoView({behavior: 'smooth'})" style="font-size: 2.5rem; color: var(--primary-purple); margin-bottom: 2rem; text-align: center; display: block; width: 100%; cursor: pointer; background: none; border: none;">Emergency Care</h2>
-          
-          <div class="emergency-intro" style="text-align: center; margin-bottom: 3rem;">
-            <!-- Baby Tooth Knocked Out -->
-            <div class="service-card" id="knocked-out-baby">
-              <h3>What should I do if my child's baby tooth is knocked out?</h3>r oral health after an injury, we have <strong>same day appointments available!</strong></p>
-            <p style="font-size: 1.1rem;">Any time you call our office with emergency concerns, we are committed to working with you over the phone, or getting your child in for a visit as soon as possible.</p>
-            <p style="font-size: 1.1rem; font-style: italic;">If you haven't had an appointment with us previously, and come to us first for an emergency, that's OK!</p>
+              <div style="margin-bottom: 1.5rem;">
+                <h5 style="color: var(--primary-orange); margin-bottom: 0.5rem; font-size: 1rem;">What is general
+                  anesthesia?</h5>
+                <p style="font-size: 0.9rem;">General anesthesia is a controlled state of unconsciousness that
+                  eliminates awareness, movement and discomfort during dental treatment. A physician or dentist with
+                  specialized training can use various medications to provide general anesthesia for patients receiving
+                  dental care.</p>
+              </div>
+
+              <div style="margin-bottom: 1.5rem;">
+                <h5 style="color: var(--primary-orange); margin-bottom: 0.5rem; font-size: 1rem;">Who should receive
+                  general anesthesia for dental treatment?</h5>
+                <p style="font-size: 0.9rem;">General anesthesia may be indicated for children with extensive dental
+                  needs who are extremely un-cooperative, fearful or anxious or for the very young who do not understand
+                  how to cope in a cooperative fashion. General anesthesia also can be helpful for children requiring
+                  significant surgical procedures or patients having special health care needs.</p>
+              </div>
+
+              <div style="margin-bottom: 1.5rem;">
+                <h5 style="color: var(--primary-orange); margin-bottom: 0.5rem; font-size: 1rem;">Is general anesthesia
+                  safe?</h5>
+                <p style="font-size: 0.9rem;">Although there is some risk associated with general anesthesia, it can be
+                  used safely and effectively when administered by an appropriately-trained individual in an
+                  appropriately-equipped facility. Precautions are taken to protect your child during general
+                  anesthesia; personnel who are trained to manage complications will monitor your child closely. Your
+                  pediatric dentist will discuss the benefits and risks of general anesthesia and why it is recommended
+                  for your child.</p>
+              </div>
+
+              <div style="margin-bottom: 0;">
+                <h5 style="color: var(--primary-orange); margin-bottom: 0.5rem; font-size: 1rem;">What special
+                  considerations are associated with the general anesthesia appointment?</h5>
+                <p style="font-size: 0.9rem; margin-bottom: 0.75rem;">A physical evaluation is required prior to general
+                  anesthesia for dental care. This physical assessment provides information to ensure the safety of your
+                  child during the general anesthesia procedure. Your pediatric dentist or general anesthesia provider
+                  will advise you about evaluation appointments that are required.</p>
+                <p style="font-size: 0.9rem; margin-bottom: 0.75rem;">Parents are instructed to report to the pediatric
+                  dentist any illness that occurs prior to the general anesthesia appointment. It may be necessary to
+                  reschedule the appointment. It is very important to follow instructions regarding fasting from fluids
+                  and foods prior to the appointment.</p>
+                <p style="font-size: 0.9rem; margin-bottom: 0.75rem;">Your child will be discharged when stable, alert,
+                  and ready to depart. Patients often are tired following general anesthesia. You will be instructed to
+                  let the child rest at home with minimal activity until the next day. Post-operative dietary
+                  recommendations also will be given.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hospital Dentistry -->
+          <div class="service-card" id="hospital-section">
+            <h3>Hospital Dentistry</h3>
+            <p>We sometimes suggest that your child receive comprehensive dental care in an operating room at one of our
+              local hospitals if some or all of the conditions:</p>
+            <ul style="text-align: left; margin: 1rem 0;">
+              <li>A child has an age related inability to cooperate for dental care in the office setting</li>
+              <li>Has many teeth that need to be fixed</li>
+              <li>Has significant dental fear or has complex medical conditions making them a poor candidate for
+                sedation in the office</li>
+            </ul>
+            <p><strong>Dr Bansal has privileges at:</strong></p>
+            <ul style="text-align: left; margin: 1rem 0;">
+              <li>Mary Bridge Children's Hospital</li>
+              <li>Tacoma General Hospital</li>
+              <li>Covington Multicare Surgery center</li>
+              <li>Swedish Hospital</li>
+            </ul>
+            <p>When in the operating room, an anesthesiologist will give your child medications that will help your
+              child fall asleep before the dental treatment is started.</p>
+          </div>
+
+          <!-- Special Needs Children -->
+          <div class="service-card" id="special-needs-section">
+            <h3>Special Needs Children</h3>
+            <p>Going to the dentist can be scary for any child, but especially for a child with special needs. Pediatric
+              dentists have two or more years of advanced training beyond dental school that include behavior management
+              and sedation techniques. We provide a range of dental services from routine preventative care to
+              specialized care for children and teens with complex medical conditions, developmental delays and
+              behavioral problems, including those who cannot be treated elsewhere. We are able to work with parents on
+              the limits and risks of various techniques. Talk to us about a specialized program of preventative care
+              and treatment that is geared toward your child.</p>
+          </div>
+
+          <!-- Mouth Guard -->
+          <div class="service-card" id="mouth-guard-section">
+            <h3>Mouth Guard</h3>
+            <p>Custom-fitted mouth guards provide essential protection for your child's teeth during sports and
+              recreational activities. Our professionally made mouth guards offer superior comfort and protection
+              compared to over-the-counter options, helping prevent dental injuries, tooth fractures, and jaw trauma. We
+              create personalized mouth guards that fit perfectly and allow for comfortable breathing and speaking
+              during athletic activities.</p>
+          </div>
+
+          <!-- Habit Preventing Appliance -->
+          <div class="service-card" id="habit-appliance-section">
+            <h3>Habit Preventing Appliance</h3>
+            <p>Specialized appliances designed to help children break harmful oral habits such as thumb sucking, finger
+              sucking, or tongue thrusting. These custom-made devices are comfortable and effective in redirecting
+              harmful behaviors that can affect tooth alignment and jaw development. Dr. Bansal will evaluate your
+              child's specific needs and recommend the most appropriate appliance to promote healthy oral development
+              and eliminate detrimental habits.</p>
+            <!--              <h5 style="color: var(--primary-orange); margin-top: 1.5rem; margin-bottom: 0.5rem;">Professional Habit Breaking Appliances</h6>
+-->
+            <p style="margin-bottom: 0;">Dr. Bansal provides custom-fitted habit preventing appliances that are designed
+              to discourage thumb and finger sucking while being comfortable for your child to wear. These appliances
+              help redirect harmful behaviors and promote healthy oral development.</p>
+
+            <!-- Detailed Thumb & Finger Sucking Information -->
+            <div class="habit-content"
+              style="margin-top: 2rem; border-top: 2px solid var(--primary-orange); padding-top: 2rem;">
+              <h4 style="color: var(--primary-purple); margin-bottom: 1rem; text-align: center;">Understanding Thumb &
+                Finger Sucking</h4>
+
+              <div class="habit-images" style="display: flex; justify-content: center; gap:  1rem; margin: 1.5rem 0;">
+                <picture>
+                  <img src="./sucking-1.png" alt="Thumb sucking effects on teeth" class="habit-image"
+                    style="max-width: 200px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
+                    loading="lazy">
+                  <picture>
+                    <img src="./sucking-2.png" alt="Finger sucking dental problems" class="habit-image"
+                      style="max-width: 200px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
+                      loading="lazy">
+              </div>
+
+              <div class="habit-info">
+                <h5 style="color: var(--primary-purple); margin-top: 2rem; margin-bottom: 1rem;">Why do children suck on
+                  fingers, pacifiers or other objects?</h5>
+                <p>This type of sucking is completely normal for babies and young children. It provides security. For
+                  young babies, it is a way to make contact with and learn about the world. In fact, babies begin to
+                  suck on their fingers or thumbs even before they are born.</p>
+
+                <h5 style="color: var(--primary-purple); margin-top: 2rem; margin-bottom: 1rem;">Are these habits bad
+                  for the teeth and jaws?</h5>
+                <p>Most children stop sucking on thumbs, pacifiers or other objects on their own between 2 and 4 years
+                  of age. However, some children continue these habits over long periods of time. In these children, the
+                  upper front teeth may tip toward the lip or not come in properly. Frequent or intense habits over a
+                  prolonged period of time can affect the way the child's teeth bite together, as well as the growth of
+                  the jaws and bones that support the teeth.</p>
+
+                <h5 style="color: var(--primary-purple); margin-top: 2rem; margin-bottom: 1rem;">When should I worry
+                  about a sucking habit?</h5>
+                <p>Your pediatric dentist will carefully watch the way your child's teeth erupt and jaws develop,
+                  keeping the sucking habit in mind at all times. Because persistent habits may cause long term
+                  problems, intervention may be recommended for children beyond 3 years of age.</p>
+
+                <h5 style="color: var(--primary-purple); margin-top: 2rem; margin-bottom: 1rem;">Are pacifiers a safer
+                  habit for the teeth than thumbs or fingers?</h5>
+                <p>Thumb, finger and pacifier sucking affect the teeth and jaws in essentially the same way. However, a
+                  pacifier habit often is easier to break.</p>
+
+                <!-- ...existing content for treatment-section... -->
+                <h5 style="color: var(--primary-purple); margin-top: 2rem; margin-bottom: 1rem;">What can I do to stop
+                  my child's habit?</h5>
+                <p>Most children stop sucking habits on their own, but some children need the help of their parents and
+                  their pediatric dentist. When your child is old enough to understand the possible results of a sucking
+                  habit, your pediatric dentist can encourage your child to stop, as well as talk about what happens to
+                  the teeth and jaws if your child does not stop.</p>
+                <p>This advice, coupled with support from parents, helps most children quit. If this approach does not
+                  work, your pediatric dentist may recommend ways to change the behavior, including a mouth appliance
+                  that interferes with sucking habits.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Emergency Care Section -->
+    <section id="emergency" class="section">
+      <div class="section-content">
+        <h2 class="section-title-btn"
+          onclick="document.getElementById('emergency').scrollIntoView({behavior: 'smooth'})"
+          style="font-size: 2.5rem; color: var(--primary-purple); margin-bottom: 2rem; text-align: center; display: block; width: 100%; cursor: pointer; background: none; border: none;">
+          Emergency Care</h2>
+
+        <div class="emergency-intro" style="text-align: center; margin-bottom: 3rem;">
+          <!-- Baby Tooth Knocked Out -->
+          <div class="service-card" id="knocked-out-baby">
+            <h3>What should I do if my child's baby tooth is knocked out?</h3>r oral health after an injury, we have
+            <strong>same day appointments available!</strong></p>
+            <p style="font-size: 1.1rem;">Any time you call our office with emergency concerns, we are committed to
+              working with you over the phone, or getting your child in for a visit as soon as possible.</p>
+            <p style="font-size: 1.1rem; font-style: italic;">If you haven't had an appointment with us previously, and
+              come to us first for an emergency, that's OK!</p>
           </div>
 
           <div class="services-grid">
-            
+
             <!-- Baby Tooth Knocked Out -->
             <div class="service-card">
               <h3>What should I do if my child's baby tooth is knocked out?</h3>
-              <p>Contact us as soon as possible. The baby tooth should not be replanted because of the potential for subsequent damage to the developing permanent tooth.</p>
+              <p>Contact us as soon as possible. The baby tooth should not be replanted because of the potential for
+                subsequent damage to the developing permanent tooth.</p>
             </div>
 
             <!-- Permanent Tooth Knocked Out -->
@@ -687,8 +1593,10 @@
               <p>Unlike a baby tooth that is knocked out, an adult tooth should be put back into the socket.</p>
               <p><strong>Steps to follow:</strong></p>
               <ul style="text-align: left; margin: 1rem 0;">
-                <li>Find the tooth and rinse it gently and briefly in cool water. (Do not scrub or clean it with soap — use only water!)</li>
-                <li>If possible, replace the tooth in the socket immediately and hold it there with clean gauze or a wash cloth</li>
+                <li>Find the tooth and rinse it gently and briefly in cool water. (Do not scrub or clean it with soap —
+                  use only water!)</li>
+                <li>If possible, replace the tooth in the socket immediately and hold it there with clean gauze or a
+                  wash cloth</li>
                 <li>If you can't put the tooth back in the socket:
                   <ul style="margin-left: 1rem;">
                     <li>Have the child hold the tooth under their tongue or between the cheek and the gums</li>
@@ -697,7 +1605,8 @@
                 </li>
                 <li>Get to the pediatric dental office immediately (Call the emergency number if it's after hours.)</li>
               </ul>
-              <p style="font-weight: bold; color: var(--primary-purple);">The faster you act, the better your chances of saving the tooth.</p>
+              <p style="font-weight: bold; color: var(--primary-purple);">The faster you act, the better your chances of
+                saving the tooth.</p>
             </div>
 
             <!-- Toothache -->
@@ -706,7 +1615,8 @@
               <p>Call us and visit the office promptly. To comfort your child:</p>
               <ul style="text-align: left; margin: 1rem 0;">
                 <li>Rinse the mouth with water</li>
-                <li>Over-the-counter children's pain medication, dosed according to your child's weight and age might ease the symptoms</li>
+                <li>Over-the-counter children's pain medication, dosed according to your child's weight and age might
+                  ease the symptoms</li>
                 <li>You may apply a cold compress or ice wrapped in a cloth to the face in the area of the pain</li>
                 <li><strong>Do not</strong> put heat or aspirin on the sore area</li>
               </ul>
@@ -715,20 +1625,24 @@
             <!-- Chipped or Fractured Tooth -->
             <div class="service-card" id="chipped-tooth">
               <h3>What if a tooth is chipped or fractured?</h3>
-              <p>Contact your pediatric dentist immediately. Quick action can save the tooth, prevent infection and reduce the need for extensive dental treatment.</p>
+              <p>Contact your pediatric dentist immediately. Quick action can save the tooth, prevent infection and
+                reduce the need for extensive dental treatment.</p>
               <p><strong>Immediate care:</strong></p>
               <ul style="text-align: left; margin: 1rem 0;">
                 <li>Rinse the mouth with water</li>
                 <li>Apply cold compresses to reduce swelling if the lip also was injured</li>
-                <li>If you can find the broken tooth fragment, place it in cold milk or water and bring it with you to the dental office</li>
+                <li>If you can find the broken tooth fragment, place it in cold milk or water and bring it with you to
+                  the dental office</li>
               </ul>
             </div>
 
             <!-- Head Injury or Jaw Fracture -->
             <div class="service-card">
               <h3>What about a severe blow to the head or a jaw fracture?</h3>
-              <p style="color: var(--primary-purple); font-weight: bold;">You need immediate medical attention. A severe head injury can be life threatening.</p>
-              <p>Keep in mind that an emergency medical team might be able to reach you faster than you can get to the hospital.</p>
+              <p style="color: var(--primary-purple); font-weight: bold;">You need immediate medical attention. A severe
+                head injury can be life threatening.</p>
+              <p>Keep in mind that an emergency medical team might be able to reach you faster than you can get to the
+                hospital.</p>
             </div>
 
             <!-- Prevention -->
@@ -736,186 +1650,340 @@
               <h3>Can dental injuries be prevented?</h3>
               <p>Your child's risk for dental injuries can be reduced greatly by following a few simple suggestions:</p>
               <ul style="text-align: left; margin: 1rem 0;">
-                <li><strong>Sports Protection:</strong> Reduce risk for severe oral injury in sports by wearing protective gear, including a mouth guard</li>
-                <li><strong>Car Safety:</strong> Always use a car seat for young children and require seat belts for everyone else in the car</li>
+                <li><strong>Sports Protection:</strong> Reduce risk for severe oral injury in sports by wearing
+                  protective gear, including a mouth guard</li>
+                <li><strong>Car Safety:</strong> Always use a car seat for young children and require seat belts for
+                  everyone else in the car</li>
                 <li><strong>Home Safety:</strong> Child-proof your home to prevent falls and electrical injuries</li>
-                <li><strong>Regular Check-ups:</strong> Regular dental check-ups provide your dentist an opportunity to discuss additional age-appropriate preventive strategies with your child</li>
+                <li><strong>Regular Check-ups:</strong> Regular dental check-ups provide your dentist an opportunity to
+                  discuss additional age-appropriate preventive strategies with your child</li>
               </ul>
             </div>
 
           </div>
 
           <!-- Emergency Contact Information -->
-          <div class="emergency-contact" style="background: linear-gradient(135deg, var(--primary-purple), var(--secondary-purple)); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 3rem;">
+          <div class="emergency-contact"
+            style="background: linear-gradient(135deg, var(--primary-purple), var(--secondary-purple)); color: white; padding: 2rem; border-radius: 12px; text-align: center; margin-top: 3rem;">
             <h3 style="color: white; margin-bottom: 1rem;">Emergency Contact</h3>
             <p style="font-size: 1.2rem; margin-bottom: 1rem;">For dental emergencies, call us immediately:</p>
-            <a href="tel:+14256570609" style="color: white; font-size: 1.5rem; font-weight: bold; text-decoration: none; display: block; margin-bottom: 0.5rem;">(425) 657-0609</a>
-            <p style="font-size: 1rem; margin-bottom: 0;">We are committed to working with you over the phone or getting your child in for a visit as soon as possible.</p>
+            <a href="tel:+14256570609"
+              style="color: white; font-size: 1.5rem; font-weight: bold; text-decoration: none; display: block; margin-bottom: 0.5rem;">(425)
+              657-0609</a>
+            <p style="font-size: 1rem; margin-bottom: 0;">We are committed to working with you over the phone or getting
+              your child in for a visit as soon as possible.</p>
           </div>
         </div>
-      </section>
+    </section>
 
-      <!-- Patient Forms Section -->
-      <section id="forms" class="section">
-        <div class="section-content">
-          <h2 class="section-title-btn" onclick="document.getElementById('forms').scrollIntoView({behavior: 'smooth'})" style="font-size: 2.5rem; color: var(--primary-purple); margin-bottom: 2rem; text-align: center; display: block; width: 100%; cursor: pointer; background: none; border: none;">Patient Forms</h2>
-          
-          <div class="services-grid">
-            <!-- New Patient Section -->
-            <div id="new-patient" class="service-card">
-              <h3>New Patient</h3>
-              <p>Welcome to Issaquah Kids Dentistry! If you're a new patient, please complete our online registration forms to help us prepare for your child's first visit. These forms include medical history, insurance information, and important health details.</p>
-              <a href="https://www.bing.com" target="_blank" class="btn">Complete New Patient Forms</a>
+    <!-- Patient Forms Section -->
+    <section id="forms" class="section">
+      <div class="section-content">
+        <h2 class="section-title-btn" onclick="document.getElementById('forms').scrollIntoView({behavior: 'smooth'})"
+          style="font-size: 2.5rem; color: var(--primary-purple); margin-bottom: 2rem; text-align: center; display: block; width: 100%; cursor: pointer; background: none; border: none;">
+          Patient Forms</h2>
+
+        <div class="services-grid">
+          <!-- New Patient Section -->
+          <div id="new-patient" class="service-card">
+            <h3>Patient Review</h3>
+            <p>We appreciate patient feedback! If you would like to share your experience with our pediatric dental
+              services, please use the form below to submit your review.</p>
+            <div class="form-container" style="margin-top: 1.5rem;">
+              <form id="patient-review-form">
+                <div class="form-group">
+                  <label for="review-patient-name">Your Name</label>
+                  <input type="text" id="review-patient-name" name="review-patient-name" required>
+                </div>
+                <div class="form-group">
+                  <label for="review-phone">Your Phone Number</label>
+                  <input type="tel" id="review-phone" name="review-phone" required>
+                </div>
+                <div class="form-group">
+                  <label for="review-comments">Your Review</label>
+                  <textarea id="review-comments" name="review-comments" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="review-captcha-answer">Security Verification</label>
+                  <div class="captcha-container"
+                    style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem;" aria-live="polite">
+                    <span id="review-captcha-question"
+                      style="font-size: 1.1rem; font-weight: bold; color: var(--primary-purple); padding: 0.75rem; background: rgba(103, 58, 183, 0.1); border-radius: 8px; min-width: 120px; text-align: center;"></span>
+                    <span style="font-size: 1.1rem; font-weight: bold; color: var(--primary-purple);"
+                      aria-hidden="true">=</span>
+                    <input type="number" id="review-captcha-answer" name="review-captcha-answer" style="width: 100px;"
+                      placeholder="?" required aria-required="true" aria-describedby="review-captcha-desc">
+                    <button type="button" id="refresh-review-captcha" aria-label="Refresh CAPTCHA"
+                      style="background: var(--primary-orange); color: white; border: none; border-radius: 6px; padding: 0.5rem; cursor: pointer; font-size: 0.9rem;">↻
+                      New</button>
+                  </div>
+                  <small id="review-captcha-desc" style="color: var(--primary-orange); font-size: 0.85rem;">Please solve
+                    the math problem above to verify you're human</small>
+                </div>
+                <button type="submit" class="btn">Submit Review</button>
+              </form>
             </div>
+          </div>
+          <div class="form-group">
+            <label for="records-email">Email Address</label>
+            <input type="email" id="records-email" name="records-email" required>
+          </div>
+          <div class="form-group">
+            <label for="records-reason">Reason for Records Request (Optional)</label>
+            <textarea id="records-reason" name="records-reason" rows="3"
+              placeholder="Please specify why you need the records (e.g., transferring to another dentist, personal files, etc.)..."></textarea>
+          </div>
+          <div class="form-group">
+            <label for="captcha-answer">Security Verification</label>
+            <div class="captcha-container"
+              style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem;">
+              <span id="captcha-question"
+                style="font-size: 1.1rem; font-weight: bold; color: var(--primary-purple); padding: 0.75rem; background: rgba(103, 58, 183, 0.1); border-radius: 8px; min-width: 120px; text-align: center;"></span>
+              <span style="font-size: 1.1rem; font-weight: bold; color: var(--primary-purple);">=</span>
+              <input type="number" id="captcha-answer" name="captcha-answer" style="width: 100px;" placeholder="?"
+                required>
+              <button type="button" id="refresh-captcha" aria-label="Refresh CAPTCHA"
+                style="background: var(--primary-orange); color: white; border: none; border-radius: 6px; padding: 0.5rem; cursor: pointer; font-size: 0.9rem;">↻
+                New</button>
+            </div>
+            <small style="color: var(--primary-orange); font-size: 0.85rem;">Please solve the math problem above to
+              verify you're human</small>
+          </div>
+          <button type="submit" class="btn">Submit Records Request</button>
+          </form>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
 
-            <!-- Existing Patient Section -->
-            <div id="existing-patient" class="service-card">
-              <h3>Existing Patient - Records Request</h3>
-              <p>If you're an existing patient and need copies of your child's dental records for transfer to another provider or for your personal files, please complete the form below. We'll process your request and provide the records as soon as possible.</p>
-              
-              <!-- HIPAA Warning -->
-              <div class="hipaa-warning" style="background: linear-gradient(135deg, #ffeaa7, #fab1a0); border: 2px solid #e17055; border-radius: 8px; padding: 1rem; margin: 1.5rem 0; text-align: center;">
-                <h4 style="color: #d63031; margin: 0 0 0.5rem 0; font-size: 1.1rem;">⚠️ HIPAA Privacy Notice</h4>
-                <p style="color: #2d3436; margin: 0; font-weight: 600; font-size: 0.95rem;">Due to HIPAA regulations, the patient name and date of birth must exactly match our records for us to release any medical information. Please ensure all information is accurate.</p>
-              </div>
-              
-              <div class="form-container" style="margin-top: 1.5rem;">
-                <form id="records-request-form">
-                  <div class="form-group">
-                    <label for="records-patient-name">Patient Name</label>
-                    <input type="text" id="records-patient-name" name="records-patient-name" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="records-parent-name">Parent/Guardian Name</label>
-                    <input type="text" id="records-parent-name" name="records-parent-name" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="records-patient-dob">Patient Date of Birth</label>
-                    <input type="date" id="records-patient-dob" name="records-patient-dob" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="records-contact-phone">Contact Phone Number</label>
-                    <input type="tel" id="records-contact-phone" name="records-contact-phone" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="records-email">Email Address</label>
-                    <input type="email" id="records-email" name="records-email" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="records-reason">Reason for Records Request (Optional)</label>
-                    <textarea id="records-reason" name="records-reason" rows="3" placeholder="Please specify why you need the records (e.g., transferring to another dentist, personal files, etc.)..."></textarea>
-                  </div>
-                  <div class="form-group">
-                    <label for="captcha-answer">Security Verification</label>
-                    <div class="captcha-container" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem;">
-                      <span id="captcha-question" style="font-size: 1.1rem; font-weight: bold; color: var(--primary-purple); padding: 0.75rem; background: rgba(103, 58, 183, 0.1); border-radius: 8px; min-width: 120px; text-align: center;"></span>
-                      <span style="font-size: 1.1rem; font-weight: bold; color: var(--primary-purple);">=</span>
-                      <input type="number" id="captcha-answer" name="captcha-answer" style="width: 100px;" placeholder="?" required>
-                      <button type="button" id="refresh-captcha" style="background: var(--primary-orange); color: white; border: none; border-radius: 6px; padding: 0.5rem; cursor: pointer; font-size: 0.9rem;">↻ New</button>
+    <!-- Finances Section -->
+    <section id="finances" class="section">
+      <div class="section-content">
+        <h2 class="section-title-btn" onclick="document.getElementById('finances').scrollIntoView({behavior: 'smooth'})"
+          style="font-size: 2.5rem; color: var(--primary-purple); margin-bottom: 2rem; text-align: center; display: block; width: 100%; cursor: pointer; background: none; border: none;">
+          Finances & Insurance</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <h3>Insurance Accepted</h3>
+            <p>One of our primary concerns is to make dental care affordable so that you can do what's best for your
+              child. We will happily file any necessary insurance forms to insure you receive the full benefits of your
+              dental coverage. We work with all major insurance carriers. We are currently preferred providers with the
+              following insurances:</p>
+            <ul style="text-align: left; margin-top: 1rem;">
+              <li>Aetna</li>
+              <li>Cigna</li>
+              <li>Assurant / Sunlife</li>
+              <li>GEHA / Connection dental</li>
+              <li>Guardian</li>
+              <li>Principle</li>
+              <li>United Concordia</li>
+              <li>Premera</li>
+              <li>Regence</li>
+              <li>Washington Dental Services / Delta Dental</li>
+              <li>Dentemax</li>
+              <li>Lifewise</li>
+              <li>Metlife</li>
+              <li>United Healthcare</li>
+              <li>Carpenters</li>
+              <li>Dental health Services</li>
+              <li>Tricare Metlife</li>
+              <li>Washington Medicaid / Apple Health</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <h3>Payment Options</h3>
+            <p>We offer flexible payment solutions:</p>
+            <ul style="text-align: left; margin-top: 1rem;">
+              <li>Cash and Credit Cards</li>
+              <li>CareCredit Financing</li>
+              <li>Payment Plans</li>
+              <li>HSA/FSA Accepted</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Referrals Section -->
+  <section id="reviews" class="section" style="background: url('/heart-with-hands.png') center/cover no-repeat; min-height: 100vh;">
+  <div class="section-content">
+        <h2 class="section-title" style="font-size:2.5rem; color:var(--primary-purple); margin-bottom:2rem; text-align:center;">Reviews</h2>
+        <div class="review-cards">
+          <!-- Provider Reviews -->
+          <div class="review-card provider-review">
+            <h3>Provider Testimonials</h3>
+            <div class="review">
+              <strong>Vicki Breaker, DDS</strong>
+              <p>Dr. Bansal always sees the patients in a timely manner and provides excellent care for them. There are other pediatric dentists we could refer to, but she is always our first choice. Her communication with us is exceptional. She calls and visits our clinic to discuss cases and concerns, and she sends us a written treatment report when she has completed treatment on a patient.</p>
+            </div>
+            <div class="review">
+              <strong>Lisa Yu, DDS</strong>
+              <p>I have referred numerous patients who needed hospital dentistry. All the patients who were referred to her were satisfied by her work ethics and professional demeanor. She has shown tremendous amount of responsibility and care for the patients who were in need of immediate dental care by
+accommodating them in such a short notice. I also had opportunity to perform follow-up exams on patients treated by Dr Bansal and I was impressed with the quality of dental care she provided. I have every confidence that she will be a positive addition to your hospital and that the community will most definitely be benefited from her service.</p>
+            </div>
+            <div class="review">
+              <strong>Dr. Sean Kelly, DDS</strong>
+              <p>Dr. Bansal’s care for our patients is highly valued, of great quality and meets our expectations. She communicates well with our clinic staff, providing the necessary information for follow-up care. She reliably provides our patients the necessary care and the parents are very satisfied with the care she provides their children. I highly recommend her for any position to serve as a pediatric dentist.</p>
+            </div>
+          </div>
+          <!-- Patient Reviews -->
+          <div class="review-card patient-review">
+            <h3>Patient Testimonials</h3>
+            <div class="review">
+              <p>My son had cavities in his first molars and we consulted clinic of Dr. Bansal. Since our son was only 2yrs old we were little concerned about general anesthesia process that he had to go through, Dr. Bansal explained every little detail about which made us very comfortable to move forward and was right thing to do for our son to protect the molars. Overall we are very happy to have made the decision to move forward with this, we couldn’t have done this without help and support and staff at Dr. Bansal’s clinic. Thank you Dr. Bansal.  </p>
+            </div>
+            <div class="review">
+              <p>I would like to share my first hand unforgettable and a high gratitude experience with doctor Bansal. Last year we were in US for a short stint and during that period my 3 year old daughter came up with tooth ache , though she had significant number of cavities 😌with her for quite some time. All thanks to chocolates , gummies, cookies etc.. In our home country we got her reviewed with dentist but looking at her age it was not easy for them to pick the treatment. Anyhow when she was in severe pain in US during our stay , we went to couple of dentist but the suggested cure was spanning over good number of weeks , that involved anesthesia too ( oops I am little scared of that) and we didn’t have time over there. Moreover the kind of pain she had we didn’t even had time to wait to start the treatment. She was going through sleepless nights in pain and we were suffering as parents.
+Then we met Doctor Bansal ( pedodontist) , she was God’s angel to us and then it went so seamless that after our first meeting with doctor Bansal the whole dental problem was put into reverse gear. She not only guarded and treated our kid with her love , affection, medical care / expertise but also ensured the cure is in the best favor of child. I remember we had couple of meetings with her , from diagnosis , cavity filling , wiggling out spoiled tooth, fluoride covering etc but as we were moving on ,both kid and us were gaining more confidence and trust in her. The way she won my kid’s trust to allow her to touch and treat her open mouth , that was really fantabulous. She has her own way of talking in kids language, extremely polite / lovingly and connecting with them before really bang on the treatment with tools.
+This whole way of hers comforted us so much as parents , even she once reviewed my 9 years elder son. He was so amused to get reviewed by her.
+Our concluding sessions were kind of outings with family and we used to have planned things to do post session. Since it was going so smooth and easy way by her. Even today my little one talks about her.
+We have very high regards to her humane and medical abilities!!!!!
+Trust me kids are in real safe hands if treated by her. Moreover she is always reachable at her hours to address the queries of puzzled, anxious and stressed parents.</p>
+            </div>
+          </div>
+          <!-- Patient Review Form -->
+          <div class="review-card patient-form" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem 1rem; position: relative;">
+                <div style="display: flex; justify-content: center; width: 100%; margin-bottom: 1.5rem;">
+                  <img src="/heart-with-hands.jpg" alt="Heart with hands graphic" style="max-width: 640px; width: 100%; height: auto; display: block; margin: 0 auto;" loading="lazy" />
+                </div>
+            <!-- <h3 style="background: rgba(255,255,255,0.85); border-radius: 8px; padding: 0.5rem 1.2rem; margin-bottom: 1.2rem; color: var(--primary-purple);">Share Your Experience</h3> -->
+            <div style="display: flex; ">
+              <a href="https://www.facebook.com/IssaquahKidsDentistry/reviews/" target="_blank" rel="noopener" class="btn" style="background: #4267B2; color: #fff; font-weight: bold; border-radius: 6px; padding: 0.8rem 1.5rem; font-size: 1.1rem; box-shadow: 0 2px 8px rgba(66,103,178,0.12); text-decoration: none;">Leave a Facebook Review</a>
+              <a href="https://g.page/r/CQwQvQwQvQwQEAI/review" target="_blank" rel="noopener" class="btn" style="background: #EA4335; color: #fff; font-weight: bold; border-radius: 6px; padding: 0.8rem 1.5rem; font-size: 1.1rem; box-shadow: 0 2px 8px rgba(234,67,53,0.12); text-decoration: none;">Leave a Google Review</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Referrals Section -->
+    <section id="referrals" class="section">
+      <div class="section-content">
+        <h2 class="section-title-btn"
+          onclick="document.getElementById('referrals').scrollIntoView({behavior: 'smooth'})"
+          style="font-size: 2.5rem; color: var(--primary-purple); margin-bottom: 2rem; text-align: center; display: block; width: 100%; cursor: pointer; background: none; border: none;">
+          Referrals</h2>
+        <div class="services-grid">
+          <div id="provider-referral" class="service-card">
+            <h3>From Another Provider</h3>
+            <p>Healthcare providers can refer patients using our fillable referral form. Please download, complete, and
+              submit the form with all relevant patient information and treatment recommendations.</p>
+            <a href="/IKD-Fillable-Referral.pdf" target="_blank" class="btn">Download Referral Form (PDF)</a>
+          </div>
+          <div id="patient-referral" class="service-card">
+            <h3>From Another Patient</h3>
+            <p>We appreciate patient referrals! If you know someone who could benefit from our pediatric dental
+              services, please use the form below to refer them to our practice.</p>
+            <div class="form-container" style="margin-top: 1.5rem;">
+              <form id="patient-referral-form">
+                <div class="form-group">
+                  <label for="referral-patient-name">Your Name</label>
+                  <input type="text" id="referral-patient-name" name="referral-patient-name" required>
+                </div>
+                <div class="form-group">
+                  <label for="referral-phone">Your Phone Number</label>
+                  <input type="tel" id="referral-phone" name="referral-phone" required>
+                </div>
+                <div class="form-group">
+                  <label for="referring-patient-name">Referring Patient Name</label>
+                  <input type="text" id="referring-patient-name" name="referring-patient-name" required>
+                </div>
+                <div class="form-group">
+                  <label for="referring-patient-phone">Referring Patient Phone Number</label>
+                  <input type="tel" id="referring-patient-phone" name="referring-patient-phone" required>
+                </div>
+                <div class="form-group">
+                  <label for="referral-captcha-answer">Security Verification</label>
+                  <div class="captcha-container"
+                    style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem;">
+                    <span id="referral-captcha-question"
+                      style="font-size: 1.1rem; font-weight: bold; color: var(--primary-purple); padding: 0.75rem; background: rgba(103, 58, 183, 0.1); border-radius: 8px; min-width: 120px; text-align: center;"></span>
+                    <span style="font-size: 1.1rem; font-weight: bold; color: var(--primary-purple);"
+                      aria-hidden="true">=</span>
+                    <input type="number" id="captcha-answer" name="captcha-answer" style="width: 100px;" placeholder="?"
+                      required aria-required="true" aria-describedby="captcha-desc">
+                    <small id="captcha-desc" style="color: var(--primary-orange); font-size: 0.85rem;">Please solve the
+                      math problem above to verify you're human</small>
+                    <div class="captcha-container"
+                      style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem;" aria-live="polite">
+                      <input type="date" id="records-patient-dob" name="records-patient-dob" required
+                        aria-required="true">
+                      <input type="tel" id="records-contact-phone" name="records-contact-phone" required
+                        aria-required="true">
+                      <input type="email" id="records-email" name="records-email" required aria-required="true">
+                      <input type="number" id="referral-captcha-answer" name="referral-captcha-answer"
+                        style="width: 100px;" placeholder="?" required>
+                      <button type="button" id="refresh-referral-captcha" aria-label="Refresh CAPTCHA"
+                        style="background: var(--primary-orange); color: white; border: none; border-radius: 6px; padding: 0.5rem; cursor: pointer; font-size: 0.9rem;">↻
+                        New</button>
+                      <input type="number" id="referral-captcha-answer" name="referral-captcha-answer"
+                        style="width: 100px;" placeholder="?" required aria-required="true"
+                        aria-describedby="referral-captcha-desc">
+                      <small id="referral-captcha-desc" style="color: var(--primary-orange); font-size: 0.85rem;">Please
+                        solve the math problem above to verify you're human</small>
+                      <div class="captcha-container"
+                        style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem;"
+                        aria-live="polite">
+                      </div>
+                      <small style="color: var(--primary-orange); font-size: 0.85rem;">Please solve the math problem
+                        above to verify you're human</small>
                     </div>
-                    <small style="color: var(--primary-orange); font-size: 0.85rem;">Please solve the math problem above to verify you're human</small>
-                  </div>
-                  <button type="submit" class="btn">Submit Records Request</button>
-                </form>
-              </div>
+                    <button type="submit" class="btn">Submit Referral</button>
+              </form>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+  </main>
 
-      <!-- Finances Section -->
-      <section id="finances" class="section">
-        <div class="section-content">
-          <h2 class="section-title-btn" onclick="document.getElementById('finances').scrollIntoView({behavior: 'smooth'})" style="font-size: 2.5rem; color: var(--primary-purple); margin-bottom: 2rem; text-align: center; display: block; width: 100%; cursor: pointer; background: none; border: none;">Finances & Insurance</h2>
-          <div class="services-grid">
-            <div class="service-card">
-              <h3>Insurance Accepted</h3>
-              <p>One of our primary concerns is to make dental care affordable so that you can do what's best for your child. We will happily file any necessary insurance forms to insure you receive the full benefits of your dental coverage. We work with all major insurance carriers. We are currently preferred providers with the following insurances:</p>
-              <ul style="text-align: left; margin-top: 1rem;">
-                <li>Aetna</li>
-                <li>Cigna</li>
-                <li>Assurant / Sunlife</li>
-                <li>GEHA / Connection dental</li>
-                <li>Guardian</li>
-                <li>Principle</li>
-                <li>United Concordia</li>
-                <li>Premera</li>
-                <li>Regence</li>
-                <li>Washington Dental Services / Delta Dental</li>
-                <li>Dentemax</li>
-                <li>Lifewise</li>
-                <li>Metlife</li>
-                <li>United Healthcare</li>
-                <li>Carpenters</li>
-                <li>Dental health Services</li>
-                <li>Tricare Metlife</li>
-                <li>Washington Medicaid / Apple Health</li>
-              </ul>
-            </div>
-            <div class="service-card">
-              <h3>Payment Options</h3>
-              <p>We offer flexible payment solutions:</p>
-              <ul style="text-align: left; margin-top: 1rem;">
-                <li>Cash and Credit Cards</li>
-                <li>CareCredit Financing</li>
-                <li>Payment Plans</li>
-                <li>HSA/FSA Accepted</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+  <script type="module" src="/src/main.js"></script>
+  <!-- Footer for Local SEO -->
+  <footer class="site-footer"
+    style="background: var(--primary-purple); color: white; padding: 2rem 0; text-align: center; margin-top: 3rem;">
+    <div itemscope itemtype="https://schema.org/LocalBusiness">
+      <span itemprop="name"
+        style="font-size: 1.3rem; font-weight: bold; display: block; margin-bottom: 0.5rem;">Issaquah Kids
+        Dentistry</span>
+      <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"
+        style="display: block; margin-bottom: 0.5rem;">
+        <span itemprop="streetAddress">85 NW Alder Pl Suite B</span>,
+        <span itemprop="addressLocality">Issaquah</span>,
+        <span itemprop="addressRegion">WA</span>
+        <span itemprop="postalCode">98027</span>
+      </span>
+      <span itemprop="telephone" style="display: block; margin-bottom: 0.5rem;">(425) 657-0609</span>
+      <span itemprop="email" style="display: block; margin-bottom: 0.5rem;">office@IssaquahKidsDentistry.com</span>
+      <span style="font-size: 0.95rem;">&copy; 2025 Issaquah Kids Dentistry. All rights reserved.</span>
+    </div>
+  </footer>
+  <script>
+    // Hamburger menu toggle logic for mobile
+    document.addEventListener('DOMContentLoaded', function () {
+      var mobileToggle = document.getElementById('mobile-toggle');
+      var navMenu = document.getElementById('nav-menu');
+      if (mobileToggle && navMenu) {
+        mobileToggle.addEventListener('click', function (e) {
+          e.stopPropagation();
+          navMenu.classList.toggle('open');
+        });
+      }
+      // Close menu when clicking outside
+      document.addEventListener('click', function (e) {
+        if (window.innerWidth <= 900 && navMenu && navMenu.classList.contains('open')) {
+          if (!navMenu.contains(e.target) && e.target !== mobileToggle) {
+            navMenu.classList.remove('open');
+          }
+        }
+      });
+      // Optional: close menu on resize to desktop
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 900 && navMenu) {
+          navMenu.classList.remove('open');
+        }
+      });
+    });
+  </script>
+</body>
 
-      <!-- Referrals Section -->
-      <section id="referrals" class="section">
-        <div class="section-content">
-          <h2 class="section-title-btn" onclick="document.getElementById('referrals').scrollIntoView({behavior: 'smooth'})" style="font-size: 2.5rem; color: var(--primary-purple); margin-bottom: 2rem; text-align: center; display: block; width: 100%; cursor: pointer; background: none; border: none;">Referrals</h2>
-          <div class="services-grid">
-            <div id="provider-referral" class="service-card">
-              <h3>From Another Provider</h3>
-              <p>Healthcare providers can refer patients using our fillable referral form. Please download, complete, and submit the form with all relevant patient information and treatment recommendations.</p>
-              <a href="/IKD-Fillable-Referral.pdf" target="_blank" class="btn">Download Referral Form (PDF)</a>
-            </div>
-            <div id="patient-referral" class="service-card">
-              <h3>From Another Patient</h3>
-              <p>We appreciate patient referrals! If you know someone who could benefit from our pediatric dental services, please use the form below to refer them to our practice.</p>
-              <div class="form-container" style="margin-top: 1.5rem;">
-                <form id="patient-referral-form">
-                  <div class="form-group">
-                    <label for="referral-patient-name">Your Name</label>
-                    <input type="text" id="referral-patient-name" name="referral-patient-name" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="referral-phone">Your Phone Number</label>
-                    <input type="tel" id="referral-phone" name="referral-phone" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="referring-patient-name">Referring Patient Name</label>
-                    <input type="text" id="referring-patient-name" name="referring-patient-name" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="referring-patient-phone">Referring Patient Phone Number</label>
-                    <input type="tel" id="referring-patient-phone" name="referring-patient-phone" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="referral-captcha-answer">Security Verification</label>
-                    <div class="captcha-container" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem;">
-                      <span id="referral-captcha-question" style="font-size: 1.1rem; font-weight: bold; color: var(--primary-purple); padding: 0.75rem; background: rgba(103, 58, 183, 0.1); border-radius: 8px; min-width: 120px; text-align: center;"></span>
-                      <span style="font-size: 1.1rem; font-weight: bold; color: var(--primary-purple);">=</span>
-                      <input type="number" id="referral-captcha-answer" name="referral-captcha-answer" style="width: 100px;" placeholder="?" required>
-                      <button type="button" id="refresh-referral-captcha" style="background: var(--primary-orange); color: white; border: none; border-radius: 6px; padding: 0.5rem; cursor: pointer; font-size: 0.9rem;">↻ New</button>
-                    </div>
-                    <small style="color: var(--primary-orange); font-size: 0.85rem;">Please solve the math problem above to verify you're human</small>
-                  </div>
-                  <button type="submit" class="btn">Submit Referral</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <script type="module" src="/src/main.js"></script>
-  </body>
 </html>
