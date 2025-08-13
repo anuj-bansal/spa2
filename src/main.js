@@ -1,7 +1,57 @@
+// Keyboard navigation for main navigation and submenus
+document.addEventListener('DOMContentLoaded', function () {
+  const nav = document.querySelector('nav[role="navigation"]');
+  if (!nav) return;
+  const menuItems = nav.querySelectorAll('ul[role="menubar"] > li > a, ul[role="menubar"] > li > button');
+  menuItems.forEach((item, idx) => {
+    item.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        const next = menuItems[(idx + 1) % menuItems.length];
+        next.focus();
+      } else if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        const prev = menuItems[(idx - 1 + menuItems.length) % menuItems.length];
+        prev.focus();
+      } else if (e.key === 'ArrowDown') {
+        // If submenu exists, focus first submenu item
+        const submenu = item.parentElement.querySelector('ul[role="menu"]');
+        if (submenu) {
+          const firstSub = submenu.querySelector('a, button');
+          if (firstSub) firstSub.focus();
+        }
+      }
+    });
+  });
+
+  // Submenu keyboard navigation
+  const submenuItems = nav.querySelectorAll('ul[role="menu"] > li > a, ul[role="menu"] > li > button');
+  submenuItems.forEach((item, idx, arr) => {
+    item.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        const next = arr[(idx + 1) % arr.length];
+        next.focus();
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        const prev = arr[(idx - 1 + arr.length) % arr.length];
+        prev.focus();
+      } else if (e.key === 'Escape') {
+        // Return focus to parent menu item
+        const parentMenu = item.closest('li').parentElement.closest('li').querySelector('a, button');
+        if (parentMenu) parentMenu.focus();
+      }
+    });
+  });
+});
 import './style.css'
 
 // Dental Practice SPA JavaScript
 document.addEventListener('DOMContentLoaded', function() {
+  // Collapse all submenus by default on page load
+  document.querySelectorAll('.nav-item-with-submenu').forEach(item => {
+    item.classList.remove('active');
+  });
   
   // Navigation functionality
   const navLinks = document.querySelectorAll('.nav-link');
@@ -30,33 +80,44 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.nav-item-with-submenu').forEach(item => {
     const submenuLink = item.querySelector('.nav-link');
     const submenu = item.querySelector('.submenu');
-    
-    // Desktop hover behavior
-    item.addEventListener('mouseenter', () => {
+
+    // Desktop hover behavior (only expand hovered parent)
+    item.addEventListener('mouseenter', (e) => {
       if (window.innerWidth > 768) {
+        // Remove active from siblings
+        const siblings = item.parentElement.querySelectorAll('.nav-item-with-submenu');
+        siblings.forEach(sib => { if (sib !== item) sib.classList.remove('active'); });
         item.classList.add('active');
       }
     });
-    
-    item.addEventListener('mouseleave', () => {
+
+    item.addEventListener('mouseleave', (e) => {
       if (window.innerWidth > 768) {
         item.classList.remove('active');
       }
     });
-    
-    // Mobile click behavior
+
+    // Mobile click behavior (toggle only clicked parent)
     submenuLink.addEventListener('click', (e) => {
       if (window.innerWidth <= 768) {
         e.preventDefault();
         e.stopPropagation();
-        
-        // Close other submenus
-        document.querySelectorAll('.nav-item-with-submenu').forEach(otherItem => {
-          if (otherItem !== item) {
-            otherItem.classList.remove('active');
+
+        // Close other submenus at same level
+        const siblings = item.parentElement.querySelectorAll('.nav-item-with-submenu');
+        siblings.forEach(sib => { if (sib !== item) sib.classList.remove('active'); });
+
+        // If submenu link has href to a section, scroll to it and close menu
+        const targetId = submenuLink.getAttribute('href');
+        if (targetId && targetId.startsWith('#')) {
+          const targetSection = document.querySelector(targetId);
+          if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+            navMenu.classList.remove('active');
+            item.classList.remove('active');
           }
-        });
-        
+        }
+
         // Toggle current submenu
         item.classList.toggle('active');
       }
