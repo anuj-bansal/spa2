@@ -469,6 +469,7 @@ Website Records Request System
     observer.observe(el);
   });
 
+  
   // Initialize scroll progress on page load
   updateScrollProgress();
   updateActiveNavigation();
