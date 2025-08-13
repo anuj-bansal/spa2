@@ -992,7 +992,6 @@ button:focus-visible {
   font-size: 1.1rem;
 }
 
-  
 @media (max-width: 768px) {
   .habit-images {
     flex-direction: column;
