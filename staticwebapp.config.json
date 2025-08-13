@@ -1,22 +1,9 @@
 {
-  "navigationFallback": {
-    "rewrite": "/index.html",
-    "exclude": ["/images/*.{png,jpg,gif,svg}", "/css/*", "/js/*", "/*.pdf"]
-  },
-  "mimeTypes": {
-    ".json": "application/json",
-    ".pdf": "application/pdf",
-    ".png": "image/png",
-    ".jpg": "image/jpeg",
-    ".gif": "image/gif",
-    ".svg": "image/svg+xml"
-  },
-  "globalHeaders": {
-    "cache-control": "must-revalidate, max-age=6000"
-  },
-  "responseOverrides": {
-    "404": {
-      "rewrite": "/index.html"
+  "platform": {
+    "azureStaticWebApps": {
+      "appLocation": "/dist",
+      "outputLocation": "/dist",
+      "apiLocation": ""
     }
   }
 }
