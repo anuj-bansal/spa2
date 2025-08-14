@@ -3,7 +3,8 @@
     "azureStaticWebApps": {
       "appLocation": "/dist",
       "outputLocation": "/dist",
-      "apiLocation": ""
+      "apiLocation": "",
+      "apiRuntime": "node:20"
     }
   }
 }
