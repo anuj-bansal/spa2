@@ -8,7 +8,7 @@ This is a single page web application (SPA) for Issaquah Kids Dentistry, a pedia
 - Practice Name: Issaquah Kids Dentistry
 - Address: 85 NW Alder Pl Suite B, Issaquah, WA 98027
 - Phone: (425) 657-0609
-- Fax: (425) 888-1234
+- Fax: (425) 369-4694
 - Email: office@IssaquahKidsDentistry.com
 - Logo: ikd-logo.png
 

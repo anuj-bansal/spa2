@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://issaquahkidsdentistry.com/sitemap.xml
+Sitemap: https://www.issaquahkidsdentistry.com/sitemap.xml
 
 # Crawl-delay for polite crawling
 Crawl-delay: 1

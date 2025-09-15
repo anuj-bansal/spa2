@@ -1,0 +1,10 @@
+{
+  "platform": {
+    "azureStaticWebApps": {
+      "appLocation": "/dist",
+      "outputLocation": "/dist",
+      "apiLocation": "",
+      "apiRuntime": "node:20"
+    }
+  }
+}
