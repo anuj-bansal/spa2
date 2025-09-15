@@ -8,7 +8,7 @@ export default defineConfig({
         quality: 80,
       },
       pngquant: {
-        quality: [0.6, 0.0],
+        quality: [0.7, 0.9],
       },
       mozjpeg: {
         quality: 80,

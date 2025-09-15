@@ -1,0 +1,15 @@
+{
+  "configurations": {
+    "spa": {
+      "appLocation": "./",
+      "apiLocation": "",
+      "outputLocation": "dist",
+      "start": {
+        "outputLocation": "dist"
+      },
+      "deploy": {
+        "outputLocation": "dist"
+      }
+    }
+  }
+}

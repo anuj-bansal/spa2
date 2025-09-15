@@ -120,7 +120,57 @@
       ]
     }
     </script>
-  <style>
+<!-- FAQ Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What age should my child first visit the dentist?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The American Academy of Pediatric Dentistry recommends a child’s first dental visit by their first birthday or within six months after the first tooth erupts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer sedation dentistry for children?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer safe sedation options including nitrous oxide (laughing gas) and general anesthesia for children who are anxious or require complex treatment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you able to treat children with special needs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. We have extensive experience providing compassionate dental care for children with developmental, physical, or medical needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What insurance plans do you accept?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We accept most major dental insurance plans, CareCredit, and flexible payment options. Please contact our office for details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do in a dental emergency?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call our office immediately at (425) 657-0609. We offer same-day emergency appointments for children."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
     /* Hamburger menu for mobile */
     .logo-flex {
       display: flex;
@@ -582,7 +632,7 @@
       "logo": "https://issaquahkidsdentistry.com/ikd-logo.png",
       "image": "https://issaquahkidsdentistry.com/dentist.png",
       "telephone": "+1-425-657-0609",
-      "faxNumber": "+1-425-888-1234",
+      "faxNumber": "+1-425-369-4694",
       "email": "office@IssaquahKidsDentistry.com",
       "address": {
         "@type": "PostalAddress",
@@ -977,9 +1027,22 @@
     <section id="home" class="section">
       <div class="section-content">
         <h1>Welcome to Issaquah Kids Dentistry</h1>
-        <p>Providing exceptional pediatric dental care with a warm, friendly approach. Our specialized practice combines
-          advanced technology with gentle treatment methods designed specifically for children's comfort and optimal
-          oral health.</p>
+        <p>Providing exceptional pediatric dental care with a warm, friendly approach by focusing on the child’s overall wellbeing, 
+          our environment inspires and educates children while creating a
+          community where parents, along with the doctor, confidently share knowledge to raise healthier, more aware kids. 
+          Our mission is to be a place within the community that promotes oral health through prevention and education 
+          while building lasting relationships with children and families over the years. 
+          Our specialized practice combines advanced technology with gentle treatment methods designed specifically 
+          for children's comfort and optimal oral health. 
+          </p>
+          <p>We concentrate on education, prevention, 
+          and early detection with exceptional precision. We believe that empowering families with knowledge about 
+          dental health and providing proactive care are fundamental to achieving long-term wellbeing.
+          We not only address current concerns but also anticipate potential issues before they arise. 
+          Our commitment to early detection allows us to implement preventive strategies that support healthier smiles and 
+          avoid more complex treatments in the future, ensuring that every child receives the most comprehensive and 
+          forward-thinking care possible.
+          </p>
 
         <!-- Prominent Contact Info -->
         <div class="home-contact-info" style="margin: 3rem 0; text-align: center;">
@@ -1040,9 +1103,9 @@
               <p><strong>She is credentialed and privileged as dental surgeon at following hospitals locations:</strong>
               </p>
               <ul style="text-align: left; margin: 1rem 0;">
-                <li>Swedish Hospital, Issaquah</li>
-                <li>Covington Multicare Surgery center</li>
-                <li>Mary Bridge Children's Hospital</li>
+                <li><a href="https://www.swedish.org/" target="_blank" rel="noopener">Swedish Hospital, Issaquah</a></li>
+                <li><a href="https://www.multicare.org/location/covington-medical-center/" target="_blank" rel="noopener">Covington Multicare Surgery Center</a></li>
+                <li><a href="https://www.marybridge.org/" target="_blank" rel="noopener">Mary Bridge Children's Hospital</a></li>
               </ul>
 
               <p>After completing her graduate program from Howard University in 2000, she settled in the Pacific
@@ -1053,11 +1116,11 @@
 
               <p><strong>She is a member of the following:</strong></p>
               <ul style="text-align: left; margin: 1rem 0;">
-                <li>American Academy of Pediatric Dentistry</li>
-                <li>American Dental Association</li>
-                <li>International Association of Dental Traumatology</li>
-                <li>Affiliated with the University of Washington</li>
-                <li>Seattle pediatric dental study club</li>
+                <li><a href="https://www.aapd.org/" target="_blank" rel="noopener">American Academy of Pediatric Dentistry</a></li>
+                <li><a href="https://www.ada.org/" target="_blank" rel="noopener">American Dental Association</a></li>
+                <li><a href="https://www.iadt-dentaltrauma.org/" target="_blank" rel="noopener">International Association of Dental Traumatology</a></li>
+                <li><a href="https://www.washington.edu/" target="_blank" rel="noopener">Affiliated with the University of Washington</a></li>
+                <li><a href="https://www.seattlechildrens.org/" target="_blank" rel="noopener">Seattle pediatric dental study club</a></li>
                 <li>Northwest pediatric dental study club</li>
               </ul>
 
@@ -1080,7 +1143,7 @@
             <div class="contact-card">
               <div class="contact-icon">📠</div>
               <h4>Fax</h4>
-              <p itemprop="faxNumber">(425) 888-1234</p>
+              <p itemprop="faxNumber">(425) 369-4694</p>
             </div>
             <div class="contact-card">
               <div class="contact-icon"><a href="mailto:office@IssaquahKidsDentistry.com"
@@ -1101,6 +1164,13 @@
                   <span itemprop="addressLocality">Issaquah</span>, <span itemprop="addressRegion">WA</span> <span
                     itemprop="postalCode">98027</span>
                 </a></p>
+            <!-- Embedded Google Map for Issaquah Kids Dentistry -->
+            <div style="width:100%; margin: 2rem 0; text-align:center;">
+              <iframe
+                src="https://www.google.com/maps?q=85+NW+Alder+Pl+Suite+B,+Issaquah,+WA+98027&output=embed"
+                width="100%" height="300" style="border:0; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                title="Issaquah Kids Dentistry Location"></iframe>
+            </div>
             </div>
             <div class="contact-card">
               <div class="contact-icon">🕒</div>
@@ -1120,13 +1190,6 @@
           style="font-size: 2.5rem; color: var(--primary-purple); margin-bottom: 2rem; text-align: center; display: block; width: 100%; cursor: pointer; background: none; border: none;">
           Our Services</h2>
         <div class="services-grid">
-          <div id="provider-review" class="service-card">
-            <h3>Provider Review</h3>
-            <p>Healthcare providers can share their feedback and experiences with our pediatric dental practice. Please
-              download, complete, and submit the review form with your comments and recommendations.</p>
-            <a href="/IKD-Fillable-Referral.pdf" target="_blank" class="btn">Download Review Form (PDF)</a>
-          </div>
-
           <!-- Early Childhood Visit / First Visit -->
           <div class="service-card" id="first-visit-section">
             <h3>First Visit / Early Childhood Visit</h3>
