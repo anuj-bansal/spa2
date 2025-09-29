@@ -2,12 +2,31 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.issaquahkidsdentistry.com/sitemap.xml
+Sitemap: https://issaquahkidsdentistry.com/sitemap.xml
 
 # Crawl-delay for polite crawling
 Crawl-delay: 1
 
-# Block unnecessary paths
+# Allow important paths
+Allow: /public/
+Allow: /*.css$
+Allow: /*.js$
+
+# Block development and unnecessary paths
 Disallow: /src/
-Disallow: *.js$
-Disallow: *.css$
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /vite.config.js
+Disallow: /package.json
+Disallow: /package-lock.json
+
+# Block duplicate content
+Disallow: /*?*
+Disallow: /#*
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
