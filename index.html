@@ -1371,9 +1371,8 @@
         <li class="nav-item-with-submenu" role="none">
           <a href="#forms" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false">Patient Forms</a>
           <ul class="submenu" role="menu">
-            <li role="none"><a href="#new-patient" class="nav-link submenu-link" role="menuitem">New Patient</a></li>
-            <li role="none"><a href="#existing-patient" class="nav-link submenu-link" role="menuitem">Existing
-                Patient</a></li>
+            <li role="none"><a href="#new-patient-forms" class="nav-link submenu-link" role="menuitem">New Patient Forms</a></li>
+            <li role="none"><a href="#records-request" class="nav-link submenu-link" role="menuitem">Records Request</a></li>
           </ul>
         </li>
         <li class="nav-item-with-submenu" role="none">
@@ -3948,76 +3947,82 @@ Every child deserves comprehensive, forward-thinking care—and that’s exactly
         </div>
 
         <div class="services-grid">
-          <!-- New Patient Section -->
-          <div id="new-patient" class="service-card">
-            <h3>Patient Review</h3>
-            <p>We appreciate patient feedback! If you would like to share your experience with our pediatric dental
-              services, please use the form below to submit your review.</p>
+          <!-- New Patient Forms Section -->
+          <div id="new-patient-forms" class="service-card">
+            <h3>New Patient Forms</h3>
+            <p>Complete your new patient paperwork online before your first visit to save time at the office. Our secure patient portal makes it easy to fill out all necessary forms from the comfort of your home.</p>
             <div class="form-container" style="margin-top: 1.5rem;">
-              <form id="patient-review-form">
+              <div style="text-align: center;">
+                <a href="https://www.patientviewer.com/new" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="btn"
+                   style="display: inline-block; background: linear-gradient(135deg, #4a90e2, #357abd); color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3); transition: all 0.3s ease;"
+                   onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(74, 144, 226, 0.4)'"
+                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(74, 144, 226, 0.3)'">
+                  📋 Complete New Patient Forms Online
+                </a>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: #666; font-style: italic;">
+                  ✓ Save time at your appointment<br>
+                  ✓ Secure and HIPAA compliant<br>
+                  ✓ Available 24/7
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Records Request Section -->
+          <div id="records-request" class="service-card">
+            <h3>Records Request</h3>
+            <p>Need copies of your child's dental records? Submit a HIPAA-compliant records request using the form below.</p>
+            <div class="form-container" style="margin-top: 1.5rem;">
+              <form id="records-request-form">
                 <div class="form-group">
-                  <label for="review-patient-name">Your Name</label>
-                  <input type="text" id="review-patient-name" name="review-patient-name" required>
+                  <label for="records-patient-name">Patient Name</label>
+                  <input type="text" id="records-patient-name" name="records-patient-name" required>
                 </div>
                 <div class="form-group">
-                  <label for="review-phone">Your Phone Number</label>
-                  <input type="tel" id="review-phone" name="review-phone" required>
+                  <label for="records-dob">Patient Date of Birth</label>
+                  <input type="date" id="records-dob" name="records-dob" required>
                 </div>
                 <div class="form-group">
-                  <label for="review-comments">Your Review</label>
-                  <textarea id="review-comments" name="review-comments" rows="4" required></textarea>
+                  <label for="records-guardian">Parent/Guardian Name</label>
+                  <input type="text" id="records-guardian" name="records-guardian" required>
                 </div>
                 <div class="form-group">
-                  <label for="review-captcha-answer">Security Verification</label>
+                  <label for="records-phone">Phone Number</label>
+                  <input type="tel" id="records-phone" name="records-phone" required>
+                </div>
+                <div class="form-group">
+                  <label for="records-email">Email Address</label>
+                  <input type="email" id="records-email" name="records-email" required>
+                </div>
+                <div class="form-group">
+                  <label for="records-reason">Reason for Records Request (Optional)</label>
+                  <textarea id="records-reason" name="records-reason" rows="3"
+                    placeholder="Please specify why you need the records (e.g., transferring to another dentist, personal files, etc.)..."></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="captcha-answer">Security Verification</label>
                   <div class="captcha-container"
-                    style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem;" aria-live="polite">
-                    <span id="review-captcha-question"
+                    style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem;">
+                    <span id="captcha-question"
                       style="font-size: 1.1rem; font-weight: bold; color: var(--primary-purple); padding: 0.75rem; background: rgba(103, 58, 183, 0.1); border-radius: 8px; min-width: 120px; text-align: center;"></span>
-                    <span style="font-size: 1.1rem; font-weight: bold; color: var(--primary-purple);"
-                      aria-hidden="true">=</span>
-                    <input type="number" id="review-captcha-answer" name="review-captcha-answer" style="width: 100px;"
-                      placeholder="?" required aria-required="true" aria-describedby="review-captcha-desc">
-                    <button type="button" id="refresh-review-captcha" aria-label="Refresh CAPTCHA"
+                    <span style="font-size: 1.1rem; font-weight: bold; color: var(--primary-purple);">=</span>
+                    <input type="number" id="captcha-answer" name="captcha-answer" style="width: 100px;" placeholder="?"
+                      required>
+                    <button type="button" id="refresh-captcha" aria-label="Refresh CAPTCHA"
                       style="background: var(--primary-orange); color: white; border: none; border-radius: 6px; padding: 0.5rem; cursor: pointer; font-size: 0.9rem;">↻
                       New</button>
                   </div>
-                  <small id="review-captcha-desc" style="color: var(--primary-orange); font-size: 0.85rem;">Please solve
-                    the math problem above to verify you're human</small>
+                  <small style="color: var(--primary-orange); font-size: 0.85rem;">Please solve the math problem above to
+                    verify you're human</small>
                 </div>
-                <button type="submit" class="btn">Submit Review</button>
+                <button type="submit" class="btn">Submit Records Request</button>
               </form>
             </div>
           </div>
-          <div class="form-group">
-            <label for="records-email">Email Address</label>
-            <input type="email" id="records-email" name="records-email" required>
-          </div>
-          <div class="form-group">
-            <label for="records-reason">Reason for Records Request (Optional)</label>
-            <textarea id="records-reason" name="records-reason" rows="3"
-              placeholder="Please specify why you need the records (e.g., transferring to another dentist, personal files, etc.)..."></textarea>
-          </div>
-          <div class="form-group">
-            <label for="captcha-answer">Security Verification</label>
-            <div class="captcha-container"
-              style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem;">
-              <span id="captcha-question"
-                style="font-size: 1.1rem; font-weight: bold; color: var(--primary-purple); padding: 0.75rem; background: rgba(103, 58, 183, 0.1); border-radius: 8px; min-width: 120px; text-align: center;"></span>
-              <span style="font-size: 1.1rem; font-weight: bold; color: var(--primary-purple);">=</span>
-              <input type="number" id="captcha-answer" name="captcha-answer" style="width: 100px;" placeholder="?"
-                required>
-              <button type="button" id="refresh-captcha" aria-label="Refresh CAPTCHA"
-                style="background: var(--primary-orange); color: white; border: none; border-radius: 6px; padding: 0.5rem; cursor: pointer; font-size: 0.9rem;">↻
-                New</button>
-            </div>
-            <small style="color: var(--primary-orange); font-size: 0.85rem;">Please solve the math problem above to
-              verify you're human</small>
-          </div>
-          <button type="submit" class="btn">Submit Records Request</button>
-          </form>
         </div>
-      </div>
-      </div>
       </div>
     </section>
 
@@ -4580,31 +4585,14 @@ Trust me kids are in real safe hands if treated by her. Moreover she is always r
                       aria-hidden="true">=</span>
                     <input type="number" id="captcha-answer" name="captcha-answer" style="width: 100px;" placeholder="?"
                       required aria-required="true" aria-describedby="captcha-desc">
-                    <small id="captcha-desc" style="color: var(--primary-orange); font-size: 0.85rem;">Please solve the
-                      math problem above to verify you're human</small>
                     <div class="captcha-container"
                       style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem;" aria-live="polite">
-                      <input type="date" id="records-patient-dob" name="records-patient-dob" required
-                        aria-required="true">
-                      <input type="tel" id="records-contact-phone" name="records-contact-phone" required
-                        aria-required="true">
-                      <input type="email" id="records-email" name="records-email" required aria-required="true">
-                      <input type="number" id="referral-captcha-answer" name="referral-captcha-answer"
-                        style="width: 100px;" placeholder="?" required>
                       <button type="button" id="refresh-referral-captcha" aria-label="Refresh CAPTCHA"
                         style="background: var(--primary-orange); color: white; border: none; border-radius: 6px; padding: 0.5rem; cursor: pointer; font-size: 0.9rem;">↻
                         New</button>
-                      <input type="number" id="referral-captcha-answer" name="referral-captcha-answer"
-                        style="width: 100px;" placeholder="?" required aria-required="true"
-                        aria-describedby="referral-captcha-desc">
-                      <small id="referral-captcha-desc" style="color: var(--primary-orange); font-size: 0.85rem;">Please
-                        solve the math problem above to verify you're human</small>
-                      <div class="captcha-container"
-                        style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem;"
-                        aria-live="polite">
-                      </div>
-                      <small style="color: var(--primary-orange); font-size: 0.85rem;">Please solve the math problem
-                        above to verify you're human</small>
+                    </div>
+                    <small id="captcha-desc" style="color: var(--primary-orange); font-size: 0.85rem;">Please solve the
+                      math problem above to verify you're human</small>
                     </div>
                     <button type="submit" class="btn">Submit Referral</button>
               </form>
