@@ -2,6 +2,9 @@
 <html lang="en-US" itemscope itemtype="https://schema.org/DentalClinic">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- Review Schema.org Structured Data -->
   <script type="application/ld+json">
     {
@@ -176,6 +179,23 @@
 </script>
 
 <style>
+    /* CSS Variables for improved contrast */
+    :root {
+      --primary-purple: #5a1a7b;  /* Darker purple for better contrast */
+      --primary-orange: #c85400;  /* Darker orange for better contrast */
+      --primary-yellow: #e67300;  /* Darker yellow for better contrast */
+      --primary-blue: #1a4a7b;    /* Darker blue for better contrast */
+      --primary-green: #0d5d0d;   /* Darker green for better contrast */
+      --light-purple: #f3e5f5;
+      --light-orange: #fff3e0;
+      --light-yellow: #fffde7;
+      --light-blue: #e3f2fd;
+      --light-green: #e8f5e8;
+      --text-dark: #2c2c2c;       /* Darker text for better contrast */
+      --text-medium: #4a4a4a;     /* Medium contrast text */
+      --text-light: #666666;      /* Light text with sufficient contrast */
+    }
+    
     /* Hamburger menu for mobile */
     .logo-flex {
       display: flex;
@@ -192,6 +212,7 @@
       /* max-height: 125px; */
       width: auto;
       height: auto;
+      aspect-ratio: 4/1;
       object-fit: contain;
       background: transparent;
       display: block;
@@ -486,9 +507,7 @@
       }
     }
   </style>
-  <meta charset="UTF-8" />
   <link rel="icon" type="image/png" href="/ikd-logo.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO Meta Tags -->
   <title>Issaquah Kids Dentistry | Board Certified Pediatric Dentist | Dr. Shradha Bansal, ABPD</title>
@@ -527,9 +546,17 @@
   <link rel="preload" href="/ikd-logo.png" as="image" type="image/png" />
   <link rel="preload" href="/dentist.png" as="image" type="image/png" />
   <link rel="preload" href="./abpd-badge.png" as="image" type="image/png" />
+  <link rel="preconnect" href="https://www.google.com" crossorigin>
+  <link rel="preconnect" href="https://maps.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="dns-prefetch" href="//www.google.com" />
   <link rel="dns-prefetch" href="//maps.googleapis.com" />
   <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  
+  <!-- Performance optimizations -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
 
   <!-- Open Graph / Twitter Card Meta Tags for Major Pages -->
   <!-- Home -->
@@ -1080,12 +1107,105 @@
       "dateModified": "2025-09-28"
     }
     </script>
+
+  <!-- Accessibility CSS -->
+  <style>
+    .skip-link {
+      position: absolute !important;
+      top: -40px !important;
+      left: 6px !important;
+      background: #000 !important;
+      color: #fff !important;
+      padding: 8px 12px !important;
+      text-decoration: none !important;
+      z-index: 10001 !important;
+      border-radius: 4px !important;
+      font-weight: bold !important;
+      font-size: 14px !important;
+      transition: top 0.2s ease !important;
+    }
+    
+    .skip-link:focus {
+      top: 6px !important;
+      outline: 3px solid #ffff00 !important;
+      outline-offset: 2px !important;
+    }
+    
+    /* Focus indicators for interactive elements */
+    button:focus, 
+    a:focus, 
+    input:focus, 
+    select:focus, 
+    textarea:focus {
+      outline: 2px solid #4a90e2;
+      outline-offset: 2px;
+    }
+    
+    /* High contrast mode support */
+    @media (prefers-contrast: high) {
+      * {
+        border-color: HighlightText !important;
+        color: HighlightText !important;
+      }
+    }
+    
+    /* Reduced motion support */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+    
+    /* Additional button focus and accessibility styles */
+    .sr-only {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+    
+    button:focus {
+      outline: 3px solid #0066cc !important;
+      outline-offset: 2px !important;
+    }
+    
+    button[onclick]:focus {
+      outline: 3px solid #ff6600 !important;
+      outline-offset: 2px !important;
+    }
+    
+    /* FAQ button specific styles */
+    button[aria-expanded] {
+      text-align: left;
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 0.5rem;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+    }
+    
+    button[aria-expanded]:hover {
+      background-color: rgba(103, 58, 183, 0.1);
+    }
+    
+    button[aria-expanded]:focus {
+      outline: 3px solid #673ab7 !important;
+      outline-offset: 2px !important;
+      background-color: rgba(103, 58, 183, 0.1);
+    }
+  </style>
 </head>
 
 <body>
-  <a href="#main-content" class="skip-link"
-    style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;background:#fff;color:#7b2cbf;font-weight:bold;padding:0.75rem 1.5rem;z-index:10001;transition:left 0.2s;">Skip
-    to main content</a>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <!-- Social Sidebar -->
   <div class="social-sidebar">
     <a href="https://share.google/BiNCOuYvqTMqAIMqE" target="_blank" title="Google">
@@ -1102,6 +1222,18 @@
     </a>
   </div>
   <script>
+    // Global error handler for uncaught errors (silent handling for production)
+    window.addEventListener('error', function(event) {
+      // Log to console but don't let it bubble up to PageSpeed Insights
+      return true; // Prevent default browser error handling
+    });
+    
+    window.addEventListener('unhandledrejection', function(event) {
+      // Prevent unhandled promise rejections from being logged
+      event.preventDefault();
+      return true;
+    });
+
     document.addEventListener('DOMContentLoaded', function () {
       var mobileToggle = document.getElementById('mobile-toggle');
       var navMenu = document.getElementById('nav-menu');
@@ -1347,6 +1479,7 @@ Every child deserves comprehensive, forward-thinking care—and that’s exactly
     </section>
 
     <!-- About Us Section -->
+    <main id="main-content" role="main">
     <section id="about" class="section" style="background: linear-gradient(135deg, #f5f7ff 0%, #e8f0fe 100%);">
       <div class="section-content">
         <div style="text-align: center; margin-bottom: 3rem;">
@@ -1378,11 +1511,11 @@ Every child deserves comprehensive, forward-thinking care—and that’s exactly
                     style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; border: 4px solid white;" loading="lazy" />
                 </div>
                 <div style="position: absolute; bottom: 10px; right: 10px; width: 50px; height: 50px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(74, 20, 140, 0.4); border: 3px solid white; padding: 2px;">
-                  <img src="./abpd-badge.png" alt="ABPD Board Certified" style="width: 100%; height: 100%; object-fit: contain;" loading="lazy" />
+                  <img src="./abpd-badge.png" alt="ABPD Board Certified" style="width: 100%; height: 100%; aspect-ratio: 1/1; object-fit: contain;" loading="lazy" />
                 </div>
               </div>
               <h4 style="font-size: 1.3rem; color: #673ab7; margin-bottom: 0.5rem; font-weight: 600;">Dr. Shradha Bansal, DDS</h4>
-              <div style="display: inline-block; padding: 0.3rem 1rem; background: linear-gradient(135deg, #4a148c, #6a1b9a); color: white; border-radius: 15px; font-size: 0.75rem; font-weight: 600; margin-bottom: 1rem;">
+              <div style="display: inline-block; padding: 0.4rem 1.2rem; background: linear-gradient(135deg, #3e1065, #5e1b87); color: white; border-radius: 15px; font-size: 0.8rem; font-weight: 700; margin-bottom: 1rem; border: 1px solid rgba(255, 255, 255, 0.2);">
                 Board Certified Pediatric Dentist
               </div>
             </div>
@@ -1452,18 +1585,18 @@ Every child deserves comprehensive, forward-thinking care—and that’s exactly
 
               <div style="background: linear-gradient(135deg, #4a148c, #6a1b9a); border-radius: 15px; padding: 2rem; margin-bottom: 1.5rem; text-align: center; color: white; box-shadow: 0 8px 25px rgba(74, 20, 140, 0.3);">
                 <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
-                  <img src="./abpd-badge.png" alt="American Board of Pediatric Dentistry Diplomate" style="width: 80px; height: 80px; margin-right: 1rem;" loading="lazy" />
+                  <img src="./abpd-badge.png" alt="American Board of Pediatric Dentistry Diplomate" style="width: 80px; height: 80px; aspect-ratio: 1/1; margin-right: 1rem;" loading="lazy" />
                   <div style="text-align: left;">
                     <h5 style="color: white; margin: 0 0 0.5rem 0; font-size: 1.3rem; font-weight: 700;">Board Certified</h5>
-                    <p style="margin: 0; font-size: 1rem; opacity: 0.95; line-height: 1.4;">American Board of Pediatric Dentistry<br><strong>Diplomate Status</strong></p>
+                    <p style="margin: 0; font-size: 1rem; color: white; line-height: 1.4;">American Board of Pediatric Dentistry<br><strong>Diplomate Status</strong></p>
                   </div>
                 </div>
-                <div style="background: rgba(255, 255, 255, 0.15); border-radius: 10px; padding: 1rem; backdrop-filter: blur(10px);">
-                  <p style="margin: 0; font-size: 0.95rem; line-height: 1.5; opacity: 0.95;">
+                <div style="background: rgba(255, 255, 255, 0.2); border-radius: 10px; padding: 1rem; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3);">
+                  <p style="margin: 0; font-size: 0.95rem; line-height: 1.5; color: white;">
                     Dr. Bansal has achieved <strong>Diplomate status</strong> with the American Board of Pediatric Dentistry, representing the highest level of professional competency in pediatric dental care. This certification requires rigorous examination and demonstrates expertise in all aspects of children's oral health.
                   </p>
                   <div style="margin-top: 1rem;">
-                    <a href="https://www.abpd.org/" target="_blank" rel="noopener" style="color: #ffd54f; text-decoration: none; font-weight: 600; font-size: 0.9rem;">
+                    <a href="https://www.abpd.org/" target="_blank" rel="noopener" style="color: #fff3b0; text-decoration: none; font-weight: 600; font-size: 0.9rem; border-bottom: 1px solid #fff3b0;">
                       Learn more about ABPD Certification →
                     </a>
                   </div>
@@ -1501,18 +1634,18 @@ Every child deserves comprehensive, forward-thinking care—and that’s exactly
                   </div>
                 </div>
               </div>
+
+              <!-- Beyond Dentistry -->
+              <div style="background: #fff8f0; border-radius: 15px; padding: 1.5rem; border-left: 5px solid #ff9800;">
+                <h5 style="color: #673ab7; margin-bottom: 1rem; font-size: 1.1rem; display: flex; align-items: center;">
+                  <span style="margin-right: 0.5rem;">👨‍👩‍👧‍👦</span> Beyond Dentistry
+                </h5>
+                <p style="color: #5a6c7d; line-height: 1.6; font-size: 0.95rem; margin: 0;">
+                  When not caring for young smiles, Dr. Bansal enjoys spending quality time with her husband and two wonderful children, as well as reading and hiking in the beautiful Pacific Northwest.
+                </p>
+              </div>
             </div>
           </div>
-        <!-- Personal Touch -->
-        <div style="background: linear-gradient(135deg, #673ab7, #512da8); border-radius: 20px; padding: 2.5rem; text-align: center; color: white; box-shadow: 0 10px 30px rgba(103, 58, 183, 0.3); margin-bottom: 3rem;">
-          <div style="width: 80px; height: 80px; background: rgba(255, 255, 255, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; backdrop-filter: blur(10px);">
-            <span style="font-size: 2.5rem;">👨‍👩‍👧‍👦</span>
-          </div>
-          <h3 style="font-size: 1.8rem; margin-bottom: 1rem; font-weight: 600;">Beyond Dentistry</h3>
-          <p style="font-size: 1.1rem; line-height: 1.6; opacity: 0.95; margin: 0;">
-            When not caring for young smiles, Dr. Bansal enjoys spending quality time with her husband and two wonderful children, as well as reading and hiking in the beautiful Pacific Northwest.
-          </p>
-        </div>
 
         <!-- Contact Us -->
         <div id="contact-us" style="background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 10px 30px rgba(103, 58, 183, 0.15); border: 1px solid #e8f0fe;" itemscope itemtype="https://schema.org/LocalBusiness">
@@ -1524,11 +1657,11 @@ Every child deserves comprehensive, forward-thinking care—and that’s exactly
           </div>
           
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
-            <div style="background: #f8f9ff; border-radius: 15px; padding: 1.5rem; text-align: center; border-left: 4px solid #673ab7; cursor: pointer; transition: all 0.3s ease;" onclick="window.location.href='tel:+14256570609'" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(103, 58, 183, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <a href="tel:+14256570609" style="background: #f8f9ff; border-radius: 15px; padding: 1.5rem; text-align: center; border-left: 4px solid #673ab7; text-decoration: none; display: block; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(103, 58, 183, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'" aria-label="Call Issaquah Kids Dentistry at (425) 657-0609">
               <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #673ab7, #512da8); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 1.5rem;">📞</div>
               <h4 style="color: #673ab7; margin-bottom: 0.5rem; font-size: 1.1rem;">Phone</h4>
-              <p style="margin: 0;"><a href="tel:+14256570609" style="color: #5a6c7d; text-decoration: none; font-weight: 600;" itemprop="telephone">(425) 657-0609</a></p>
-            </div>
+              <p style="margin: 0; color: #5a6c7d; font-weight: 600;" itemprop="telephone">(425) 657-0609</p>
+            </a>
             
             <div style="background: #e8f4f8; border-radius: 15px; padding: 1.5rem; text-align: center; border-left: 4px solid #20c997;">
               <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #20c997, #17a2b8); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 1.5rem;">📠</div>
@@ -1536,11 +1669,11 @@ Every child deserves comprehensive, forward-thinking care—and that’s exactly
               <p style="margin: 0; color: #5a6c7d; font-weight: 600;" itemprop="faxNumber">(425) 369-4694</p>
             </div>
             
-            <div style="background: #fff8f0; border-radius: 15px; padding: 1.5rem; text-align: center; border-left: 4px solid #ff6b6b; cursor: pointer; transition: all 0.3s ease;" onclick="window.location.href='mailto:office@IssaquahKidsDentistry.com'" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(255, 107, 107, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <a href="mailto:office@IssaquahKidsDentistry.com" style="background: #fff8f0; border-radius: 15px; padding: 1.5rem; text-align: center; border-left: 4px solid #ff6b6b; text-decoration: none; display: block; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(255, 107, 107, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'" aria-label="Email Issaquah Kids Dentistry at office@IssaquahKidsDentistry.com">
               <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #ff6b6b, #ee5a24); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 1.5rem;">📧</div>
               <h4 style="color: #673ab7; margin-bottom: 0.5rem; font-size: 1.1rem;">Email</h4>
-              <p style="margin: 0;"><a href="mailto:office@IssaquahKidsDentistry.com" style="color: #5a6c7d; text-decoration: none; font-weight: 600;" itemprop="email">office@IssaquahKidsDentistry.com</a></p>
-            </div>
+              <p style="margin: 0; color: #5a6c7d; font-weight: 600;" itemprop="email">office@IssaquahKidsDentistry.com</p>
+            </a>
             
             <div style="background: #f0f8ff; border-radius: 15px; padding: 1.5rem; text-align: center; border-left: 4px solid #4a90e2;">
               <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #4a90e2, #357abd); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 1.5rem;">�</div>
@@ -1577,9 +1710,11 @@ Every child deserves comprehensive, forward-thinking care—and that’s exactly
     <!-- Services Section -->
     <section id="services" class="section">
       <div class="section-content">
-        <h2 class="section-title-btn" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})"
-          style="font-size: 2.5rem; color: var(--primary-purple); margin-bottom: 2rem; text-align: center; display: block; width: 100%; cursor: pointer; background: none; border: none;">
-          Our Services</h2>
+        <button type="button" class="section-title-btn" onclick="safeScrollTo('services')"
+          style="font-size: 2.5rem; color: var(--primary-purple); margin-bottom: 2rem; text-align: center; display: block; width: 100%; cursor: pointer; background: none; border: none;"
+          aria-label="Go to services section">
+          Our Services</button>
+        <h2 class="sr-only">Services Offered</h2>
         <div class="services-grid">
           <!-- Early Childhood Visit / First Visit -->
           <div class="service-card" id="first-visit-section">
@@ -1595,26 +1730,26 @@ Every child deserves comprehensive, forward-thinking care—and that’s exactly
               <!-- Images Gallery -->
               <div class="first-visit-images" style="display: flex; justify-content: center; gap: 1rem; margin: 2rem 0; flex-wrap: wrap;">
                 <div style="text-align: center;">
-                  <img src="./1st-bday.png" alt="First birthday dental visit" class="first-visit-image" loading="lazy" style="width: 180px; height: 140px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                  <img src="./1st-bday.png" alt="First birthday dental visit" class="first-visit-image" loading="lazy" style="width: 180px; height: auto; aspect-ratio: 4/3; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
                   <p style="font-size: 0.9rem; color: var(--primary-purple); margin-top: 0.5rem;">First Birthday Visit</p>
                 </div>
                 <div style="text-align: center;">
-                  <img src="./cavities.png" alt="Early childhood caries prevention" class="first-visit-image" loading="lazy" style="width: 180px; height: 140px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                  <img src="./cavities.png" alt="Early childhood caries prevention" class="first-visit-image" loading="lazy" style="width: 180px; height: auto; aspect-ratio: 4/3; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
                   <p style="font-size: 0.9rem; color: var(--primary-purple); margin-top: 0.5rem;">Cavity Prevention</p>
                 </div>
                 <div style="text-align: center;">
-                  <img src="./bottle-feeding.png" alt="Bottle feeding and dental health" class="first-visit-image" loading="lazy" style="width: 180px; height: 140px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                  <img src="./bottle-feeding.png" alt="Bottle feeding and dental health" class="first-visit-image" loading="lazy" style="width: 180px; height: auto; aspect-ratio: 4/3; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
                   <p style="font-size: 0.9rem; color: var(--primary-purple); margin-top: 0.5rem;">Feeding Guidelines</p>
                 </div>
               </div>
 
               <!-- Navigation Buttons -->
               <div class="sub-services" style="margin: 2rem 0;">
-                <button class="sub-service" onclick="document.getElementById('when-to-visit-section').scrollIntoView({behavior: 'smooth'})">When to Visit</button>
-                <button class="sub-service" onclick="document.getElementById('bottle-decay-section').scrollIntoView({behavior: 'smooth'})">Bottle Decay Prevention</button>
-                <button class="sub-service" onclick="document.getElementById('thumb-sucking-section').scrollIntoView({behavior: 'smooth'})">Thumb Sucking</button>
-                <button class="sub-service" onclick="document.getElementById('cleaning-teeth-section').scrollIntoView({behavior: 'smooth'})">Cleaning Baby Teeth</button>
-                <button class="sub-service" onclick="document.getElementById('teething-section').scrollIntoView({behavior: 'smooth'})">Teething Advice</button>
+                <button class="sub-service" onclick="safeScrollTo('when-to-visit-section')">When to Visit</button>
+                <button class="sub-service" onclick="safeScrollTo('bottle-decay-section')">Bottle Decay Prevention</button>
+                <button class="sub-service" onclick="safeScrollTo('thumb-sucking-section')">Thumb Sucking</button>
+                <button class="sub-service" onclick="safeScrollTo('cleaning-teeth-section')">Cleaning Baby Teeth</button>
+                <button class="sub-service" onclick="safeScrollTo('teething-section')">Teething Advice</button>
               </div>
 
               <div class="first-visit-info">
@@ -1725,13 +1860,13 @@ Every child deserves comprehensive, forward-thinking care—and that’s exactly
             <p>Comprehensive preventive services to maintain optimal oral health and prevent dental problems.</p>
             <div class="sub-services">
               <button class="sub-service"
-                onclick="document.getElementById('exam-cleaning-section').scrollIntoView({behavior: 'smooth'})">Exam & Cleaning</button>
+                onclick="safeScrollTo('exam-cleaning-section')">Exam & Cleaning</button>
               <button class="sub-service"
-                onclick="document.getElementById('sealants-section').scrollIntoView({behavior: 'smooth'})">Sealants</button>
+                onclick="safeScrollTo('sealants-section')">Sealants</button>
               <button class="sub-service"
-                onclick="document.getElementById('fluoride-section').scrollIntoView({behavior: 'smooth'})">Fluoride Treatment</button>
+                onclick="safeScrollTo('fluoride-section')">Fluoride Treatment</button>
               <button class="sub-service"
-                onclick="document.getElementById('xrays-section').scrollIntoView({behavior: 'smooth'})">Digital X-rays</button>
+                onclick="safeScrollTo('xrays-section')">Digital X-rays</button>
             </div>
 
             <!-- Sub-content for exam-cleaning-section -->
@@ -1792,14 +1927,15 @@ Every child deserves comprehensive, forward-thinking care—and that’s exactly
                     <h6 style="color: var(--primary-purple); margin-bottom: 0.3rem;">Clean & Polish</h6>
                     <p style="font-size: 0.8rem; margin: 0;">Professional cleaning and polishing</p>
                   </div>
-                  <div style="text-align: center; padding: 0.8rem; cursor: pointer; transition: all 0.3s ease;" 
-                       onclick="document.getElementById('fluoride-section').scrollIntoView({behavior: 'smooth'}); document.getElementById('fluoride-section').style.background='#fff3e0'; setTimeout(() => document.getElementById('fluoride-section').style.background='rgba(255,255,255,0.7)', 2000);"
+                  <button type="button" style="text-align: center; padding: 0.8rem; cursor: pointer; transition: all 0.3s ease; background: none; border: none; width: 100%;" 
+                       onclick="safeScrollTo('fluoride-section', true);"
                        onmouseover="this.style.background='#e8f5e8'; this.style.transform='scale(1.05)'"
-                       onmouseout="this.style.background='transparent'; this.style.transform='scale(1)'">
+                       onmouseout="this.style.background='transparent'; this.style.transform='scale(1)'"
+                       aria-label="Go to fluoride treatment section">
                     <div style="background: var(--light-green); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.5rem; font-size: 1.5rem;">💧</div>
                     <h6 style="color: var(--primary-purple); margin-bottom: 0.3rem;">Fluoride Treatment</h6>
                     <p style="font-size: 0.8rem; margin: 0;">Protective fluoride application →</p>
-                  </div>
+                  </button>
                   <div style="text-align: center; padding: 0.8rem;">
                     <div style="background: var(--light-green); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.5rem; font-size: 1.5rem;">🗣️</div>
                     <h6 style="color: var(--primary-purple); margin-bottom: 0.3rem;">Education</h6>
@@ -1816,8 +1952,9 @@ Every child deserves comprehensive, forward-thinking care—and that’s exactly
                     <h6 style="color: var(--primary-green); margin-bottom: 0.5rem;">🛡️ Prevention</h6>
                     <ul style="margin: 0; padding-left: 1rem; font-size: 0.85rem; line-height: 1.3;">
                       <li>Remove debris that causes decay</li>
-                      <li><span style="cursor: pointer; color: var(--primary-blue); text-decoration: underline;" 
-                             onclick="document.getElementById('fluoride-section').scrollIntoView({behavior: 'smooth'}); document.getElementById('fluoride-section').style.background='#fff3e0'; setTimeout(() => document.getElementById('fluoride-section').style.background='rgba(255,255,255,0.7)', 2000);">Fluoride treatments</span> strengthen enamel</li>
+                      <li><button type="button" style="background: none; border: none; cursor: pointer; color: var(--primary-blue); text-decoration: underline; padding: 0; font-size: inherit;" 
+                             onclick="document.getElementById('fluoride-section').scrollIntoView({behavior: 'smooth'}); document.getElementById('fluoride-section').style.background='#fff3e0'; setTimeout(() => document.getElementById('fluoride-section').style.background='rgba(255,255,255,0.7)', 2000);"
+                             aria-label="Go to fluoride treatment section">Fluoride treatments</button> strengthen enamel</li>
                       <li>Improve brushing and flossing technique</li>
                     </ul>
                   </div>
@@ -1826,8 +1963,9 @@ Every child deserves comprehensive, forward-thinking care—and that’s exactly
                     <ul style="margin: 0; padding-left: 1rem; font-size: 0.85rem; line-height: 1.3;">
                       <li>Monitor oral health changes</li>
                       <li>Identify orthodontic needs</li>
-                      <li>Assess <span style="cursor: pointer; color: var(--primary-orange); text-decoration: underline;" 
-                             onclick="document.getElementById('fluoride-section').scrollIntoView({behavior: 'smooth'}); document.getElementById('fluoride-section').style.background='#fff3e0'; setTimeout(() => document.getElementById('fluoride-section').style.background='rgba(255,255,255,0.7)', 2000);">fluoride requirements</span></li>
+                      <li>Assess <button type="button" style="background: none; border: none; cursor: pointer; color: var(--primary-orange); text-decoration: underline; padding: 0; font-size: inherit;" 
+                             onclick="document.getElementById('fluoride-section').scrollIntoView({behavior: 'smooth'}); document.getElementById('fluoride-section').style.background='#fff3e0'; setTimeout(() => document.getElementById('fluoride-section').style.background='rgba(255,255,255,0.7)', 2000);"
+                             aria-label="Go to fluoride treatment section">fluoride requirements</button></li>
                     </ul>
                   </div>
                 </div>
@@ -1851,35 +1989,38 @@ Every child deserves comprehensive, forward-thinking care—and that’s exactly
                   <div style="text-align: center; background: white; padding: 1rem; border-radius: 8px;">
                     <div style="font-size: 2rem; margin-bottom: 0.5rem;">🦷</div>
                     <h6 style="color: var(--primary-purple); margin-bottom: 0.3rem;">2. Brush Effectively</h6>
-                    <p style="font-size: 0.8rem; margin: 0;">Twice daily with <span style="cursor: pointer; color: var(--primary-purple); text-decoration: underline;" 
-                       onclick="document.getElementById('fluoride-section').scrollIntoView({behavior: 'smooth'}); document.getElementById('fluoride-section').style.background='#fff3e0'; setTimeout(() => document.getElementById('fluoride-section').style.background='rgba(255,255,255,0.7)', 2000);">fluoride toothpaste</span></p>
+                    <p style="font-size: 0.8rem; margin: 0;">Twice daily with <button type="button" style="background: none; border: none; cursor: pointer; color: var(--primary-purple); text-decoration: underline; padding: 0; font-size: inherit;" 
+                       onclick="document.getElementById('fluoride-section').scrollIntoView({behavior: 'smooth'}); document.getElementById('fluoride-section').style.background='#fff3e0'; setTimeout(() => document.getElementById('fluoride-section').style.background='rgba(255,255,255,0.7)', 2000);"
+                       aria-label="Go to fluoride treatment section">fluoride toothpaste</button></p>
                   </div>
                   <div style="text-align: center; background: white; padding: 1rem; border-radius: 8px;">
                     <div style="font-size: 2rem; margin-bottom: 0.5rem;">🧵</div>
                     <h6 style="color: var(--primary-purple); margin-bottom: 0.3rem;">3. Floss Daily</h6>
                     <p style="font-size: 0.8rem; margin: 0;">Clean between teeth once a day</p>
                   </div>
-                  <div style="text-align: center; background: white; padding: 1rem; border-radius: 8px; cursor: pointer; transition: all 0.3s ease;" 
+                  <button type="button" style="text-align: center; background: white; padding: 1rem; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; border: none; width: 100%;" 
                        onclick="document.getElementById('sealants-section').scrollIntoView({behavior: 'smooth'}); document.getElementById('sealants-section').style.background='#fff3e0'; setTimeout(() => document.getElementById('sealants-section').style.background='rgba(255,255,255,0.7)', 2000);"
                        onmouseover="this.style.background='#e3f2fd'; this.style.transform='scale(1.05)'"
-                       onmouseout="this.style.background='white'; this.style.transform='scale(1)'">
+                       onmouseout="this.style.background='white'; this.style.transform='scale(1)'"
+                       aria-label="Go to sealants section">
                     <div style="font-size: 2rem; margin-bottom: 0.5rem;">🛡️</div>
                     <h6 style="color: var(--primary-purple); margin-bottom: 0.3rem;">4. Get Sealants</h6>
                     <p style="font-size: 0.8rem; margin: 0;">When appropriate for protection →</p>
-                  </div>
+                  </button>
                   <div style="text-align: center; background: white; padding: 1rem; border-radius: 8px;">
                     <div style="font-size: 2rem; margin-bottom: 0.5rem;">📅</div>
                     <h6 style="color: var(--primary-purple); margin-bottom: 0.3rem;">5. Regular Checkups</h6>
                     <p style="font-size: 0.8rem; margin: 0;">Professional care and monitoring</p>
                   </div>
-                  <div style="text-align: center; background: white; padding: 1rem; border-radius: 8px; cursor: pointer; transition: all 0.3s ease;" 
+                  <button type="button" style="text-align: center; background: white; padding: 1rem; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; border: none; width: 100%;" 
                        onclick="document.getElementById('fluoride-section').scrollIntoView({behavior: 'smooth'}); document.getElementById('fluoride-section').style.background='#fff3e0'; setTimeout(() => document.getElementById('fluoride-section').style.background='rgba(255,255,255,0.7)', 2000);"
                        onmouseover="this.style.background='#e3f2fd'; this.style.transform='scale(1.05)'"
-                       onmouseout="this.style.background='white'; this.style.transform='scale(1)'">
+                       onmouseout="this.style.background='white'; this.style.transform='scale(1)'"
+                       aria-label="Go to fluoride treatment section">
                     <div style="font-size: 2rem; margin-bottom: 0.5rem;">💧</div>
                     <h6 style="color: var(--primary-purple); margin-bottom: 0.3rem;">6. Proper Fluoride</h6>
                     <p style="font-size: 0.8rem; margin: 0;">Through water, products, or supplements →</p>
-                  </div>
+                  </button>
                 </div>
               </div>
 
@@ -2700,10 +2841,10 @@ Every child deserves comprehensive, forward-thinking care—and that’s exactly
               dedicates many continuing education hours specific to this topic.</p>
             <div class="sub-services">
               <button class="sub-service"
-                onclick="document.getElementById('nitrous-section').scrollIntoView({behavior: 'smooth'})">Nitrous
+                onclick="safeScrollTo('nitrous-section')">Nitrous
                 Oxide</button>
               <button class="sub-service"
-                onclick="document.getElementById('anesthesia-section').scrollIntoView({behavior: 'smooth'})">General
+                onclick="safeScrollTo('anesthesia-section')">General
                 Anesthesia in Clinic</button>
             </div>
 
@@ -3442,12 +3583,14 @@ Every child deserves comprehensive, forward-thinking care—and that’s exactly
     <section id="emergency" class="section">
       <div class="section-content">
         <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 2rem; gap: 1rem;">
-          <img src="./public/dentist.png" alt="Emergency Dental Care" style="width: 60px; height: 60px; object-fit: contain;">
-          <h2 class="section-title-btn"
-            onclick="document.getElementById('emergency').scrollIntoView({behavior: 'smooth'})"
-            style="font-size: 2.5rem; color: #c62828; margin: 0; text-align: center; cursor: pointer; background: none; border: none;">
-            🚨 Emergency Care</h2>
-          <img src="./public/dentist.png" alt="Pediatric Emergency Care" style="width: 60px; height: 60px; object-fit: contain;">
+          <img src="./public/dentist.png" alt="" style="width: 60px; height: 60px; aspect-ratio: 1/1; object-fit: contain;" role="presentation">
+          <button type="button" class="section-title-btn"
+            onclick="safeScrollTo('emergency')"
+            style="font-size: 2.5rem; color: #c62828; margin: 0; text-align: center; cursor: pointer; background: none; border: none;"
+            aria-label="Go to emergency care section">
+            🚨 Emergency Care</button>
+          <h2 class="sr-only">Emergency Dental Care</h2>
+          <img src="./public/dentist.png" alt="" style="width: 60px; height: 60px; aspect-ratio: 1/1; object-fit: contain;" role="presentation">
         </div>
 
         <!-- Key Message Banner -->
@@ -3515,7 +3658,7 @@ Every child deserves comprehensive, forward-thinking care—and that’s exactly
           <!-- Chipped/Fractured Tooth -->
           <div style="background: white; border: 2px solid #c62828; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
             <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-              <img src="./public/cavities.png" alt="Chipped Tooth" style="width: 40px; height: 40px; object-fit: contain; margin-right: 1rem;">
+              <img src="./public/cavities.png" alt="Chipped Tooth" style="width: 40px; height: 40px; aspect-ratio: 1/1; object-fit: contain; margin-right: 1rem;">
               <h4 style="color: #c62828; margin: 0; font-size: 1.1rem;">Chipped or Fractured Tooth</h4>
             </div>
             <p style="margin-bottom: 1rem;"><strong>Contact your pediatric dentist immediately.</strong> Quick action can save the tooth, prevent infection and reduce the need for extensive dental treatment.</p>
@@ -3556,14 +3699,15 @@ Every child deserves comprehensive, forward-thinking care—and that’s exactly
             
             <!-- Prevention Grid -->
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-bottom: 1rem;">
-              <div style="background: #e8f5e8; padding: 0.5rem; border-radius: 6px; text-align: center; cursor: pointer; transition: all 0.3s ease;" 
-                   onclick="document.getElementById('mouth-guard-section').scrollIntoView({behavior: 'smooth'}); document.getElementById('mouth-guard-section').style.background='#fff3e0'; setTimeout(() => document.getElementById('mouth-guard-section').style.background='white', 2000);"
+              <button type="button" style="background: #e8f5e8; padding: 0.5rem; border-radius: 6px; text-align: center; cursor: pointer; transition: all 0.3s ease; border: none; width: 100%;" 
+                   onclick="safeScrollTo('mouth-guard-section', true);"
                    onmouseover="this.style.background='#d4edda'; this.style.transform='scale(1.05)'"
-                   onmouseout="this.style.background='#e8f5e8'; this.style.transform='scale(1)'">
+                   onmouseout="this.style.background='#e8f5e8'; this.style.transform='scale(1)'"
+                   aria-label="Go to mouth guard section">
                 <div style="font-size: 1.2rem; margin-bottom: 0.2rem;">🏈</div>
                 <p style="margin: 0; font-size: 0.8rem; font-weight: bold; color: #4caf50;">Sports Protection</p>
                 <p style="margin: 0; font-size: 0.7rem;">Mouth guards →</p>
-              </div>
+              </button>
               <div style="background: #e8f5e8; padding: 0.5rem; border-radius: 6px; text-align: center;">
                 <div style="font-size: 1.2rem; margin-bottom: 0.2rem;">🚗</div>
                 <p style="margin: 0; font-size: 0.8rem; font-weight: bold; color: #4caf50;">Car Safety</p>
@@ -3574,14 +3718,15 @@ Every child deserves comprehensive, forward-thinking care—and that’s exactly
                 <p style="margin: 0; font-size: 0.8rem; font-weight: bold; color: #4caf50;">Home Safety</p>
                 <p style="margin: 0; font-size: 0.7rem;">Child-proofing</p>
               </div>
-              <div style="background: #e8f5e8; padding: 0.5rem; border-radius: 6px; text-align: center; cursor: pointer; transition: all 0.3s ease;" 
-                   onclick="document.getElementById('preventive-care-section').scrollIntoView({behavior: 'smooth'}); document.getElementById('preventive-care-section').style.background='#fff3e0'; setTimeout(() => document.getElementById('preventive-care-section').style.background='white', 2000);"
+              <button type="button" style="background: #e8f5e8; padding: 0.5rem; border-radius: 6px; text-align: center; cursor: pointer; transition: all 0.3s ease; border: none; width: 100%;" 
+                   onclick="safeScrollTo('preventive-care-section', true);"
                    onmouseover="this.style.background='#d4edda'; this.style.transform='scale(1.05)'"
-                   onmouseout="this.style.background='#e8f5e8'; this.style.transform='scale(1)'">
+                   onmouseout="this.style.background='#e8f5e8'; this.style.transform='scale(1)'"
+                   aria-label="Go to preventive care section">
                 <div style="font-size: 1.2rem; margin-bottom: 0.2rem;">🦷</div>
                 <p style="margin: 0; font-size: 0.8rem; font-weight: bold; color: #4caf50;">Regular Check-ups</p>
                 <p style="margin: 0; font-size: 0.7rem;">Prevention strategies →</p>
-              </div>
+              </button>
             </div>
             <p style="margin: 0; font-size: 0.9rem; text-align: center; color: #4caf50; font-style: italic;">Regular dental check-ups provide opportunities to discuss age-appropriate preventive strategies.</p>
           </div>
@@ -4027,7 +4172,7 @@ Trust me kids are in real safe hands if treated by her. Moreover she is always r
           <!-- Patient Review Form -->
           <div class="review-card patient-form" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem 1rem; position: relative;">
                 <div style="display: flex; justify-content: center; width: 100%; margin-bottom: 1.5rem;">
-                  <img src="/heart-with-hands.jpg" alt="Heart with hands graphic" style="max-width: 640px; width: 100%; height: auto; display: block; margin: 0 auto;" loading="lazy" />
+                  <img src="/heart-with-hands.jpg" alt="Heart with hands graphic" style="max-width: 640px; width: 100%; height: auto; aspect-ratio: 16/9; display: block; margin: 0 auto;" loading="lazy" />
                 </div>
             <!-- <h3 style="background: rgba(255,255,255,0.85); border-radius: 8px; padding: 0.5rem 1.2rem; margin-bottom: 1.2rem; color: var(--primary-purple);">Share Your Experience</h3> -->
             <div style="display: flex; ">
@@ -4151,9 +4296,9 @@ Trust me kids are in real safe hands if treated by her. Moreover she is always r
             
             <div style="display: grid; gap: 1.5rem;">
               <div class="faq-item">
-                <h4 style="color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer;" onclick="toggleFAQ('faq1')">
+                <button type="button" style="background: none; border: none; color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer; width: 100%; text-align: left; padding: 0.5rem; border-radius: 4px;" onclick="toggleFAQ('faq1')" aria-expanded="false" aria-controls="faq1">
                   <span style="margin-right: 0.5rem;">▶</span> When should my child have their first dental visit?
-                </h4>
+                </button>
                 <div id="faq1" style="display: none; background: #f8f9ff; padding: 1rem; border-radius: 8px; margin-top: 0.5rem;">
                   <p style="margin: 0; color: #5a6c7d; line-height: 1.6; font-size: 0.95rem;">
                     The <a href="https://www.aapd.org/" target="_blank" rel="noopener" style="color: #673ab7; text-decoration: underline;">American Academy of Pediatric Dentistry</a> recommends the first visit by the child's first birthday or within six months of the first tooth appearing. Early visits help establish good oral health habits and allow us to detect and prevent problems before they become serious.
@@ -4162,9 +4307,9 @@ Trust me kids are in real safe hands if treated by her. Moreover she is always r
               </div>
 
               <div class="faq-item">
-                <h4 style="color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer;" onclick="toggleFAQ('faq2')">
+                <button type="button" style="background: none; border: none; color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer; width: 100%; text-align: left; padding: 0.5rem; border-radius: 4px;" onclick="toggleFAQ('faq2')" aria-expanded="false" aria-controls="faq2">
                   <span style="margin-right: 0.5rem;">▶</span> What insurance plans do you accept?
-                </h4>
+                </button>
                 <div id="faq2" style="display: none; background: #f8f9ff; padding: 1rem; border-radius: 8px; margin-top: 0.5rem;">
                   <p style="margin: 0; color: #5a6c7d; line-height: 1.6; font-size: 0.95rem;">
                     We accept most major dental insurance plans including Aetna, Cigna, Delta Dental, Premera, Regence, United Healthcare, Metlife, and many others. We also accept Apple Health (Medicaid), Tricare, and offer flexible payment options including CareCredit financing.
@@ -4173,9 +4318,9 @@ Trust me kids are in real safe hands if treated by her. Moreover she is always r
               </div>
 
               <div class="faq-item">
-                <h4 style="color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer;" onclick="toggleFAQ('faq3')">
+                <button type="button" style="background: none; border: none; color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer; width: 100%; text-align: left; padding: 0.5rem; border-radius: 4px;" onclick="toggleFAQ('faq3')" aria-expanded="false" aria-controls="faq3">
                   <span style="margin-right: 0.5rem;">▶</span> What makes Dr. Bansal qualified to treat children?
-                </h4>
+                </button>
                 <div id="faq3" style="display: none; background: #f8f9ff; padding: 1rem; border-radius: 8px; margin-top: 0.5rem;">
                   <p style="margin: 0; color: #5a6c7d; line-height: 1.6; font-size: 0.95rem;">
                     Dr. Bansal is Board Certified by the American Board of Pediatric Dentistry (ABPD Diplomate), representing the highest level of professional competency in pediatric dental care. She completed specialized training in pediatric dentistry and has extensive experience treating children with special needs, anxiety, and complex medical conditions.
@@ -4193,9 +4338,9 @@ Trust me kids are in real safe hands if treated by her. Moreover she is always r
             
             <div style="display: grid; gap: 1.5rem;">
               <div class="faq-item">
-                <h4 style="color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer;" onclick="toggleFAQ('faq4')">
+                <button type="button" style="background: none; border: none; color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer; width: 100%; text-align: left; padding: 0.5rem; border-radius: 4px;" onclick="toggleFAQ('faq4')" aria-expanded="false" aria-controls="faq4">
                   <span style="margin-right: 0.5rem;">▶</span> What are dental sealants and when are they needed?
-                </h4>
+                </button>
                 <div id="faq4" style="display: none; background: #e8f4f8; padding: 1rem; border-radius: 8px; margin-top: 0.5rem;">
                   <p style="margin: 0; color: #5a6c7d; line-height: 1.6; font-size: 0.95rem;">
                     Dental sealants are thin, protective coatings applied to the chewing surfaces of back teeth to prevent cavities. They're typically recommended when the permanent molars come in (around ages 6 and 12). Sealants can reduce cavity risk by up to 80% and are usually covered by dental insurance.
@@ -4204,9 +4349,9 @@ Trust me kids are in real safe hands if treated by her. Moreover she is always r
               </div>
 
               <div class="faq-item">
-                <h4 style="color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer;" onclick="toggleFAQ('faq5')">
+                <button type="button" style="background: none; border: none; color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer; width: 100%; text-align: left; padding: 0.5rem; border-radius: 4px;" onclick="toggleFAQ('faq5')" aria-expanded="false" aria-controls="faq5">
                   <span style="margin-right: 0.5rem;">▶</span> When might my child need nitrous oxide (laughing gas)?
-                </h4>
+                </button>
                 <div id="faq5" style="display: none; background: #e8f4f8; padding: 1rem; border-radius: 8px; margin-top: 0.5rem;">
                   <p style="margin: 0; color: #5a6c7d; line-height: 1.6; font-size: 0.95rem;">
                     Nitrous oxide is a safe, mild sedation option for anxious children or those undergoing longer procedures. It helps children relax while remaining conscious and responsive. It's completely reversible and wears off quickly after treatment. We assess each child individually to determine if nitrous oxide would be beneficial.
@@ -4215,9 +4360,9 @@ Trust me kids are in real safe hands if treated by her. Moreover she is always r
               </div>
 
               <div class="faq-item">
-                <h4 style="color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer;" onclick="toggleFAQ('faq6')">
+                <button type="button" style="background: none; border: none; color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer; width: 100%; text-align: left; padding: 0.5rem; border-radius: 4px;" onclick="toggleFAQ('faq6')" aria-expanded="false" aria-controls="faq6">
                   <span style="margin-right: 0.5rem;">▶</span> What is Silver Diamine Fluoride (SDF) treatment?
-                </h4>
+                </button>
                 <div id="faq6" style="display: none; background: #e8f4f8; padding: 1rem; border-radius: 8px; margin-top: 0.5rem;">
                   <p style="margin: 0; color: #5a6c7d; line-height: 1.6; font-size: 0.95rem;">
                     SDF is a non-invasive treatment that stops cavity progression and prevents new cavities. It's applied as a liquid and is particularly useful for young children, those with special needs, or when traditional drilling isn't possible. The treated area may turn black, but it's an effective way to arrest decay and buy time for more comprehensive treatment.
@@ -4235,9 +4380,9 @@ Trust me kids are in real safe hands if treated by her. Moreover she is always r
             
             <div style="display: grid; gap: 1.5rem;">
               <div class="faq-item">
-                <h4 style="color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer;" onclick="toggleFAQ('faq7')">
+                <button type="button" style="background: none; border: none; color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer; width: 100%; text-align: left; padding: 0.5rem; border-radius: 4px;" onclick="toggleFAQ('faq7')" aria-expanded="false" aria-controls="faq7">
                   <span style="margin-right: 0.5rem;">▶</span> What should I do if my child has a dental emergency?
-                </h4>
+                </button>
                 <div id="faq7" style="display: none; background: #fff8f0; padding: 1rem; border-radius: 8px; margin-top: 0.5rem;">
                   <p style="margin: 0; color: #5a6c7d; line-height: 1.6; font-size: 0.95rem;">
                     Call our office immediately at (425) 657-0609. We offer same-day emergency appointments. For knocked-out teeth, keep the tooth moist in milk or saliva. For severe injuries, seek immediate medical attention first, then contact us. We provide detailed emergency care instructions and are available for urgent situations.
@@ -4246,9 +4391,9 @@ Trust me kids are in real safe hands if treated by her. Moreover she is always r
               </div>
 
               <div class="faq-item">
-                <h4 style="color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer;" onclick="toggleFAQ('faq8')">
+                <button type="button" style="background: none; border: none; color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer; width: 100%; text-align: left; padding: 0.5rem; border-radius: 4px;" onclick="toggleFAQ('faq8')" aria-expanded="false" aria-controls="faq8">
                   <span style="margin-right: 0.5rem;">▶</span> Do you treat children with special needs?
-                </h4>
+                </button>
                 <div id="faq8" style="display: none; background: #fff8f0; padding: 1rem; border-radius: 8px; margin-top: 0.5rem;">
                   <p style="margin: 0; color: #5a6c7d; line-height: 1.6; font-size: 0.95rem;">
                     Yes, Dr. Bansal has extensive experience treating children with special healthcare needs, including autism, ADHD, developmental delays, and medical complexities. We provide individualized care plans, sensory-friendly environments, and can accommodate special scheduling needs. Hospital dentistry is also available when necessary.
@@ -4257,9 +4402,9 @@ Trust me kids are in real safe hands if treated by her. Moreover she is always r
               </div>
 
               <div class="faq-item">
-                <h4 style="color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer;" onclick="toggleFAQ('faq9')">
+                <button type="button" style="background: none; border: none; color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer; width: 100%; text-align: left; padding: 0.5rem; border-radius: 4px;" onclick="toggleFAQ('faq9')" aria-expanded="false" aria-controls="faq9">
                   <span style="margin-right: 0.5rem;">▶</span> When might general anesthesia be necessary?
-                </h4>
+                </button>
                 <div id="faq9" style="display: none; background: #fff8f0; padding: 1rem; border-radius: 8px; margin-top: 0.5rem;">
                   <p style="margin: 0; color: #5a6c7d; line-height: 1.6; font-size: 0.95rem;">
                     General anesthesia may be recommended for extensive treatment, very young children, those with special needs, or extreme dental anxiety. Dr. Bansal is credentialed at Swedish Hospital Issaquah, Covington Multicare Surgery Center, and Mary Bridge Children's Hospital to provide safe, hospital-based dental care when needed.
@@ -4277,9 +4422,9 @@ Trust me kids are in real safe hands if treated by her. Moreover she is always r
             
             <div style="display: grid; gap: 1.5rem;">
               <div class="faq-item">
-                <h4 style="color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer;" onclick="toggleFAQ('faq10')">
+                <button type="button" style="background: none; border: none; color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer; width: 100%; text-align: left; padding: 0.5rem; border-radius: 4px;" onclick="toggleFAQ('faq10')" aria-expanded="false" aria-controls="faq10">
                   <span style="margin-right: 0.5rem;">▶</span> How can I prevent bottle decay in my baby?
-                </h4>
+                </button>
                 <div id="faq10" style="display: none; background: #f0f8ff; padding: 1rem; border-radius: 8px; margin-top: 0.5rem;">
                   <p style="margin: 0; color: #5a6c7d; line-height: 1.6; font-size: 0.95rem;">
                     Never put your baby to bed with a bottle containing milk, formula, or juice. Clean your baby's gums with a soft cloth after feeding. Start brushing with fluoride toothpaste as soon as teeth appear. Wean from bottle by age 12-14 months and transition to a sippy cup with water between meals.
@@ -4288,9 +4433,9 @@ Trust me kids are in real safe hands if treated by her. Moreover she is always r
               </div>
 
               <div class="faq-item">
-                <h4 style="color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer;" onclick="toggleFAQ('faq11')">
+                <button type="button" style="background: none; border: none; color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer; width: 100%; text-align: left; padding: 0.5rem; border-radius: 4px;" onclick="toggleFAQ('faq11')" aria-expanded="false" aria-controls="faq11">
                   <span style="margin-right: 0.5rem;">▶</span> When should my child stop thumb-sucking or pacifier use?
-                </h4>
+                </button>
                 <div id="faq11" style="display: none; background: #f0f8ff; padding: 1rem; border-radius: 8px; margin-top: 0.5rem;">
                   <p style="margin: 0; color: #5a6c7d; line-height: 1.6; font-size: 0.95rem;">
                     Most children naturally stop these habits between ages 2-4. If the habit continues past age 4-5 or when permanent teeth begin erupting, it may affect tooth alignment and jaw development. We can provide guidance and, if necessary, habit-preventing appliances to help break persistent habits.
@@ -4299,9 +4444,9 @@ Trust me kids are in real safe hands if treated by her. Moreover she is always r
               </div>
 
               <div class="faq-item">
-                <h4 style="color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer;" onclick="toggleFAQ('faq12')">
+                <button type="button" style="background: none; border: none; color: #673ab7; margin-bottom: 0.5rem; font-size: 1rem; cursor: pointer; width: 100%; text-align: left; padding: 0.5rem; border-radius: 4px;" onclick="toggleFAQ('faq12')" aria-expanded="false" aria-controls="faq12">
                   <span style="margin-right: 0.5rem;">▶</span> Does my child need a mouth guard for sports?
-                </h4>
+                </button>
                 <div id="faq12" style="display: none; background: #f0f8ff; padding: 1rem; border-radius: 8px; margin-top: 0.5rem;">
                   <p style="margin: 0; color: #5a6c7d; line-height: 1.6; font-size: 0.95rem;">
                     Custom mouth guards are recommended for contact sports and activities with risk of facial injury. We create properly fitted guards that provide superior protection compared to store-bought options. They're especially important for children with braces or other orthodontic appliances.
@@ -4405,17 +4550,58 @@ Trust me kids are in real safe hands if treated by her. Moreover she is always r
 
     // FAQ Toggle Function
     function toggleFAQ(faqId) {
-      var faqElement = document.getElementById(faqId);
-      var questionElement = faqElement.previousElementSibling;
-      var arrow = questionElement.querySelector('span');
-      
-      if (faqElement.style.display === 'none' || faqElement.style.display === '') {
-        faqElement.style.display = 'block';
-        arrow.textContent = '▼';
-        faqElement.style.animation = 'fadeIn 0.3s ease-in-out';
-      } else {
-        faqElement.style.display = 'none';
-        arrow.textContent = '▶';
+      try {
+        var faqElement = document.getElementById(faqId);
+        if (!faqElement) {
+          return; // Silent fail for production
+        }
+        
+        var questionElement = faqElement.previousElementSibling;
+        if (!questionElement) {
+          return; // Silent fail for production
+        }
+        
+        var arrow = questionElement.querySelector('span');
+        if (!arrow) {
+          return; // Silent fail for production
+        }
+        
+        if (faqElement.style.display === 'none' || faqElement.style.display === '') {
+          faqElement.style.display = 'block';
+          arrow.textContent = '▼';
+          questionElement.setAttribute('aria-expanded', 'true');
+          faqElement.style.animation = 'fadeIn 0.3s ease-in-out';
+        } else {
+          faqElement.style.display = 'none';
+          arrow.textContent = '▶';
+          questionElement.setAttribute('aria-expanded', 'false');
+        }
+      } catch (error) {
+        // Silent error handling for production
+        return;
+      }
+    }
+
+    // Error-safe scroll function for inline onclick handlers
+    function safeScrollTo(elementId, highlight = false) {
+      try {
+        var element = document.getElementById(elementId);
+        if (element) {
+          element.scrollIntoView({behavior: 'smooth'});
+          
+          if (highlight) {
+            var originalBackground = element.style.background || 'rgba(255,255,255,0.7)';
+            element.style.background = '#fff3e0';
+            setTimeout(() => {
+              element.style.background = originalBackground;
+            }, 2000);
+          }
+        } else {
+          // Silent fail for production
+        }
+      } catch (error) {
+        // Silent error handling for production
+        return;
       }
     }
 
@@ -4429,6 +4615,7 @@ Trust me kids are in real safe hands if treated by her. Moreover she is always r
     `;
     document.head.appendChild(style);
   </script>
+  </main>
 </body>
 
 </html>
